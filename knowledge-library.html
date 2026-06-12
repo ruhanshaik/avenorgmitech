@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Knowledge Library | AVENOR – Startup Playbooks & Founder Stories</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+     <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://avenor.sbs/knowledge-library.html" />
+    
+    <meta name="description" content="Operator-written playbooks on fundraising, ops, legal, marketing, product, and design from Indian startup founders and experts. Founded by PRANAV GAUTAM from Bihar.">
+    <meta name="keywords" content="AVENOR, PRANAV GAUTAM, knowledge library, startup playbooks, fundraising guide, founder stories">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR Knowledge Library – Startup Resources">
+    <meta property="og:description" content="Operator-written playbooks on fundraising, hiring, and scaling from founders and experts.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs/knowledge-library.html">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR Knowledge Library – Startup Resources">
+    <meta name="twitter:description" content="Operator-written playbooks on fundraising, hiring, and scaling from founders and experts.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="built-by" content="gmitech.in">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #050505;
+            --text: #ffffff;
+            --text-muted: #aaaaaa;
+            --text-dim: #666666;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(255, 255, 255, 0.2);
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-bg-hover: rgba(255, 255, 255, 0.05);
+            --header-bg: rgba(10, 10, 10, 0.95);
+            --btn-primary-bg: #ffffff;
+            --btn-primary-text: #000000;
+            --scrollbar-track: #1a1a1a;
+            --scrollbar-thumb: #333;
+            --accent: #7B7481;
+        }
+        [data-theme="light"] {
+            --bg: #f5f5f0;
+            --bg-secondary: #ebebeb;
+            --text: #0a0a0a;
+            --text-muted: #555555;
+            --text-dim: #888888;
+            --border: rgba(0, 0, 0, 0.08);
+            --border-hover: rgba(0, 0, 0, 0.2);
+            --card-bg: rgba(0, 0, 0, 0.03);
+            --card-bg-hover: rgba(0, 0, 0, 0.05);
+            --header-bg: rgba(245, 245, 240, 0.95);
+            --btn-primary-bg: #0a0a0a;
+            --btn-primary-text: #ffffff;
+            --accent: #6a5f70;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; transition: background .4s, color .4s; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+
+        /* Theme Toggle */
+        .switch { font-size: 17px; position: relative; display: inline-block; width: 64px; height: 34px; flex-shrink: 0; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #73C0FC; transition: .4s; border-radius: 30px; }
+        .slider:before { position: absolute; content: ""; height: 30px; width: 30px; border-radius: 20px; left: 2px; bottom: 2px; z-index: 2; background-color: #e8e8e8; transition: .4s; }
+        .sun svg { position: absolute; top: 6px; left: 36px; z-index: 1; width: 24px; height: 24px; animation: rotate 15s linear infinite; }
+        .moon svg { fill: #73C0FC; position: absolute; top: 5px; left: 5px; z-index: 1; width: 24px; height: 24px; animation: tilt 5s linear infinite; }
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
+        @keyframes tilt { 0%,100%{transform:rotate(0)}25%{transform:rotate(-10deg)}75%{transform:rotate(10deg)} }
+        .input:checked+.slider { background-color: #183153; }
+        .input:checked+.slider:before { transform: translateX(30px); }
+
+        /* Header */
+        .main-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2rem; background: var(--header-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); transition: background .4s; }
+        .header-container { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .logo-center a { display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 800; font-size: 1.3rem; color: var(--text); }
+        .logo-center img { height: 32px; width: auto; }
+        .logo-dark { display: block; }
+        .logo-light { display: none; }
+        [data-theme="light"] .logo-dark { display: none; }
+        [data-theme="light"] .logo-light { display: block; }
+        .nav-left { display: flex; gap: 2rem; align-items: center; }
+        .nav-left a, .dropdown-btn { color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: opacity .3s; background: none; border: none; cursor: pointer; font-family: inherit; }
+        .nav-left a:hover, .dropdown-btn:hover { opacity: 0.7; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: var(--bg-secondary); min-width: 200px; border-radius: 12px; padding: 0.5rem 0; margin-top: 0.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 1px solid var(--border); z-index: 200; }
+        .dropdown-content a { display: block; padding: 0.7rem 1.2rem; color: var(--text); font-size: 0.85rem; transition: background .2s; }
+        .dropdown-content a:hover { background: var(--card-bg-hover); }
+        .dropdown:hover .dropdown-content { display: block; }
+        .nav-right { display: flex; align-items: center; gap: 1rem; }
+        .lets-talk-btn { background: var(--btn-primary-bg); color: var(--btn-primary-text); padding: 0.5rem 1.3rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; transition: all .3s; white-space: nowrap; }
+        .lets-talk-btn:hover { transform: scale(1.02); opacity: 0.9; }
+
+        /* Mobile Menu */
+        .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; z-index: 1001; }
+        .hamburger span { display: block; width: 25px; height: 2px; background: var(--text); margin: 5px 0; transition: all .3s; }
+        .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+        .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; padding: 80px 2rem 2rem; flex-direction: column; gap: 1.5rem; overflow-y: auto; }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a, .mobile-dropdown-btn { color: var(--text); font-size: 1.2rem; font-weight: 500; padding: 0.5rem 0; border-bottom: 1px solid var(--border); background: none; width: 100%; text-align: left; cursor: pointer; }
+        .mobile-dropdown-content { display: none; padding-left: 1rem; margin-top: 0.5rem; }
+        .mobile-dropdown-content a { font-size: 1rem; border-bottom: none; }
+        .mobile-theme-row { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+        .mobile-theme-label { font-size: 1.2rem; font-weight: 500; color: var(--text); }
+
+        /* Hero Section */
+        .library-hero { padding: 9rem 2rem 4rem; text-align: center; position: relative; overflow: hidden; }
+        .library-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(123,116,129,0.12), transparent); pointer-events: none; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--card-bg); border: 1px solid var(--border); padding: .3rem 1rem; border-radius: 100px; font-size: .8rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .library-hero h1 { font-size: 3rem; font-weight: 900; letter-spacing: -.03em; margin-bottom: 1rem; color: var(--text); }
+        .library-hero p { font-size: 1rem; color: var(--text-muted); max-width: 650px; margin: 0 auto; line-height: 1.6; }
+
+        /* Search */
+        .search-container { position: relative; max-width: 500px; margin: 2rem auto 0; }
+        .search-container i { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+        .search-input { width: 100%; padding: 0.9rem 1rem 0.9rem 3rem; border-radius: 60px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text); font-size: 0.9rem; outline: none; transition: all .3s; }
+        .search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(123,116,129,0.2); }
+
+        /* Category Filters */
+        .category-filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 2rem; }
+        .category-btn { padding: 0.5rem 1.2rem; border-radius: 40px; font-size: 0.8rem; font-weight: 500; background: transparent; border: 1px solid var(--border); color: var(--text-muted); cursor: pointer; transition: all .3s; }
+        .category-btn:hover, .category-btn.active { background: var(--accent); color: white; border-color: var(--accent); transform: translateY(-2px); }
+
+        /* Stats */
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 1000px; margin: 3rem auto; padding: 0 1rem; }
+        .stat-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; padding: 1.5rem; text-align: center; transition: all .3s; }
+        .stat-card:hover { transform: translateY(-4px); background: var(--card-bg-hover); border-color: var(--accent); }
+        .stat-value { font-size: 2rem; font-weight: 800; color: var(--accent); }
+        .stat-label { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.3rem; }
+
+        /* Featured */
+        .featured-section { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .featured-card { background: linear-gradient(135deg, rgba(123,116,129,0.08), rgba(123,116,129,0.02)); border: 1px solid rgba(123,116,129,0.2); border-radius: 28px; padding: 2rem; transition: all .3s; }
+        .featured-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+        .featured-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(123,116,129,0.15); padding: 0.3rem 1rem; border-radius: 40px; font-size: 0.7rem; color: var(--accent); margin-bottom: 1rem; }
+        .featured-title { font-size: 1.6rem; font-weight: 800; margin-bottom: 0.8rem; color: var(--text); }
+        .featured-desc { color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+        .featured-meta { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; font-size: 0.8rem; color: var(--text-muted); }
+        .featured-meta span i { margin-right: 0.3rem; color: var(--accent); }
+
+        /* Article Grid */
+        .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1200px; margin: 3rem auto; padding: 0 1rem; }
+        .article-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; padding: 1.3rem; transition: all .3s; cursor: pointer; }
+        .article-card:hover { transform: translateY(-4px); background: var(--card-bg-hover); border-color: var(--accent); }
+        .article-category { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.8rem; border-radius: 20px; background: rgba(123,116,129,0.15); color: var(--accent); margin-bottom: 0.8rem; }
+        .article-views { float: right; font-size: 0.7rem; color: var(--text-muted); }
+        .article-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); line-height: 1.4; }
+        .article-desc { font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem; }
+        .article-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.8rem; border-top: 1px solid var(--border); }
+        .article-time, .article-author { display: flex; align-items: center; gap: 0.3rem; font-size: 0.7rem; color: var(--text-muted); }
+        .read-link { color: var(--accent); font-size: 0.75rem; font-weight: 500; display: flex; align-items: center; gap: 0.3rem; transition: gap .2s; }
+        .read-link:hover { gap: 0.5rem; }
+
+        /* Modal */
+        .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(12px); z-index: 2000; display: flex; align-items: center; justify-content: center; padding: 1rem; overflow-y: auto; }
+        .modal-content { max-width: 700px; width: 100%; max-height: 85vh; overflow-y: auto; border-radius: 24px; background: var(--bg); border: 1px solid var(--border); }
+        .modal-close { position: sticky; top: 0.5rem; right: 0.5rem; float: right; width: 34px; height: 34px; border-radius: 50%; background: var(--card-bg-hover); border: 1px solid var(--border); cursor: pointer; color: var(--text); z-index: 10; }
+        .modal-close:hover { background: var(--accent); color: white; }
+        .modal-body { padding: 1.5rem; }
+        .modal-category { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.8rem; border-radius: 20px; background: rgba(123,116,129,0.15); color: var(--accent); margin-bottom: 1rem; }
+        .modal-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text); }
+        .modal-stats { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.75rem; color: var(--text-muted); }
+        .modal-author { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border); }
+        .modal-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; }
+        .modal-author-name { font-weight: 700; color: var(--text); }
+        .modal-author-role { font-size: 0.7rem; color: var(--text-muted); }
+        .modal-text { color: var(--text-muted); line-height: 1.7; font-size: 0.85rem; }
+        .modal-text h3 { font-size: 1.1rem; font-weight: 700; margin: 1rem 0 0.5rem; color: var(--text); }
+        .modal-text ul { margin-left: 1.2rem; margin-bottom: 0.8rem; }
+        .modal-footer { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem; }
+        .helpful-btn { padding: 0.4rem 1rem; border-radius: 30px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text-muted); cursor: pointer; transition: all .2s; }
+        .helpful-btn:hover { background: var(--accent); color: white; border-color: var(--accent); }
+
+        /* Contributor */
+        .contributor-section { max-width: 800px; margin: 4rem auto; padding: 0 1.5rem; text-align: center; }
+        .contributor-card { background: linear-gradient(135deg, var(--card-bg), transparent); border: 1px solid var(--border); border-radius: 28px; padding: 2rem; transition: all .3s; }
+        .contributor-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+        .contributor-icon { font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem; }
+
+        /* Footer */
+        .footer { background: var(--bg-secondary); padding: 3rem 1rem 2rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .footer-logo { font-size: 1.2rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text); }
+        .footer-grid p { font-size: 0.7rem; color: var(--text-dim); }
+        .footer-grid h4 { font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text); }
+        .footer-grid a { display: block; font-size: 0.7rem; color: var(--text-dim); margin-bottom: 0.5rem; transition: color .3s; }
+        .footer-grid a:hover { color: var(--text); }
+        .footer-bottom { text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid var(--border); font-size: 0.7rem; color: var(--text-dim); }
+
+        .split-char { display: inline-block; }
+
+        @media (max-width: 1024px) { .articles-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) {
+            .nav-left, .nav-right { display: none; }
+            .hamburger { display: block; }
+            .main-header { padding: 0.8rem 1rem; }
+            .library-hero h1 { font-size: 2rem; }
+            .library-hero { padding: 8rem 1rem 3rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .articles-grid { grid-template-columns: 1fr; }
+            .featured-title { font-size: 1.2rem; }
+            .featured-card { padding: 1.2rem; }
+        }
+        @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <button class="dropdown-btn">Mentorship <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="free-mentorship.html">Free Mentorship</a>
+                    <a href="video-feedback.html">Video Feedback</a>
+                    <a href="knowledge-library.html">Knowledge Library</a>
+                </div>
+            </div>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row"><span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch"><span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"></path></g></svg></span><span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span><input type="checkbox" class="input" id="themeToggleMobile"><span class="slider"></span></label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <button class="mobile-dropdown-btn" id="mobileDropdownBtn">Mentorship <i class="fas fa-chevron-down"></i></button>
+    <div class="mobile-dropdown-content" id="mobileDropdownContent">
+        <a href="free-mentorship.html">Free Mentorship</a>
+        <a href="video-feedback.html">Video Feedback</a>
+        <a href="knowledge-library.html">Knowledge Library</a>
+    </div>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+
+<!-- Hero -->
+<section class="library-hero">
+    <div class="hero-badge"><i class="fas fa-book-open"></i> Knowledge Library</div>
+    <h1 id="heroTitle">Knowledge Library</h1>
+    <p>Operator-written playbooks on raising, hiring, and scaling — from founders and experts who've done it. Curated by <strong>PRANAV GAUTAM</strong> and the AVENOR team.</p>
+    
+    <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search 50+ articles...">
+    </div>
+    
+    <div class="category-filters" id="categoryFilters"></div>
+</section>
+
+<!-- Stats -->
+<div class="stats-grid">
+    <div class="stat-card"><div class="stat-value">50+</div><div class="stat-label">Expert Articles</div></div>
+    <div class="stat-card"><div class="stat-value">25+</div><div class="stat-label">Founder Stories</div></div>
+    <div class="stat-card"><div class="stat-value">100K+</div><div class="stat-label">Readers Served</div></div>
+    <div class="stat-card"><div class="stat-value">15+</div><div class="stat-label">Contributors</div></div>
+</div>
+
+<!-- Featured -->
+<div class="featured-section">
+    <div class="featured-card">
+        <div class="featured-badge"><i class="fas fa-bolt"></i> Featured</div>
+        <h2 class="featured-title">The Complete AVENOR Fundraising Playbook 2025</h2>
+        <p class="featured-desc">A 50-page operator's guide to running a structured raise — from prep to close. Written by founders who raised over ₹50 crore.</p>
+        <div class="featured-meta">
+            <span><i class="fas fa-user"></i> Team AVENOR</span>
+            <span><i class="fas fa-calendar"></i> January 2025</span>
+            <span><i class="fas fa-book"></i> 50 min read</span>
+        </div>
+        <button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="btn-primary" style="padding: 0.6rem 1.5rem; border-radius: 40px;">Read the Playbook <i class="fas fa-arrow-right"></i></button>
+    </div>
+</div>
+
+<!-- Articles Grid -->
+<div class="articles-grid" id="articlesGrid"></div>
+<div id="noResults" class="text-center py-16" style="display: none;"><p style="color: var(--text-muted);">No articles match your search.</p><button onclick="clearFilters()" class="category-btn" style="margin-top: 1rem;">Clear filters</button></div>
+
+<!-- Contributor -->
+<div class="contributor-section">
+    <div class="contributor-card">
+        <div class="contributor-icon"><i class="fas fa-heart"></i></div>
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.8rem;">Want to contribute to the library?</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.2rem;">Share your expertise with 10,000+ founders. Write a playbook or share your founder story.</p>
+        <button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="btn-primary" style="padding: 0.6rem 1.5rem; border-radius: 40px;">Become a Contributor <i class="fas fa-arrow-right"></i></button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div><div class="footer-logo">AVENOR</div><p>Structured fundraising and venture intelligence. Less noise. Better decisions.</p></div>
+        <div><h4>Product</h4><a>Startups</a><a>Investors</a><a>Intelligence</a><a>Pricing</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><a href="career.html">Careers</a><a href="press.html">Press</a><a href="contact.html">Contact</a></div>
+        <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a><a>Trust</a></div>
+        <div><h4>Social</h4><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a><a href="#"><i class="fab fa-youtube"></i> YouTube</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+    <div class="footer-bottom">Built With ❤️ By gmitech.in</div>
+</footer>
+
+<div id="modal" class="modal-overlay" style="display: none;" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div style="clear: both;"></div>
+        <div class="modal-body" id="modalContent"></div>
+    </div>
+</div>
+
+<script>
+    const articles = [
+        { id:1, title:"How I raised ₹4 Crore as a Solo Founder from Blume Ventures", category:"Founder Stories", readTime:"18 min", desc:"A first-person account of fundraising journey, rejections, learnings, and finally closing the deal.", author:"Priya Mehta", role:"Founder, FinSage", date:"March 15, 2025", views:"12.4k", content:"<p>When I started FinSage in my tiny Mumbai apartment, I never imagined I'd be sitting across from Vani Kola discussing term sheets. The journey was brutal — 127 investor meetings, 84 rejections, 3 term sheets, and finally a ₹4 crore seed round from Blume Ventures.</p><h3>The Beginning</h3><p>I had no co-founder, no fancy IIT pedigree, and no warm intros. What I had was a working product, 500 beta users, and a burning desire to solve the financial literacy problem.</p><h3>Key Lessons</h3><ul><li>Build in public — share your metrics</li><li>Network relentlessly — attend every event</li><li>Focus on unit economics before raising</li></ul>" },
+        { id:2, title:"The Pre-Seed Raise Playbook: From Zero to Your First ₹2 Crore", category:"Fundraising", readTime:"12 min", desc:"A step-by-step guide to raising your first institutional round in India's current market.", author:"Rahul Sharma", role:"Partner, Blume Ventures", date:"March 10, 2025", views:"8.7k", content:"<p>The Indian startup ecosystem has never been more exciting. Here's a step-by-step guide to raising your first institutional round.</p><h3>Step 1: Build Your Investor Pipeline</h3><p>Start with 50-100 potential investors. Use platforms like AVENOR, Crunchbase.</p><h3>Step 2: Perfect Your Pitch Deck</h3><p>Your deck should tell a story: Problem → Solution → Market → Traction → Team → Ask.</p>" },
+        { id:3, title:"Building Fintech for Bharat: Lessons from a Unicorn Founder", category:"Fintech", readTime:"15 min", desc:"Insights from building a fintech startup that serves 10M+ users in rural India.", author:"Anjali Krishnamurthy", role:"Founder, PayBharat", date:"March 5, 2025", views:"15.2k", content:"<p>When we started PayBharat, everyone said we were crazy. But we saw something others missed — the vernacular opportunity.</p><h3>Understanding the Bharat User</h3><p>85% of India speaks Hindi, Tamil, Telugu, or Bengali. Yet 99% of fintech apps are in English.</p>" },
+        { id:4, title:"Hiring Your First 10 Engineers in Bengaluru", category:"Operations", readTime:"10 min", desc:"A practical guide to building your core tech team in India's startup capital.", author:"Vikram Nair", role:"CTO, ServeStack", date:"Feb 28, 2025", views:"6.3k", content:"<p>Bengaluru has the best engineering talent in India, but also the most competition. Here's how we hired our first 10 engineers.</p>" },
+        { id:5, title:"SAFEs vs Convertible Notes vs Equity Rounds in India", category:"Legal", readTime:"8 min", desc:"Legal structures demystified for Indian startup founders.", author:"Neha Gupta", role:"Partner, Khaitan & Co", date:"Feb 25, 2025", views:"4.1k", content:"<p>Choosing the right legal structure for your raise can save you millions. Here's what every Indian founder needs to know.</p>" },
+        { id:6, title:"Cold Outreach That Actually Works for B2B SaaS", category:"Marketing", readTime:"9 min", desc:"A repeatable playbook for Indian B2B founders to book meetings with enterprise clients.", author:"Arjun Reddy", role:"Head of Growth, Inspekt", date:"Feb 20, 2025", views:"7.8k", content:"<p>Cold email gets a bad rap because most people do it wrong. Here's the exact framework that booked us meetings with 50+ enterprise clients.</p>" },
+        { id:7, title:"Building Your Metrics Stack: From Zero to Investor-Ready", category:"Product", readTime:"11 min", desc:"The essential metrics every startup needs to track before raising.", author:"Siddharth Joshi", role:"Product Lead, Razorpay", date:"Feb 18, 2025", views:"9.2k", content:"<p>Investors love data. Here's how to build a metrics dashboard that shows retention, engagement, and growth.</p>" },
+        { id:8, title:"Brand Design for Startups: The Minimum Viable Brand Kit", category:"Design", readTime:"7 min", desc:"What you actually need to look professional (and what you can skip).", author:"Meera Iyer", role:"Design Director, Avenir", date:"Feb 15, 2025", views:"5.4k", content:"<p>Don't spend lakhs on branding before product-market fit. Here's the MVP brand kit that works.</p>" },
+        { id:9, title:"The Art of Investor Updates: Keep Backers Engaged", category:"Fundraising", readTime:"6 min", desc:"A template that investors actually read and respond to.", author:"Kavita Singh", role:"Founder, EduRise", date:"Feb 12, 2025", views:"3.9k", content:"<p>Monthly investor updates are your secret weapon. Here's a template that keeps your investors excited.</p>" },
+        { id:10, title:"Burn Multiple: The Efficiency Metric You Need to Track", category:"Operations", readTime:"5 min", desc:"How to measure and optimize your startup's capital efficiency.", author:"Ramesh Iyer", role:"CFO, Unicorn Ventures", date:"Feb 10, 2025", views:"4.5k", content:"<p>In 2025, efficiency wins. Here's how to calculate and improve your burn multiple.</p>" },
+        { id:11, title:"From IIT to Unicorn: My 10-Year Founder Journey", category:"Founder Stories", readTime:"20 min", desc:"Raw, honest lessons from building a $1B company from scratch.", author:"Sanjay Mathur", role:"Founder, CloudScale", date:"Feb 5, 2025", views:"22.1k", content:"<p>Ten years ago, I was sleeping on a friend's couch. Today, CloudScale serves 5,000+ enterprise customers.</p>" },
+        { id:12, title:"ESOPs and Cap Table Management for Indian Startups", category:"Legal", readTime:"9 min", desc:"How to structure employee ownership without breaking your cap table.", author:"Aditya Patil", role:"General Counsel", date:"Feb 1, 2025", views:"3.2k", content:"<p>ESOPs are powerful but complex. Here's how to design a plan that motivates your team.</p>" },
+        { id:13, title:"Growth Hacking for D2C Brands in India", category:"Growth", readTime:"14 min", desc:"How we scaled from 0 to 100K monthly orders without paid ads.", author:"Divya Kulkarni", role:"Founder, Naturally", date:"Jan 28, 2025", views:"11.3k", content:"<p>Paid ads are too expensive. Here's the organic growth playbook that worked for our D2C brand.</p>" },
+        { id:14, title:"Product-Market Fit: How to Know When You've Found It", category:"Product", readTime:"10 min", desc:"The signals that tell you you're ready to scale.", author:"Tarun Mehta", role:"Product Coach", date:"Jan 25, 2025", views:"6.8k", content:"<p>Everyone talks about PMF, but few define it. Here are the metrics and signals that prove you have it.</p>" }
+    ];
+
+    const categories = ["All", ...new Set(articles.map(a => a.category))];
+    let currentCategory = "All";
+    let searchQuery = "";
+
+    function renderFilters() {
+        const container = document.getElementById("categoryFilters");
+        if (!container) return;
+        container.innerHTML = categories.map(cat => `<button class="category-btn ${currentCategory === cat ? 'active' : ''}" data-category="${cat}">${cat}</button>`).join("");
+        document.querySelectorAll(".category-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                currentCategory = btn.dataset.category;
+                renderFilters();
+                renderArticles();
+            });
+        });
+    }
+
+    function renderArticles() {
+        const filtered = articles.filter(a => (currentCategory === "All" || a.category === currentCategory) && a.title.toLowerCase().includes(searchQuery.toLowerCase()));
+        const container = document.getElementById("articlesGrid");
+        const noResults = document.getElementById("noResults");
+        if (!container) return;
+        if (filtered.length === 0) { container.innerHTML = ""; if (noResults) noResults.style.display = "block"; return; }
+        if (noResults) noResults.style.display = "none";
+        container.innerHTML = filtered.map(a => `
+            <div class="article-card" onclick="openArticle(${a.id})">
+                <div><span class="article-category">${a.category}</span><span class="article-views"><i class="fas fa-eye"></i> ${a.views}</span></div>
+                <h3 class="article-title">${a.title}</h3>
+                <p class="article-desc">${a.desc}</p>
+                <div class="article-footer">
+                    <div class="article-time"><i class="far fa-clock"></i> ${a.readTime}</div>
+                    <div class="article-author"><i class="fas fa-user"></i> ${a.author.split(" ")[0]}</div>
+                    <div class="read-link">Read <i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        `).join("");
+    }
+
+    function openArticle(id) {
+        const a = articles.find(x => x.id === id);
+        if (!a) return;
+        const modal = document.getElementById("modal");
+        const modalContent = document.getElementById("modalContent");
+        if (!modal || !modalContent) return;
+        modalContent.innerHTML = `
+            <span class="modal-category">${a.category}</span>
+            <div class="modal-stats"><span><i class="far fa-clock"></i> ${a.readTime}</span><span><i class="fas fa-eye"></i> ${a.views}</span></div>
+            <h2 class="modal-title">${a.title}</h2>
+            <div class="modal-author">
+                <div class="modal-avatar">${a.author.charAt(0)}</div>
+                <div><div class="modal-author-name">${a.author}</div><div class="modal-author-role">${a.role} • ${a.date}</div></div>
+            </div>
+            <div class="modal-text">${a.content}</div>
+            <div class="modal-footer">
+                <button class="helpful-btn" onclick="alert('Thanks for your feedback!')"><i class="fas fa-thumbs-up"></i> Helpful</button>
+                <button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="discuss-btn" style="color: var(--accent); background: none; border: none; cursor: pointer;"><i class="fab fa-whatsapp"></i> Discuss this article →</button>
+            </div>
+        `;
+        modal.style.display = "flex";
+    }
+
+    function closeModal(e) { if (!e || e.target === document.getElementById("modal")) document.getElementById("modal").style.display = "none"; }
+    function clearFilters() { currentCategory = "All"; searchQuery = ""; document.getElementById("searchInput").value = ""; renderFilters(); renderArticles(); }
+
+    document.getElementById("searchInput").addEventListener("input", (e) => { searchQuery = e.target.value; renderArticles(); });
+    renderFilters();
+    renderArticles();
+
+    // Theme Toggle
+    const html = document.documentElement;
+    const t1 = document.getElementById('themeToggle');
+    const t2 = document.getElementById('themeToggleMobile');
+    function setTheme(light) { html.setAttribute('data-theme', light ? 'light' : 'dark'); if(t1) t1.checked = light; if(t2) t2.checked = light; localStorage.setItem('avenor-theme', light ? 'light' : 'dark'); }
+    if (localStorage.getItem('avenor-theme') === 'light') setTheme(true);
+    if (t1) t1.addEventListener('change', () => setTheme(t1.checked));
+    if (t2) t2.addEventListener('change', () => setTheme(t2.checked));
+
+    // Mobile Menu
+    const hbtn = document.getElementById('hamburgerBtn');
+    const mmenu = document.getElementById('mobileMenu');
+    if (hbtn) hbtn.addEventListener('click', () => { mmenu.classList.toggle('active'); hbtn.classList.toggle('active'); });
+    const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+    const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+    if (mobileDropdownBtn) mobileDropdownBtn.addEventListener('click', () => { mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block'; });
+    document.querySelectorAll('.mobile-menu a, .mobile-menu .mobile-dropdown-content a').forEach(link => {
+        link.addEventListener('click', () => { mmenu.classList.remove('active'); if(hbtn) hbtn.classList.remove('active'); });
+    });
+
+    // SplitText Animation
+    if (typeof gsap !== 'undefined') {
+        const heroTitle = document.getElementById('heroTitle');
+        if (heroTitle) {
+            const text = heroTitle.textContent;
+            const chars = text.split('');
+            heroTitle.innerHTML = chars.map(ch => ch === ' ' ? '<span style="display:inline-block;width:0.3em;"> </span>' : `<span class="split-char">${ch}</span>`).join('');
+            gsap.fromTo(heroTitle.querySelectorAll('.split-char'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: 'power4.out', stagger: 0.03 });
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+Here is your **completely updated `video-feedback.html`** with domain changed to `avenor.sbs`, founder name updated to **PRANAV GAUTAM**, all SEO tags added, and proper styling - keeping your original layout intact.
+
+```html
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Video Feedback | AVENOR – Get Expert Pitch Review</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://avenor.sbs/video-feedback.html" />
+     <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Get async video feedback on your pitch from operators and investors. Upload your deck and pitch video. Get a video review within 48 hours. Founded by PRANAV GAUTAM from Bihar.">
+    <meta name="keywords" content="AVENOR, PRANAV GAUTAM, video feedback, pitch review, pitch deck review, startup feedback, mentor feedback">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR Video Feedback – Get Expert Pitch Review">
+    <meta property="og:description" content="Get async video feedback on your pitch from operators and investors. Upload your deck and pitch video.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs/video-feedback.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR Video Feedback – Pitch Review">
+    <meta name="twitter:description" content="Get async video feedback on your pitch from operators and investors.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <!-- Team Member SEO Meta -->
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="team:member" content="AKSHAY SINGH - Team Member">
+    <meta name="team:member" content="AMIT NAYAN - Team Member">
+    <meta name="built-by" content="gmitech.in">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0a0a0a; --bg-secondary: #050505; --text: #ffffff; --text-muted: #aaaaaa;
+            --text-dim: #666666; --border: rgba(255, 255, 255, 0.08); --border-hover: rgba(255, 255, 255, 0.2);
+            --card-bg: rgba(255, 255, 255, 0.03); --card-bg-hover: rgba(255, 255, 255, 0.05);
+            --header-bg: rgba(10, 10, 10, 0.95); --btn-primary-bg: #ffffff; --btn-primary-text: #000000;
+            --scrollbar-track: #1a1a1a; --scrollbar-thumb: #333; --accent: #7B7481; --icon-color: #7B7481;
+            --primary: #7B7481;
+        }
+        [data-theme="light"] {
+            --bg: #f5f5f0; --bg-secondary: #ebebeb; --text: #0a0a0a; --text-muted: #555555;
+            --text-dim: #888888; --border: rgba(0, 0, 0, 0.08); --border-hover: rgba(0, 0, 0, 0.2);
+            --card-bg: rgba(0, 0, 0, 0.03); --card-bg-hover: rgba(0, 0, 0, 0.05);
+            --header-bg: rgba(245, 245, 240, 0.95); --btn-primary-bg: #0a0a0a; --btn-primary-text: #ffffff;
+            --accent: #6a5f70; --icon-color: #6a5f70; --primary: #6a5f70;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; transition: background 0.4s ease, color 0.4s ease; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+        
+        .switch { font-size: 17px; position: relative; display: inline-block; width: 64px; height: 34px; flex-shrink: 0; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #73C0FC; transition: .4s; border-radius: 30px; }
+        .slider:before { position: absolute; content: ""; height: 30px; width: 30px; border-radius: 20px; left: 2px; bottom: 2px; z-index: 2; background-color: #e8e8e8; transition: .4s; }
+        .sun svg { position: absolute; top: 6px; left: 36px; z-index: 1; width: 24px; height: 24px; }
+        .moon svg { fill: #73C0FC; position: absolute; top: 5px; left: 5px; z-index: 1; width: 24px; height: 24px; }
+        .sun svg { animation: rotate 15s linear infinite; }
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
+        .moon svg { animation: tilt 5s linear infinite; }
+        @keyframes tilt { 0%,100%{transform:rotate(0deg)}25%{transform:rotate(-10deg)}75%{transform:rotate(10deg)} }
+        .input:checked + .slider { background-color: #183153; }
+        .input:checked + .slider:before { transform: translateX(30px); }
+        
+        .main-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2rem; background: var(--header-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); transition: background 0.4s ease; }
+        .header-container { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .logo-center a { display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 800; font-size: 1.3rem; color: var(--text); }
+        .logo-center img { height: 32px; width: auto; }
+        .logo-dark { display: block; }
+        .logo-light { display: none; }
+        [data-theme="light"] .logo-dark { display: none; }
+        [data-theme="light"] .logo-light { display: block; }
+        .nav-left { display: flex; gap: 2rem; align-items: center; }
+        .nav-left a, .dropdown-btn { color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: opacity 0.3s ease; background: none; border: none; cursor: pointer; font-family: inherit; }
+        .nav-left a:hover, .dropdown-btn:hover { opacity: 0.7; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: var(--bg-secondary); min-width: 200px; border-radius: 12px; padding: 0.5rem 0; margin-top: 0.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 1px solid var(--border); z-index: 200; }
+        .dropdown-content a { display: block; padding: 0.7rem 1.2rem; color: var(--text); text-decoration: none; font-size: 0.85rem; transition: background 0.2s ease; }
+        .dropdown-content a:hover { background: var(--card-bg-hover); }
+        .dropdown:hover .dropdown-content { display: block; }
+        .nav-right { display: flex; align-items: center; gap: 1rem; }
+        .lets-talk-btn { background: var(--btn-primary-bg); color: var(--btn-primary-text); padding: 0.5rem 1.3rem; border-radius: 100px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; white-space: nowrap; }
+        .lets-talk-btn:hover { transform: scale(1.02); opacity: 0.9; }
+        .hamburger { display: none; cursor: pointer; background: none; border: none; z-index: 1001; padding: 4px; }
+        .hamburger span { display: block; width: 25px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s ease; }
+        .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+        .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; padding: 80px 2rem 2rem; flex-direction: column; gap: 1.5rem; overflow-y: auto; }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a, .mobile-dropdown-btn { color: var(--text); text-decoration: none; font-size: 1.2rem; font-weight: 500; padding: 0.5rem 0; border-bottom: 1px solid var(--border); background: none; width: 100%; text-align: left; cursor: pointer; }
+        .mobile-dropdown-content { display: none; padding-left: 1rem; margin-top: 0.5rem; }
+        .mobile-dropdown-content a { font-size: 1rem; border-bottom: none; }
+        .mobile-theme-row { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+        .mobile-theme-label { font-size: 1.2rem; font-weight: 500; color: var(--text); }
+        
+        .split-char { display: inline-block; will-change: transform, opacity; }
+        .stat-card { transition: all 0.3s ease; }
+        .stat-card:hover { transform: translateY(-4px); }
+        .video-card { transition: all 0.3s ease; cursor: pointer; }
+        .video-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -12px rgba(0,0,0,0.2); }
+        .form-input:focus { outline: none; box-shadow: 0 0 0 2px var(--accent); border-color: transparent; }
+        
+        @media (max-width: 768px) {
+            .nav-left, .nav-right { display: none; }
+            .hamburger { display: block; }
+            .main-header { padding: 0.8rem 1rem; }
+        }
+        .dropdown:hover .dropdown-content { display: block; opacity: 1; visibility: visible; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; margin-top: 0; padding-top: 5px; z-index: 1000; }
+    </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/fff/000?text=A'">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/000/fff?text=A'">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch" title="Toggle dark/light mode">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+            <input type="checkbox" class="input" id="themeToggleMobile">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mentorship.html">Mentorship</a>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+
+    <main class="pt-24">
+        <!-- Hero -->
+        <section class="relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 pointer-events-none"></div>
+            <div class="mx-auto max-w-4xl px-5 py-16 md:py-24 text-center relative">
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider mb-4" style="background: var(--card-bg-hover); color: var(--accent);">Mentorship</span>
+                <h1 id="heroTitle" class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4" style="color: var(--text);">Video Feedback on Your Pitch</h1>
+                <p class="text-lg md:text-xl" style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Upload your deck and pitch video. Get an async video review from a vetted operator or investor within 48 hours. Founded by <strong>PRANAV GAUTAM</strong> from Bihar.</p>
+            </div>
+        </section>
+
+        <!-- Stats Row -->
+        <section class="mx-auto max-w-7xl px-5 py-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="stat-card text-center p-4 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><i class="fas fa-video text-2xl mb-2" style="color: var(--accent);"></i><div class="text-sm font-semibold" style="color: var(--text);">Record your pitch</div><div class="text-xs" style="color: var(--text-muted);">2-3 min video</div></div>
+                <div class="stat-card text-center p-4 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><i class="fas fa-file-alt text-2xl mb-2" style="color: var(--accent);"></i><div class="text-sm font-semibold" style="color: var(--text);">Upload deck</div><div class="text-xs" style="color: var(--text-muted);">PDF format</div></div>
+                <div class="stat-card text-center p-4 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><i class="fas fa-users text-2xl mb-2" style="color: var(--accent);"></i><div class="text-sm font-semibold" style="color: var(--text);">Expert review</div><div class="text-xs" style="color: var(--text-muted);">48h turnaround</div></div>
+                <div class="stat-card text-center p-4 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><i class="fas fa-clock text-2xl mb-2" style="color: var(--accent);"></i><div class="text-sm font-semibold" style="color: var(--text);">Video response</div><div class="text-xs" style="color: var(--text-muted);">5-10 min feedback</div></div>
+            </div>
+        </section>
+
+        <!-- Submission Form -->
+        <section class="mx-auto max-w-4xl px-5 py-12">
+            <div class="rounded-2xl border overflow-hidden" style="background: var(--card-bg); border-color: var(--border);">
+                <div class="px-6 py-4 border-b" style="background: linear-gradient(90deg, var(--card-bg-hover), transparent); border-color: var(--border);">
+                    <h2 class="text-xl font-bold flex items-center gap-2" style="color: var(--text);"><i class="fas fa-paper-plane" style="color: var(--accent);"></i> Submit Your Pitch for Review</h2>
+                    <p class="text-sm" style="color: var(--text-muted);">Fill out the form below and our team will get back to you with video feedback within 48 hours</p>
+                </div>
+                
+                <form id="feedbackForm" class="p-6 space-y-5">
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div><label class="block text-sm font-medium mb-1.5" style="color: var(--text);">Full Name *</label><input type="text" id="fullName" required class="form-input w-full px-4 py-2.5 rounded-lg border" style="background: var(--bg); border-color: var(--border); color: var(--text);"></div>
+                        <div><label class="block text-sm font-medium mb-1.5" style="color: var(--text);">Email Address *</label><input type="email" id="email" required class="form-input w-full px-4 py-2.5 rounded-lg border" style="background: var(--bg); border-color: var(--border); color: var(--text);"></div>
+                    </div>
+                    <div><label class="block text-sm font-medium mb-1.5" style="color: var(--text);">Company / Startup Name</label><input type="text" id="company" class="form-input w-full px-4 py-2.5 rounded-lg border" style="background: var(--bg); border-color: var(--border); color: var(--text);"></div>
+                    
+                    <div class="border-t pt-5" style="border-color: var(--border);">
+                        <h3 class="font-semibold mb-3 flex items-center gap-2" style="color: var(--text);"><i class="fas fa-file-pdf" style="color: var(--accent);"></i> Pitch Deck</h3>
+                        <div class="border-2 border-dashed rounded-lg p-6 text-center transition-colors" style="border-color: var(--border);" id="deckDropzone">
+                            <input type="file" id="pitchDeck" accept=".pdf,.ppt,.pptx" class="hidden">
+                            <label for="pitchDeck" class="cursor-pointer block">
+                                <i class="fas fa-cloud-upload-alt text-3xl mb-2" style="color: var(--accent);"></i>
+                                <div class="text-sm font-medium" style="color: var(--text);">Click to upload or drag and drop</div>
+                                <div class="text-xs mt-1" style="color: var(--text-muted);">PDF, PPT (Max 20MB)</div>
+                                <div id="deckFileName" class="mt-2 text-xs" style="color: var(--accent);"></div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t pt-5" style="border-color: var(--border);">
+                        <h3 class="font-semibold mb-3 flex items-center gap-2" style="color: var(--text);"><i class="fas fa-video" style="color: var(--accent);"></i> Pitch Video</h3>
+                        <div class="border-2 border-dashed rounded-lg p-6 text-center mb-3 transition-colors" style="border-color: var(--border);" id="videoDropzone">
+                            <input type="file" id="pitchVideo" accept="video/mp4,.mov,.webm" class="hidden">
+                            <label for="pitchVideo" class="cursor-pointer block">
+                                <i class="fas fa-cloud-upload-alt text-3xl mb-2" style="color: var(--accent);"></i>
+                                <div class="text-sm font-medium" style="color: var(--text);">Upload video file</div>
+                                <div class="text-xs mt-1" style="color: var(--text-muted);">MP4 or MOV (Max 100MB)</div>
+                                <div id="videoFileName" class="mt-2 text-xs" style="color: var(--accent);"></div>
+                            </label>
+                        </div>
+                        <div><label class="block text-sm font-medium mb-1.5" style="color: var(--text);">Or paste a video link (Loom, YouTube, etc.)</label><input type="url" id="videoLink" class="form-input w-full px-4 py-2.5 rounded-lg border" style="background: var(--bg); border-color: var(--border); color: var(--text);" placeholder="https://loom.com/... or https://youtube.com/..."></div>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn" class="w-full py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2" style="background: var(--btn-primary-bg); color: var(--btn-primary-text);"><i class="fas fa-paper-plane"></i> Submit for Review</button>
+                    <p class="text-xs text-center" style="color: var(--text-dim);">By submitting, you agree to receive feedback via WhatsApp. Your information will be kept confidential.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sample Videos -->
+        <section class="mx-auto max-w-7xl px-5 py-12">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider mb-4" style="background: var(--card-bg-hover); color: var(--accent);">Sample Feedback Videos</span>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" style="color: var(--text);">See what video feedback looks like</h2>
+                <p style="color: var(--text-muted);">Watch examples of how our experts review pitch decks and provide actionable insights</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="video-card rounded-xl border overflow-hidden" style="background: var(--card-bg); border-color: var(--border);">
+                    <div class="relative aspect-video overflow-hidden bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=450&fit=crop" alt="Video thumbnail" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"><div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur flex items-center justify-center"><i class="fas fa-play text-white text-xl ml-1"></i></div></div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">12:34</div>
+                    </div>
+                    <div class="p-4"><h3 class="font-bold mb-1" style="color: var(--text);">How to structure your pitch deck</h3><p class="text-xs" style="color: var(--accent);">Riya Sharma</p><p class="text-xs" style="color: var(--text-muted);">Former VC @ Sequoia</p><div class="mt-3 flex items-center justify-between"><span class="text-xs" style="color: var(--text-muted);">2.4k views</span><button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="text-xs hover:underline" style="color: var(--accent);">Request similar feedback →</button></div></div>
+                </div>
+                <div class="video-card rounded-xl border overflow-hidden" style="background: var(--card-bg); border-color: var(--border);">
+                    <div class="relative aspect-video overflow-hidden bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=450&fit=crop" alt="Video thumbnail" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"><div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur flex items-center justify-center"><i class="fas fa-play text-white text-xl ml-1"></i></div></div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">08:22</div>
+                    </div>
+                    <div class="p-4"><h3 class="font-bold mb-1" style="color: var(--text);">Perfecting your investor narrative</h3><p class="text-xs" style="color: var(--accent);">Devon Wright</p><p class="text-xs" style="color: var(--text-muted);">Angel Investor, 10+ exits</p><div class="mt-3 flex items-center justify-between"><span class="text-xs" style="color: var(--text-muted);">1.8k views</span><button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="text-xs hover:underline" style="color: var(--accent);">Request similar feedback →</button></div></div>
+                </div>
+                <div class="video-card rounded-xl border overflow-hidden" style="background: var(--card-bg); border-color: var(--border);">
+                    <div class="relative aspect-video overflow-hidden bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=450&fit=crop" alt="Video thumbnail" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"><div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur flex items-center justify-center"><i class="fas fa-play text-white text-xl ml-1"></i></div></div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">15:47</div>
+                    </div>
+                    <div class="p-4"><h3 class="font-bold mb-1" style="color: var(--text);">Common pitch mistakes to avoid</h3><p class="text-xs" style="color: var(--accent);">Mei Tanaka</p><p class="text-xs" style="color: var(--text-muted);">Product Leader @ Stripe</p><div class="mt-3 flex items-center justify-between"><span class="text-xs" style="color: var(--text-muted);">3.1k views</span><button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="text-xs hover:underline" style="color: var(--accent);">Request similar feedback →</button></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="mx-auto max-w-5xl px-5 py-12 mb-12">
+            <div class="grid md:grid-cols-2 gap-5">
+                <div class="p-6 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><div class="flex gap-1 mb-3">★★★★★</div><p class="text-base font-medium leading-relaxed" style="color: var(--text);">"Honest, specific, and actionable. Got me ready for my next investor meeting."</p><div class="mt-4 text-sm" style="color: var(--text-muted);">— Lena R., Founder</div></div>
+                <div class="p-6 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><div class="flex gap-1 mb-3">★★★★★</div><p class="text-base font-medium leading-relaxed" style="color: var(--text);">"Better than any office hours I've sat in. The async format is a cheat code."</p><div class="mt-4 text-sm" style="color: var(--text-muted);">— Sam P., Founder</div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div><div class="footer-logo">AVENOR</div><p>Structured fundraising and venture intelligence. Less noise. Better decisions.</p></div>
+            <div><h4>Product</h4><a>Startups</a><a>Investors</a><a>Intelligence</a><a>Pricing</a></div>
+            <div><h4>Company</h4><a href="about.html">About</a><a href="career.html">Careers</a><a href="press.html">Press</a><a href="contact.html">Contact</a></div>
+            <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a><a>Trust</a></div>
+            <div><h4>Social</h4><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a><a href="#"><i class="fab fa-youtube"></i> YouTube</a></div>
+        </div>
+        <div class="footer-bottom">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+        <div class="footer-bottom">Built With ❤️ By gmitech.in</div>
+    </footer>
+
+    <script>
+        // Form submission
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const videoLink = document.getElementById('videoLink').value;
+            const deckFile = document.getElementById('pitchDeck').files[0];
+            const videoFile = document.getElementById('pitchVideo').files[0];
+            
+            let message = `*AVENOR VIDEO FEEDBACK REQUEST*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Company:* ${company}%0A*Video Link:* ${videoLink || "Not provided"}%0A*Pitch Deck:* ${deckFile ? deckFile.name : "Not uploaded"}%0A*Pitch Video:* ${videoFile ? videoFile.name : "Not uploaded"}%0A%0ASubmitted from AVENOR Video Feedback Form`;
+            window.open(`https://wa.me/9192622444607?text=${message}`, '_blank');
+            
+            // Reset form
+            document.getElementById('fullName').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('company').value = '';
+            document.getElementById('videoLink').value = '';
+            document.getElementById('deckFileName').innerHTML = '';
+            document.getElementById('videoFileName').innerHTML = '';
+            
+            // Show success message
+            alert('Thank you! You will be redirected to WhatsApp to send your request.');
+        });
+        
+        // File upload handlers
+        document.getElementById('pitchDeck').addEventListener('change', function(e) {
+            if(e.target.files[0]) document.getElementById('deckFileName').innerHTML = e.target.files[0].name;
+        });
+        document.getElementById('pitchVideo').addEventListener('change', function(e) {
+            if(e.target.files[0]) document.getElementById('videoFileName').innerHTML = e.target.files[0].name;
+        });
+        
+        // Theme and mobile menu
+        const html = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
+        function setTheme(isLight) { html.setAttribute('data-theme', isLight ? 'light' : 'dark'); if(themeToggle) themeToggle.checked = isLight; if(themeToggleMobile) themeToggleMobile.checked = isLight; localStorage.setItem('avenor-theme', isLight ? 'light' : 'dark'); }
+        const savedTheme = localStorage.getItem('avenor-theme'); setTheme(savedTheme === 'light');
+        if(themeToggle) themeToggle.addEventListener('change', () => setTheme(themeToggle.checked));
+        if(themeToggleMobile) themeToggleMobile.addEventListener('change', () => setTheme(themeToggleMobile.checked));
+        
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if(hamburgerBtn) {
+            hamburgerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('active');
+                hamburgerBtn.classList.toggle('active');
+            });
+        }
+        const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+        const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+        if(mobileDropdownBtn) {
+            mobileDropdownBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if(mobileDropdownContent) {
+                    mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        }
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                if(hamburgerBtn) hamburgerBtn.classList.remove('active');
+            });
+        });
+        
+        // SplitText animation
+        if(typeof gsap !== 'undefined') {
+            const heroTitle = document.getElementById('heroTitle');
+            if(heroTitle) {
+                const text = heroTitle.textContent;
+                const chars = text.split('');
+                heroTitle.innerHTML = chars.map(ch => ch === ' ' ? '<span style="display:inline-block;width:0.3em;"> </span>' : `<span class="split-char" style="display:inline-block;">${ch}</span>`).join('');
+                gsap.fromTo(heroTitle.querySelectorAll('.split-char'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: 'power4.out', stagger: 0.03 });
+            }
+        }
+    </script>
+</body>
+</html>

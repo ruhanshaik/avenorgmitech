@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>AVENOR | Clarity Before Capital - Structured Fundraising & Venture Intelligence Platform</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="AVENOR helps startups raise smarter and investors discover high-signal opportunities through AI-powered insights. Built from Bihar for the world by founder PRANAV GAUTAM.">
+    <meta name="keywords" content="AVENOR, PRANAV GAUTAM, venture intelligence, startup fundraising, investor discovery, AI startup intelligence, startup platform, founders, investors, Bihar startup">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://avenor.sbs/index.html" />
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR | Clarity Before Capital">
+    <meta property="og:description" content="Structured fundraising and venture intelligence platform for startups and investors. Founded by PRANAV GAUTAM from Bihar.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR | Clarity Before Capital">
+    <meta name="twitter:description" content="Structured fundraising and venture intelligence platform. Built from Bihar for the world.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="team:member" content="AKSHAY SINGH - Team Member">
+    <meta name="team:member" content="AMIT NAYAN - Team Member">
+    <meta name="built-by" content="gmitech.in">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.js"></script>
+    
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #050505;
+            --text: #ffffff;
+            --text-muted: #aaaaaa;
+            --text-dim: #666666;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(255, 255, 255, 0.2);
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-bg-hover: rgba(255, 255, 255, 0.05);
+            --header-bg: rgba(10, 10, 10, 0.95);
+            --btn-primary-bg: #ffffff;
+            --btn-primary-text: #000000;
+            --scrollbar-track: #1a1a1a;
+            --scrollbar-thumb: #333;
+            --scrollbar-thumb-hover: #555;
+            --marquee-bg: rgba(255, 255, 255, 0.03);
+            --accent: #7B7481;
+            --icon-color: #7B7481;
+            --focus-border: #ffffff;
+            --focus-glow: rgba(255, 255, 255, 0.6);
+        }
+
+        [data-theme="light"] {
+            --bg: #f5f5f0;
+            --bg-secondary: #ebebeb;
+            --text: #0a0a0a;
+            --text-muted: #555555;
+            --text-dim: #888888;
+            --border: rgba(0, 0, 0, 0.08);
+            --border-hover: rgba(0, 0, 0, 0.2);
+            --card-bg: rgba(0, 0, 0, 0.03);
+            --card-bg-hover: rgba(0, 0, 0, 0.05);
+            --header-bg: rgba(245, 245, 240, 0.95);
+            --btn-primary-bg: #0a0a0a;
+            --btn-primary-text: #ffffff;
+            --scrollbar-track: #e0e0e0;
+            --scrollbar-thumb: #bbb;
+            --scrollbar-thumb-hover: #999;
+            --marquee-bg: rgba(0, 0, 0, 0.03);
+            --accent: #6a5f70;
+            --icon-color: #6a5f70;
+            --focus-border: #0a0a0a;
+            --focus-glow: rgba(0, 0, 0, 0.6);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; transition: background 0.4s ease, color 0.4s ease; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+
+        .switch { font-size: 17px; position: relative; display: inline-block; width: 64px; height: 34px; flex-shrink: 0; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #73C0FC; transition: .4s; border-radius: 30px; }
+        .slider:before { position: absolute; content: ""; height: 30px; width: 30px; border-radius: 20px; left: 2px; bottom: 2px; z-index: 2; background-color: #e8e8e8; transition: .4s; }
+        .sun svg { position: absolute; top: 6px; left: 36px; z-index: 1; width: 24px; height: 24px; }
+        .moon svg { fill: #73C0FC; position: absolute; top: 5px; left: 5px; z-index: 1; width: 24px; height: 24px; }
+        .sun svg { animation: rotate 15s linear infinite; }
+        .moon svg { animation: tilt 5s linear infinite; }
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
+        @keyframes tilt { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(-10deg); } 75% { transform: rotate(10deg); } }
+        .input:checked + .slider { background-color: #183153; }
+        .input:checked + .slider:before { transform: translateX(30px); }
+
+        .main-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2rem; background: var(--header-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); transition: background 0.4s ease, border-color 0.4s ease; }
+        .header-container { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .logo-center a { display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 800; font-size: 1.3rem; color: var(--text); }
+        .logo-center img { height: 32px; width: auto; }
+        .logo-dark { display: block; }
+        .logo-light { display: none; }
+        [data-theme="light"] .logo-dark { display: none; }
+        [data-theme="light"] .logo-light { display: block; }
+        .nav-left { display: flex; gap: 2rem; align-items: center; }
+        .nav-left a, .dropdown-btn { color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: opacity 0.3s ease; background: none; border: none; cursor: pointer; font-family: inherit; }
+        .nav-left a:hover, .dropdown-btn:hover { opacity: 0.7; }
+        .dropdown { position: relative; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: var(--bg); min-width: 200px; border-radius: 12px; padding: 0.5rem 0; margin-top: 0.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 1px solid var(--border); z-index: 200; }
+        .dropdown-content a { display: block; padding: 0.7rem 1.2rem; color: var(--text); text-decoration: none; font-size: 0.85rem; }
+        .dropdown-content a:hover { background: var(--card-bg-hover); }
+        .dropdown:hover .dropdown-content { display: block; }
+        .nav-right { display: flex; align-items: center; gap: 1rem; }
+        .lets-talk-btn { background: var(--btn-primary-bg); color: var(--btn-primary-text); padding: 0.5rem 1.3rem; border-radius: 100px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; white-space: nowrap; }
+        .lets-talk-btn:hover { transform: scale(1.02); opacity: 0.9; }
+        .hamburger { display: none; cursor: pointer; background: none; border: none; z-index: 1001; padding: 4px; }
+        .hamburger span { display: block; width: 25px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s ease; }
+        .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+        .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; padding: 80px 2rem 2rem; flex-direction: column; gap: 1.5rem; overflow-y: auto; }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a, .mobile-dropdown-btn { color: var(--text); text-decoration: none; font-size: 1.2rem; font-weight: 500; padding: 0.5rem 0; border-bottom: 1px solid var(--border); background: none; width: 100%; text-align: left; cursor: pointer; }
+        .mobile-dropdown-content { display: none; padding-left: 1rem; margin-top: 0.5rem; }
+        .mobile-dropdown-content a { font-size: 1rem; border-bottom: none; }
+        .mobile-theme-row { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+        .mobile-theme-label { font-size: 1.2rem; font-weight: 500; color: var(--text); }
+
+        .hero-section { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+        #threads-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+        [data-theme="dark"] #threads-canvas { opacity: 1; }
+        [data-theme="light"] #threads-canvas { opacity: 0.3; filter: invert(1); }
+        .hero-overlay { position: relative; z-index: 10; padding: 8rem 2rem 4rem; max-width: 900px; margin: 0 auto; }
+        .live-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--card-bg); padding: 0.3rem 1rem; border-radius: 100px; font-size: 0.8rem; margin-bottom: 1.5rem; backdrop-filter: blur(4px); border: 1px solid var(--border); color: var(--text-muted); }
+        .live-dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.2); } }
+        .hero-subtitle { font-size: 1.1rem; color: var(--text-muted); max-width: 700px; margin: 2rem auto 2rem; line-height: 1.6; }
+        .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .btn-primary, .btn-outline { padding: 0.8rem 2rem; border-radius: 100px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; display: inline-block; font-size: 0.95rem; }
+        .btn-primary { background: var(--btn-primary-bg); color: var(--btn-primary-text); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        .btn-outline { border: 1px solid var(--border-hover); color: var(--text); }
+        .btn-outline:hover { background: var(--card-bg-hover); }
+        .trust-badge { margin-top: 2rem; font-size: 0.75rem; color: var(--text-dim); }
+
+        .focus-container { position: relative; display: flex; gap: 0.5em; justify-content: center; align-items: center; flex-wrap: wrap; outline: none; user-select: none; }
+        .focus-word { position: relative; font-size: 4rem; font-weight: 900; cursor: pointer; transition: filter 0.3s ease, color 0.3s ease; outline: none; user-select: none; display: inline-block; letter-spacing: -0.03em; }
+        .focus-word.active { filter: blur(0); }
+        [data-theme="dark"] .focus-word { color: #ffffff; }
+        [data-theme="light"] .focus-word { color: #0a0a0a; }
+        .focus-frame { position: absolute; top: 0; left: 0; pointer-events: none; box-sizing: content-box; border: none; }
+        .corner { position: absolute; width: 1rem; height: 1rem; border: 3px solid var(--focus-border); filter: drop-shadow(0px 0px 4px var(--focus-glow)); border-radius: 3px; transition: none; }
+        .top-left { top: -10px; left: -10px; border-right: none; border-bottom: none; }
+        .top-right { top: -10px; right: -10px; border-left: none; border-bottom: none; }
+        .bottom-left { bottom: -10px; left: -10px; border-right: none; border-top: none; }
+        .bottom-right { bottom: -10px; right: -10px; border-left: none; border-top: none; }
+
+        .scroll-velocity-wrapper { overflow: hidden; white-space: nowrap; padding: 1rem 0; background: var(--marquee-bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .marquee-track { display: inline-block; animation: marqueeScroll 30s linear infinite; }
+        .scroll-text { display: inline-block; font-size: 1rem; font-weight: 700; letter-spacing: -0.02em; padding: 0 1.5rem; color: var(--text); opacity: 0.6; }
+        @keyframes marqueeScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 1200px; margin: 3rem auto; padding: 0 1rem; }
+        .stat-card { background: var(--card-bg); border-radius: 20px; padding: 1.2rem; text-align: center; border: 1px solid var(--border); }
+        .stat-value { font-size: 1.6rem; font-weight: 800; color: var(--text); }
+        .stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem; }
+        .stat-change { color: #22c55e; font-size: 0.7rem; }
+        .stat-change.negative { color: #ef4444; }
+
+        .bento-section { max-width: 1200px; margin: 4rem auto; padding: 0 1rem; }
+        .bento-title { font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 2rem; color: var(--text); }
+        .bento-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: minmax(180px, auto); gap: 1rem; }
+        .bento-item { background: var(--card-bg); border-radius: 24px; padding: 1.5rem; border: 1px solid var(--border); transition: all 0.3s ease; }
+        .bento-item:hover { transform: translateY(-5px); background: var(--card-bg-hover); }
+        .bento-item.large { grid-column: span 2; grid-row: span 2; }
+        .bento-item.wide { grid-column: span 2; }
+        .bento-icon { font-size: 2rem; margin-bottom: 1rem; color: var(--icon-color); }
+        .bento-item h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); }
+        .bento-item p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+
+        .map-section { max-width: 1200px; margin: 4rem auto; padding: 0 1rem; }
+        .map-container { border-radius: 24px; overflow: hidden; border: 1px solid var(--border); }
+        iframe { width: 100%; height: 400px; border: 0; }
+        .map-caption { text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-dim); }
+
+        .team-section { max-width: 1200px; margin: 4rem auto; padding: 0 1rem; text-align: center; }
+        .team-title { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text); }
+        .team-subtitle { color: var(--text-muted); margin-bottom: 3rem; }
+        .team-grid { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+        .team-card { background: var(--card-bg); border-radius: 24px; padding: 2rem 1.5rem 1.5rem; text-align: center; width: 280px; border: 1px solid var(--border); transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; }
+        .team-card:hover { transform: translateY(-5px); }
+        .team-img-wrapper { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1rem; border: 2px solid var(--accent); display: flex; align-items: center; justify-content: center; }
+        .team-img-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .team-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.2rem; color: var(--text); }
+        .team-card p { font-size: 0.8rem; color: var(--accent); margin-bottom: 0.3rem; }
+        .team-card span { font-size: 0.7rem; color: var(--text-dim); }
+        .social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
+        .social-links a { color: var(--text-muted); transition: color 0.3s; }
+        .social-links a:hover { color: var(--text); }
+
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+        .quote-mark { font-size: 3rem; opacity: 0.3; font-family: serif; color: var(--text); }
+        .testimonial-text { font-size: 0.9rem; line-height: 1.5; color: var(--text-muted); }
+        .testimonial-name { margin-top: 1rem; font-weight: 700; color: var(--text); }
+        .testimonial-role { font-size: 0.7rem; color: var(--text-dim); }
+        .cta-section { text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, var(--card-bg), transparent); }
+        .cta-section h2 { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; color: var(--text); }
+        .cta-section p { color: var(--text-muted); margin-bottom: 2rem; }
+
+        .footer { background: var(--bg-secondary); padding: 3rem 1rem 2rem; margin-top: 4rem; border-top: 1px solid var(--border); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .footer-logo { font-size: 1.2rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text); }
+        .footer-grid p { font-size: 0.7rem; color: var(--text-dim); }
+        .footer-grid h4 { font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text); }
+        .footer-grid a { display: block; font-size: 0.7rem; color: var(--text-dim); text-decoration: none; margin-bottom: 0.5rem; }
+        .footer-grid a:hover { color: var(--text); }
+        .footer-bottom { text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid var(--border); font-size: 0.7rem; color: var(--text-dim); }
+
+        @media (max-width: 1024px) {
+            .bento-grid { grid-template-columns: repeat(2, 1fr); }
+            .bento-item.large, .bento-item.wide { grid-column: span 2; }
+        }
+        @media (max-width: 768px) {
+            .nav-left, .nav-right { display: none; }
+            .hamburger { display: block; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .focus-word { font-size: 2rem !important; }
+            .focus-container { gap: 0.3em; flex-wrap: wrap; }
+            .hero-subtitle { font-size: 1rem; margin-top: 1.5rem; }
+            .bento-grid { grid-template-columns: 1fr; }
+            .bento-item.large, .bento-item.wide { grid-column: span 1; grid-row: span 1; }
+            .team-grid { flex-direction: column; align-items: center; }
+            .team-card { width: 100%; max-width: 320px; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); text-align: center; }
+            .bento-title { font-size: 1.6rem; }
+            .hero-overlay { padding: 7rem 1rem 3rem; }
+        }
+        @media (max-width: 480px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .btn-primary, .btn-outline { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
+            .focus-word { font-size: 1.5rem !important; }
+            .footer-grid { grid-template-columns: 1fr; text-align: left; }
+            .main-header { padding: 0.8rem 1rem; }
+        }
+        .dropdown:hover .dropdown-content { display: block; opacity: 1; visibility: visible; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; margin-top: 0; padding-top: 5px; z-index: 1000; }
+
+        /* ============================================
+           IMPROVED CHATBOT STYLES - Premium, Clean, Modern
+        ============================================ */
+        .chatbot-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 9998;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chatbot-btn:hover { transform: scale(1.05); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25); }
+        .chatbot-btn img { width: 32px; height: 32px; border-radius: 50%; object-fit: contain; }
+
+        .chatbot-popup {
+            position: fixed;
+            bottom: 95px;
+            right: 24px;
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            z-index: 9997;
+            animation: popupFloat 2.5s ease-in-out infinite;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            white-space: nowrap;
+            backdrop-filter: blur(4px);
+            font-family: 'Inter', sans-serif;
+        }
+        .chatbot-popup::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 20px;
+            border-width: 8px 8px 0;
+            border-style: solid;
+            border-color: var(--accent) transparent transparent;
+        }
+        @keyframes popupFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        .chatbot-window {
+            position: fixed;
+            bottom: 100px;
+            right: 24px;
+            width: 400px;
+            max-width: calc(100vw - 48px);
+            height: 600px;
+            max-height: calc(100vh - 120px);
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 9999;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        .chatbot-window.hidden { display: none; }
+
+        .chat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, var(--accent), var(--accent));
+            color: white;
+            border-bottom: none;
+        }
+        .chat-header-left { display: flex; align-items: center; gap: 12px; }
+        .chat-header-left img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: white;
+            padding: 8px;
+            object-fit: contain;
+        }
+        .chat-header-info h4 { margin: 0; font-size: 16px; font-weight: 700; letter-spacing: -0.3px; }
+        .chat-header-info p { margin: 4px 0 0; font-size: 11px; opacity: 0.85; display: flex; align-items: center; gap: 5px; }
+        .close-chat {
+            background: rgba(255,255,255,0.15);
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .close-chat:hover { background: rgba(255,255,255,0.3); }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            scroll-behavior: smooth;
+        }
+        .chat-messages::-webkit-scrollbar { width: 4px; }
+        .message { max-width: 85%; padding: 10px 16px; border-radius: 20px; font-size: 13px; line-height: 1.45; word-wrap: break-word; }
+        .user-message {
+            align-self: flex-end;
+            background: var(--accent);
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+        .bot-message {
+            align-self: flex-start;
+            background: var(--card-bg-hover);
+            color: var(--text);
+            border-bottom-left-radius: 4px;
+        }
+        .bot-message a { color: var(--accent); text-decoration: underline; }
+        .bot-message a:hover { opacity: 0.8; }
+
+        .typing-indicator {
+            display: flex;
+            gap: 5px;
+            padding: 10px 16px;
+            background: var(--card-bg-hover);
+            border-radius: 20px;
+            width: fit-content;
+        }
+        .typing-indicator span {
+            width: 7px;
+            height: 7px;
+            background: var(--text-muted);
+            border-radius: 50%;
+            animation: typingBounce 1.4s infinite;
+        }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typingBounce { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-6px); } }
+
+        .quick-buttons {
+            padding: 12px 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-top: 1px solid var(--border);
+            background: var(--card-bg);
+        }
+        .quick-btn {
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 500;
+            background: var(--card-bg-hover);
+            border: 1px solid var(--border);
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .quick-btn:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+            transform: translateY(-1px);
+        }
+
+        .chat-input-area {
+            display: flex;
+            padding: 14px 16px;
+            gap: 10px;
+            border-top: 1px solid var(--border);
+            background: var(--card-bg);
+        }
+        .chat-input-area input {
+            flex: 1;
+            padding: 12px 16px;
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 13px;
+            outline: none;
+            transition: all 0.2s;
+        }
+        .chat-input-area input:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(123,116,129,0.2); }
+        .send-btn {
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .send-btn:hover { transform: scale(1.05); background: var(--accent); }
+
+        @media (max-width: 480px) {
+            .chatbot-window { width: calc(100vw - 32px); right: 16px; bottom: 80px; height: 520px; }
+            .chatbot-btn { bottom: 16px; right: 16px; width: 50px; height: 50px; }
+            .chatbot-popup { bottom: 80px; right: 16px; padding: 8px 14px; font-size: 11px; white-space: nowrap; }
+            .quick-buttons { gap: 8px; }
+            .quick-btn { padding: 6px 12px; font-size: 11px; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AVENOR",
+      "url": "https://avenor.sbs",
+      "logo": "https://avenor.sbs/images/LogoA.svg",
+      "description": "AVENOR is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities through AI-powered insights. Founded by PRANAV GAUTAM from Bihar.",
+      "founder": {
+        "@type": "Person",
+        "name": "PRANAV GAUTAM",
+        "jobTitle": "Founder & CEO"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bihar",
+        "addressCountry": "India"
+      },
+      "foundingDate": "2026",
+      "industry": "Venture Intelligence",
+      "mission": "Less Noise. Better Decisions.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hello@avenor.sbs"
+      }
+    }
+    </script>
+</head>
+<body>
+ <header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/fff/000?text=A'">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/000/fff?text=A'">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch" title="Toggle dark/light mode">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+            <input type="checkbox" class="input" id="themeToggleMobile">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mentorship.html">Mentorship</a>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+
+    <section class="hero-section">
+        <canvas id="threads-canvas"></canvas>
+        <div class="hero-overlay">
+            <div class="live-badge"><span class="live-dot"></span><span>Live · Onboarding founders &amp; investors</span></div>
+            <div id="trueFocusContainer"></div>
+            <p class="hero-subtitle">AVENOR helps startups raise smarter and helps investors discover high-signal opportunities through structured workflows, AI-powered insights, and continuous startup intelligence. Founded by PRANAV GAUTAM from Bihar.</p>
+            <div class="btn-group">
+                <a href="connect.html" class="btn-primary">Apply as Startup →</a>
+                <a href="portfolio.html" class="btn-outline">Explore Investor Feed</a>
+            </div>
+            <div class="trust-badge">SOC-grade trust layer · AI red-flag detection · Less Noise. Better Decisions.</div>
+        </div>
+    </section>
+
+    <div class="scroll-velocity-wrapper"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+    <div class="stats-grid">
+        <div class="stat-card"><div class="stat-value">$2.4M <span class="stat-change">+18.4%</span></div><div class="stat-label">ARR</div></div>
+        <div class="stat-card"><div class="stat-value">$120K <span class="stat-change negative">-6.2%</span></div><div class="stat-label">Burn</div></div>
+        <div class="stat-card"><div class="stat-value">26 mo <span class="stat-change">+3 mo</span></div><div class="stat-label">Runway</div></div>
+        <div class="stat-card"><div class="stat-value">▲ 42.6%</div><div class="stat-label">Startup Momentum</div></div>
+    </div>
+
+    <div class="bento-section">
+        <h2 class="bento-title split-heading">Platform Intelligence</h2>
+        <div class="bento-grid">
+            <div class="bento-item large"><div class="bento-icon"><i class="fas fa-brain"></i></div><h3>AI Startup Intelligence</h3><p>Deep analysis of every startup's signal — not summary fluff. Real insights powered by machine learning algorithms that detect patterns humans miss.</p></div>
+            <div class="bento-item"><div class="bento-icon"><i class="fas fa-chart-line"></i></div><h3>Founder KPI Tracking</h3><p>Revenue, CAC, retention, burn — live metrics that never go stale.</p></div>
+            <div class="bento-item"><div class="bento-icon"><i class="fas fa-search"></i></div><h3>Investor Discovery</h3><p>High-signal feed filtered by sector, stage, and momentum.</p></div>
+            <div class="bento-item wide"><div class="bento-icon"><i class="fas fa-flag-checkered"></i></div><h3>AI Red-Flag Detection</h3><p>Patterns that humans miss — surfaced automatically. Risk detection at scale across thousands of data points.</p></div>
+        </div>
+    </div>
+
+    <div class="map-section">
+        <h2 class="bento-title split-heading">Built from Bihar, for the World</h2>
+        <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d574619.5!2d85.5!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2c4e1e2e2e2e1%3A0x8e2e2e2e2e2e2e2e!2sBihar!5e1!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe></div>
+        <p class="map-caption">Satellite view of Bihar, India — where AVENOR was born</p>
+    </div>
+
+    <div class="team-section">
+        <h2 class="team-title split-heading">Our Team</h2>
+        <p class="team-subtitle">Three builders, one mission — to fix how capital finds signal</p>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-img-wrapper"><img src="images/pranav.jpeg" alt="PRANAV GAUTAM"></div>
+                <h3>PRANAV GAUTAM</h3>
+                <p>Founder &amp; CEO</p>
+                <span>Leading strategic growth, venture partnerships, and innovation initiatives.</span>
+                <div class="social-links">
+                    <a href="mailto:pranavgautam416@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/pranav-gautam" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-img-wrapper"><img src="images/Akshay.jpeg" alt="AKSHAY SINGH"></div>
+                <h3>AKSHAY SINGH</h3>
+                <p>TEAM MEMBER</p>
+                <span>Supporting technology strategy, business development initiatives.</span>
+                <div class="social-links">
+                    <a href="mailto:akshaykumarsingh795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-img-wrapper"><img src="images/Amit.jpeg" alt="AMIT NAYAN"></div>
+                <h3>AMIT NAYAN</h3>
+                <p>TEAM MEMBER</p>
+                <span>Driving product execution, user experience, and operational excellence.</span>
+                <div class="social-links">
+                    <a href="mailto:amitnayan314@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bento-section">
+        <h2 class="bento-title split-heading">Loved by founders &amp; investors</h2>
+        <div class="bento-grid testimonials-grid">
+            <div class="bento-item"><div class="quote-mark">"</div><p class="testimonial-text">AVENOR turned our raise from a six-month grind into a focused four-week conversation. The signal-to-noise on this platform is unreal.</p><h4 class="testimonial-name">Aarav Mehta</h4><span class="testimonial-role">Founder &amp; CEO, Vellum.io</span></div>
+            <div class="bento-item"><div class="quote-mark">"</div><p class="testimonial-text">I see twice the dealflow in a quarter of the time. The AI red-flag layer alone has saved us from two bad bets.</p><h4 class="testimonial-name">Sara Kapoor</h4><span class="testimonial-role">Partner, Northwind Capital</span></div>
+            <div class="bento-item"><div class="quote-mark">"</div><p class="testimonial-text">Our IC meetings are 40% shorter — every deal arrives pre-structured with the same intelligence layer.</p><h4 class="testimonial-name">Marcus Chen</h4><span class="testimonial-role">MD, Lighthouse Ventures</span></div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2 class="split-heading">Now accepting founders &<br> investors</h2>
+        <p>The future of venture intelligence starts here.</p>
+        <div class="btn-group"><a href="connect.html" class="btn-primary">Apply your startup</a><a href="portfolio.html" class="btn-outline">Join as investor</a></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div><div class="footer-logo">AVENOR</div><p>Structured fundraising and venture intelligence. Less noise. Better decisions.</p></div>
+            <div><h4>Product</h4><a>Startups</a><a>Investors</a><a>Intelligence</a><a>Pricing</a></div>
+            <div><h4>Company</h4><a href="about.html">About</a><a href="career.html">Careers</a><a href="press.html">Press</a><a href="contact.html">Contact</a></div>
+            <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a><a>Trust</a></div>
+            <div><h4>Social</h4><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a><a href="#"><i class="fab fa-youtube"></i> YouTube</a></div>
+        </div>
+        <div class="footer-bottom">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+        <div class="footer-bottom">Built With ❤️ By gmitech.in</div>
+    </footer>
+
+    <!-- Floating Message Bubble -->
+    <div class="chatbot-popup" id="chatbotPopup">
+        👋 Hey! I'm Online
+    </div>
+
+    <!-- Chatbot Button (No border, no green badge) -->
+    <button class="chatbot-btn" id="chatbotToggleBtn">
+        <img src="images/LogoA.svg" alt="AVENOR Chatbot">
+    </button>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-window hidden" id="chatbotWindow">
+        <div class="chat-header">
+            <div class="chat-header-left">
+                <img src="images/LogoA.svg" alt="AVENOR AI">
+                <div class="chat-header-info">
+                    <h4>AVENOR AI Assistant</h4>
+                    <p>✨ Always here to help</p>
+                </div>
+            </div>
+            <button class="close-chat" id="closeChatBtn">✕</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">👋 Hey there! I'm AVENOR AI Assistant. What's your name?</div>
+        </div>
+        <div class="quick-buttons" id="quickButtons"></div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendMessage()">
+            <button class="send-btn" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // IMPROVED CHATBOT LOGIC
+        // ============================================
+        let userName = null;
+        let waitingForName = true;
+        
+        // Comprehensive FAQ Database with synonyms and keyword matching
+        const faqDatabase = [
+            { keywords: ["founder", "who created", "who started", "ceo", "pranav", "gautam", "pranav gautam", "company founder", "founder name"], 
+              answer: "👨‍💼 <strong>PRANAV GAUTAM</strong> is the Founder & CEO of AVENOR. He started building internet products at age 14 and founded AVENOR in 2026 from Bihar, India with the mission <strong>'Less Noise. Better Decisions.'</strong>" },
+            
+            { keywords: ["what is avenor", "avenor meaning", "about avenor", "company background", "avenor story"], 
+              answer: "🚀 <strong>AVENOR</strong> is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities through AI-powered insights, founder KPI tracking, and intelligent deal sourcing. Built from Bihar for the world." },
+            
+            { keywords: ["services", "what do you do", "offer", "features", "products", "platform"], 
+              answer: "✨ AVENOR offers:<br>• <strong>AI Startup Intelligence</strong><br>• <strong>Founder KPI Tracking</strong><br>• <strong>Investor Discovery Feed</strong><br>• <strong>AI Red-Flag Detection</strong><br>• <strong>Structured Fundraising workflows</strong><br>• <strong>Free Mentorship programs</strong>" },
+            
+            { keywords: ["raise capital", "fundraising", "how to raise", "get funding", "raise money"], 
+              answer: "💰 AVENOR helps startups raise capital by providing structured submission workflows, AI-powered analysis, and curated investor matching. <a href='connect.html' style='color:#4f8cff;'>Apply through our Connect.in page →</a>" },
+            
+            { keywords: ["investor", "join as investor", "invest", "angel", "vc", "venture capital"], 
+              answer: "📈 Investors can join AVENOR through our <a href='portfolio.html' style='color:#4f8cff;'>Portfolio page →</a> You'll get access to curated startup summaries, pitch decks, traction metrics, AI analysis, and live growth timelines." },
+            
+            { keywords: ["mentorship", "mentor", "free mentorship", "guidance", "advice", "learn"], 
+              answer: "🎓 AVENOR offers <strong>free 30-minute mentorship sessions</strong> with experienced founders, operators, and investors. <a href='free-mentorship.html' style='color:#4f8cff;'>Book your session →</a>" },
+            
+            { keywords: ["contact", "support", "help", "phone", "whatsapp", "email", "reach", "talk", "human agent", "customer support"], 
+              answer: "📞 You can contact AVENOR support at:<br>📧 <strong>hello@avenor.sbs</strong><br>📱 WhatsApp: <strong>+91 9262244607</strong><br><br><a href='contact.html' style='color:#4f8cff;'>Visit Contact Page →</a>" },
+            
+            { keywords: ["ai red flag", "red flag detection", "risk detection", "anomaly"], 
+              answer: "⚠️ <strong>AI Red-Flag Detection</strong> surfaces patterns humans miss — risk detection at scale across thousands of data points including anomalies in metrics, market timing risks, and execution gaps." },
+            
+            { keywords: ["kpi tracking", "founder kpi", "metrics", "tracking"], 
+              answer: "📊 <strong>Founder KPI Tracking</strong> lets founders publish 2–4 minute weekly updates on revenue, CAC, burn, runway, retention, users, and milestones — turning static decks into living intelligence." },
+            
+            { keywords: ["investor discovery", "discovery feed", "find startups"], 
+              answer: "🔍 <strong>Investor Discovery</strong> is AVENOR's structured feed providing curated summaries, pitch decks, founder videos, traction metrics, AI analysis, and live growth timelines — all in one calm surface." },
+            
+            { keywords: ["mission", "vision", "goal", "purpose"], 
+              answer: "🎯 AVENOR's mission is <strong>'Less Noise. Better Decisions.'</strong> We believe capital should flow to signal, not to whoever has the loudest network." },
+            
+            { keywords: ["location", "headquarters", "bihar", "where are you"], 
+              answer: "📍 AVENOR is headquartered in <strong>Bihar, India</strong>. We serve founders and investors across India and globally, proving that geography is not destiny." },
+            
+            { keywords: ["built by", "gmitech", "who built", "technology partner"], 
+              answer: "🛠️ AVENOR was founded by <strong>PRANAV GAUTAM</strong> and is proudly built by <strong>gmitech.in</strong>. The team includes AKSHAY SINGH and AMIT NAYAN." },
+            
+            { keywords: ["team members", "team", "employees", "who works"], 
+              answer: "👥 <strong>Our Team:</strong><br>• PRANAV GAUTAM - Founder & CEO<br>• AKSHAY SINGH - Team Member<br>• AMIT NAYAN - Team Member" },
+            
+            { keywords: ["clarity before capital", "philosophy", "tagline"], 
+              answer: "💡 <strong>Clarity Before Capital</strong> is AVENOR's core philosophy — ensuring founders have complete clarity about their business, metrics, and strategy before approaching investors." }
+        ];
+        
+        const quickReplies = [
+            "Who is the founder?",
+            "What is AVENOR?",
+            "Services offered?",
+            "How to raise capital?",
+            "Join as investor?",
+            "Free mentorship?",
+            "Contact support?"
+        ];
+        
+        function updateQuickButtons() {
+            const container = document.getElementById('quickButtons');
+            if (!container) return;
+            container.innerHTML = quickReplies.map(q => `<button class="quick-btn" onclick="sendQuickReply('${q.replace(/'/g, "\\'")}')">${q}</button>`).join('');
+            container.innerHTML += `<button class="quick-btn" onclick="window.location.href='contact.html'">📞 Contact AVENOR Team</button>`;
+        }
+        
+        function addMessage(text, isUser = false) {
+            const container = document.getElementById('chatMessages');
+            const div = document.createElement('div');
+            div.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+            div.innerHTML = text;
+            container.appendChild(div);
+            container.scrollTop = container.scrollHeight;
+        }
+        
+        function showTyping(callback) {
+            const container = document.getElementById('chatMessages');
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'typing-indicator';
+            typingDiv.innerHTML = '<span></span><span></span><span></span>';
+            container.appendChild(typingDiv);
+            container.scrollTop = container.scrollHeight;
+            setTimeout(() => {
+                typingDiv.remove();
+                callback();
+            }, 600);
+        }
+        
+        function sendQuickReply(text) {
+            document.getElementById('chatInput').value = text;
+            sendMessage();
+        }
+        
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            if (!message) return;
+            
+            addMessage(message, true);
+            input.value = '';
+            
+            showTyping(() => {
+                processMessage(message);
+            });
+        }
+        
+        function findBestMatch(message) {
+            const lowerMsg = message.toLowerCase();
+            let bestMatch = null;
+            let highestScore = 0;
+            
+            for (const faq of faqDatabase) {
+                for (const keyword of faq.keywords) {
+                    if (lowerMsg.includes(keyword.toLowerCase())) {
+                        const score = keyword.length;
+                        if (score > highestScore) {
+                            highestScore = score;
+                            bestMatch = faq;
+                        }
+                    }
+                }
+            }
+            return bestMatch;
+        }
+        
+        function processMessage(message) {
+            const lowerMsg = message.toLowerCase();
+            
+            if (waitingForName) {
+                userName = message.trim();
+                waitingForName = false;
+                addMessage(`Hey <strong>${userName}</strong>, nice to meet you! 👋 I'm here to help you learn about AVENOR. What would you like to know?`);
+                updateQuickButtons();
+                return;
+            }
+            
+            if (lowerMsg.includes('bye') || lowerMsg.includes('goodbye')) {
+                addMessage(`Goodbye <strong>${userName}</strong>! Feel free to reach out anytime. Have a great day! 🚀`);
+                setTimeout(() => {
+                    document.getElementById('chatbotWindow').classList.add('hidden');
+                }, 2000);
+                return;
+            }
+            
+            const match = findBestMatch(message);
+            
+            if (match) {
+                addMessage(match.answer);
+            } else {
+                addMessage(`Thanks for your question, <strong>${userName}</strong>! For detailed assistance, please visit our <a href='contact.html' style='color:#4f8cff;'>Contact page</a> or <a href='connect.html' style='color:#4f8cff;'>Connect page</a>. Our team would be happy to help!`);
+            }
+        }
+        
+        // Chatbot Toggle
+        const chatbotBtn = document.getElementById('chatbotToggleBtn');
+        const chatbotWindow = document.getElementById('chatbotWindow');
+        const closeChatBtn = document.getElementById('closeChatBtn');
+        const chatbotPopup = document.getElementById('chatbotPopup');
+        
+        if (chatbotBtn) {
+            chatbotBtn.addEventListener('click', () => {
+                chatbotWindow.classList.toggle('hidden');
+                if (chatbotPopup) chatbotPopup.style.opacity = '0';
+                setTimeout(() => {
+                    if (chatbotPopup) chatbotPopup.style.display = 'none';
+                }, 300);
+            });
+        }
+        if (closeChatBtn) {
+            closeChatBtn.addEventListener('click', () => {
+                chatbotWindow.classList.add('hidden');
+                if (chatbotPopup) {
+                    chatbotPopup.style.display = 'flex';
+                    setTimeout(() => { chatbotPopup.style.opacity = '1'; }, 50);
+                }
+            });
+        }
+        
+        // Theme Toggle
+        const html = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
+        function setTheme(isLight) {
+            html.setAttribute('data-theme', isLight ? 'light' : 'dark');
+            if(themeToggle) themeToggle.checked = isLight;
+            if(themeToggleMobile) themeToggleMobile.checked = isLight;
+            localStorage.setItem('avenor-theme', isLight ? 'light' : 'dark');
+            const canvas = document.getElementById('threads-canvas');
+            if(canvas) canvas.style.opacity = isLight ? '0.3' : '1';
+        }
+        const savedTheme = localStorage.getItem('avenor-theme');
+        setTheme(savedTheme === 'light');
+        if(themeToggle) themeToggle.addEventListener('change', () => setTheme(themeToggle.checked));
+        if(themeToggleMobile) themeToggleMobile.addEventListener('change', () => setTheme(themeToggleMobile.checked));
+
+        // Mobile Menu - FIXED
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if(hamburgerBtn) {
+            hamburgerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('active');
+                hamburgerBtn.classList.toggle('active');
+            });
+        }
+        
+        const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+        const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+        if(mobileDropdownBtn) {
+            mobileDropdownBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (mobileDropdownContent) {
+                    mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        }
+        
+        document.querySelectorAll('.mobile-menu a:not(.mobile-dropdown-btn), .mobile-menu .mobile-dropdown-content a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                if(hamburgerBtn) hamburgerBtn.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside (optional)
+        document.addEventListener('click', function(event) {
+            if (mobileMenu && mobileMenu.classList.contains('active')) {
+                if (!mobileMenu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+                    mobileMenu.classList.remove('active');
+                    if(hamburgerBtn) hamburgerBtn.classList.remove('active');
+                }
+            }
+        });
+
+        // Marquee
+        const marqueeItems = ['AI Startup Intelligence', '·', 'Founder KPI Tracking', '·', 'Investor Discovery', '·', 'AI Red-Flag Detection', '·', 'Structured Fundraising', '·', 'Venture Intelligence', '·', 'Smart Deal Flow', '·', 'Clarity Before Capital', '·'];
+        const track = document.getElementById('marqueeTrack');
+        if(track) track.innerHTML = [...marqueeItems, ...marqueeItems].map(item => `<span class="scroll-text">${item}</span>`).join('');
+
+        // TrueFocus Component
+        class TrueFocus {
+            constructor(container, sentence, options = {}) {
+                this.container = container;
+                this.sentence = sentence;
+                this.separator = options.separator || ' ';
+                this.manualMode = options.manualMode || false;
+                this.blurAmount = options.blurAmount || 5;
+                this.borderColor = options.borderColor || '#ffffff';
+                this.glowColor = options.glowColor || 'rgba(255, 255, 255, 0.6)';
+                this.animationDuration = options.animationDuration || 0.5;
+                this.pauseBetweenAnimations = options.pauseBetweenAnimations || 1;
+                this.words = sentence.split(this.separator);
+                this.currentIndex = 0;
+                this.lastActiveIndex = null;
+                this.wordRefs = [];
+                this.interval = null;
+                this.init();
+            }
+            init() {
+                this.container.innerHTML = '';
+                this.container.className = 'focus-container';
+                this.words.forEach((word, idx) => {
+                    const span = document.createElement('span');
+                    span.className = `focus-word ${this.manualMode ? 'manual' : ''}`;
+                    span.textContent = word;
+                    span.style.filter = `blur(${this.blurAmount}px)`;
+                    span.style.transition = `filter ${this.animationDuration}s ease`;
+                    span.style.fontSize = '4rem';
+                    span.style.fontWeight = '900';
+                    span.style.display = 'inline-block';
+                    if(!this.manualMode && idx === 0) {
+                        span.style.filter = 'blur(0px)';
+                        span.classList.add('active');
+                    }
+                    span.addEventListener('mouseenter', () => {
+                        if(this.manualMode) {
+                            this.lastActiveIndex = this.currentIndex;
+                            this.setActiveWord(idx);
+                        }
+                    });
+                    span.addEventListener('mouseleave', () => {
+                        if(this.manualMode && this.lastActiveIndex !== null) {
+                            this.setActiveWord(this.lastActiveIndex);
+                        }
+                    });
+                    this.container.appendChild(span);
+                    this.wordRefs.push(span);
+                });
+                this.frame = document.createElement('div');
+                this.frame.className = 'focus-frame';
+                this.frame.innerHTML = `<span class="corner top-left"></span><span class="corner top-right"></span><span class="corner bottom-left"></span><span class="corner bottom-right"></span>`;
+                this.container.appendChild(this.frame);
+                this.updateFramePosition();
+                if(!this.manualMode) {
+                    this.startAutoAnimation();
+                }
+                window.addEventListener('resize', () => this.updateFramePosition());
+            }
+            setActiveWord(index) {
+                if(index < 0 || index >= this.words.length) return;
+                this.wordRefs.forEach((word, i) => {
+                    word.style.filter = i === index ? `blur(0px)` : `blur(${this.blurAmount}px)`;
+                    if(i === index) word.classList.add('active');
+                    else word.classList.remove('active');
+                });
+                this.currentIndex = index;
+                this.updateFramePosition();
+            }
+            updateFramePosition() {
+                if(!this.frame || !this.wordRefs[this.currentIndex]) return;
+                const parentRect = this.container.getBoundingClientRect();
+                const activeRect = this.wordRefs[this.currentIndex].getBoundingClientRect();
+                this.frame.style.transform = `translate(${activeRect.left - parentRect.left}px, ${activeRect.top - parentRect.top}px)`;
+                this.frame.style.width = `${activeRect.width}px`;
+                this.frame.style.height = `${activeRect.height}px`;
+                this.frame.style.opacity = '1';
+            }
+            startAutoAnimation() {
+                if(this.interval) clearInterval(this.interval);
+                this.interval = setInterval(() => {
+                    let next = (this.currentIndex + 1) % this.words.length;
+                    this.setActiveWord(next);
+                }, (this.animationDuration + this.pauseBetweenAnimations) * 1000);
+            }
+            destroy() {
+                if(this.interval) clearInterval(this.interval);
+                window.removeEventListener('resize', () => this.updateFramePosition());
+            }
+        }
+        const trueFocusContainer = document.getElementById('trueFocusContainer');
+        if(trueFocusContainer) {
+            const isLight = html.getAttribute('data-theme') === 'light';
+            new TrueFocus(trueFocusContainer, 'CLARITY BEFORE CAPITAL', {
+                separator: ' ',
+                manualMode: false,
+                blurAmount: 5,
+                borderColor: isLight ? '#0a0a0a' : '#ffffff',
+                glowColor: isLight ? 'rgba(0, 0, 0, 0.6)' : 'rgba(255, 255, 255, 0.6)',
+                animationDuration: 0.6,
+                pauseBetweenAnimations: 1.5
+            });
+        }
+
+        // SplitText Animation
+        if(typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+            gsap.registerPlugin(ScrollTrigger);
+            function animateSplitText(el) {
+                const text = el.textContent;
+                const chars = text.split('');
+                el.innerHTML = chars.map(ch => ch === ' ' ? '<span style="display:inline-block;width:0.3em;"> </span>' : `<span class="split-char" style="display:inline-block;will-change:transform,opacity;">${ch}</span>`).join('');
+                gsap.fromTo(el.querySelectorAll('.split-char'), { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.65, ease: 'power3.out', stagger: 0.035, scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
+            }
+            document.querySelectorAll('.split-heading').forEach(animateSplitText);
+        }
+
+        // Threads WebGL Background
+        (function() {
+            const canvas = document.getElementById('threads-canvas');
+            if(!canvas) return;
+            const gl = canvas.getContext('webgl', { alpha: true, antialias: true });
+            if(!gl) return;
+            gl.clearColor(0,0,0,0);
+            gl.enable(gl.BLEND);
+            gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+            const vertSrc = `attribute vec2 position; void main() { gl_Position = vec4(position, 0.0, 1.0); }`;
+            const fragSrc = `precision highp float; uniform float iTime; uniform vec3 iResolution; uniform float uAmplitude; uniform vec2 uMouse; #define PI 3.1415926538 const int u_line_count = 40; const float u_line_width = 7.0; const float u_line_blur = 10.0; float Perlin2D(vec2 P) { vec2 Pi = floor(P); vec4 Pf_Pfmin1 = P.xyxy - vec4(Pi, Pi + 1.0); vec4 Pt = vec4(Pi.xy, Pi.xy + 1.0); Pt = Pt - floor(Pt * (1.0 / 71.0)) * 71.0; Pt += vec2(26.0, 161.0).xyxy; Pt *= Pt; Pt = Pt.xzxz * Pt.yyww; vec4 hash_x = fract(Pt * (1.0 / 951.135664)); vec4 hash_y = fract(Pt * (1.0 / 642.949883)); vec4 grad_x = hash_x - 0.49999; vec4 grad_y = hash_y - 0.49999; vec4 grad_results = inversesqrt(grad_x * grad_x + grad_y * grad_y) * (grad_x * Pf_Pfmin1.xzxz + grad_y * Pf_Pfmin1.yyww); grad_results *= 1.4142135623730950; vec2 blend = Pf_Pfmin1.xy * Pf_Pfmin1.xy * Pf_Pfmin1.xy * (Pf_Pfmin1.xy * (Pf_Pfmin1.xy * 6.0 - 15.0) + 10.0); vec4 blend2 = vec4(blend, vec2(1.0 - blend)); return dot(grad_results, blend2.zxzx * blend2.wwyy); } float pixel(float count, vec2 resolution) { return (1.0 / max(resolution.x, resolution.y)) * count; } float lineFn(vec2 st, float width, float perc, float offset, vec2 mouse, float time, float amplitude) { float split_offset = (perc * 0.4); float split_point = 0.1 + split_offset; float amplitude_normal = smoothstep(split_point, 0.7, st.x); float amplitude_strength = 0.5; float finalAmplitude = amplitude_normal * amplitude_strength * amplitude * (1.0 + (mouse.y - 0.5) * 0.2); float time_scaled = time / 10.0 + (mouse.x - 0.5) * 1.0; float blur = smoothstep(split_point, split_point + 0.05, st.x) * perc; float xnoise = mix(Perlin2D(vec2(time_scaled, st.x + perc) * 2.5), Perlin2D(vec2(time_scaled, st.x + time_scaled) * 3.5) / 1.5, st.x * 0.3); float y = 0.5 + (perc - 0.5) * 0.0 + xnoise / 2.0 * finalAmplitude; float line_start = smoothstep(y + (width / 2.0) + (u_line_blur * pixel(1.0, iResolution.xy) * blur), y, st.y); float line_end = smoothstep(y, y - (width / 2.0) - (u_line_blur * pixel(1.0, iResolution.xy) * blur), st.y); return clamp((line_start - line_end) * (1.0 - smoothstep(0.0, 1.0, pow(perc, 0.3))), 0.0, 1.0); } void main() { vec2 uv = gl_FragCoord.xy / iResolution.xy; float line_strength = 1.0; for (int i = 0; i < u_line_count; i++) { float p = float(i) / float(u_line_count); line_strength *= (1.0 - lineFn(uv, u_line_width * pixel(1.0, iResolution.xy) * (1.0 - p), p, (PI * 1.0) * p, uMouse, iTime, uAmplitude)); } float colorVal = 1.0 - line_strength; gl_FragColor = vec4(vec3(1.0) * colorVal, colorVal); }`;
+            function createShader(type, src) { const sh = gl.createShader(type); gl.shaderSource(sh, src); gl.compileShader(sh); return sh; }
+            const vert = createShader(gl.VERTEX_SHADER, vertSrc);
+            const frag = createShader(gl.FRAGMENT_SHADER, fragSrc);
+            const prog = gl.createProgram();
+            gl.attachShader(prog, vert); gl.attachShader(prog, frag); gl.linkProgram(prog); gl.useProgram(prog);
+            const buf = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+            const posLoc = gl.getAttribLocation(prog, 'position');
+            gl.enableVertexAttribArray(posLoc);
+            gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+            const iTimeLoc = gl.getUniformLocation(prog, 'iTime');
+            const iResLoc = gl.getUniformLocation(prog, 'iResolution');
+            const uAmpLoc = gl.getUniformLocation(prog, 'uAmplitude');
+            const uMouseLoc = gl.getUniformLocation(prog, 'uMouse');
+            let mouse = [0.5, 0.5], targetMouse = [0.5, 0.5];
+            canvas.addEventListener('mousemove', (e) => { const r = canvas.getBoundingClientRect(); targetMouse[0] = (e.clientX - r.left) / r.width; targetMouse[1] = 1.0 - (e.clientY - r.top) / r.height; });
+            canvas.addEventListener('mouseleave', () => { targetMouse = [0.5, 0.5]; });
+            function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; gl.viewport(0, 0, canvas.width, canvas.height); }
+            window.addEventListener('resize', resize); resize();
+            function loop(t) { mouse[0] += 0.05 * (targetMouse[0] - mouse[0]); mouse[1] += 0.05 * (targetMouse[1] - mouse[1]); gl.clear(gl.COLOR_BUFFER_BIT); gl.uniform1f(iTimeLoc, t * 0.001); gl.uniform3f(iResLoc, canvas.width, canvas.height, canvas.width / canvas.height); gl.uniform1f(uAmpLoc, 1.2); gl.uniform2f(uMouseLoc, mouse[0], mouse[1]); gl.drawArrays(gl.TRIANGLES, 0, 3); requestAnimationFrame(loop); }
+            requestAnimationFrame(loop);
+        })();
+
+        // Custom Cursor
+        (function() {
+            const isMobile = window.innerWidth <= 768 || ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+            if(isMobile) return;
+            const cursorWrapper = document.createElement('div');
+            cursorWrapper.className = 'target-cursor-wrapper';
+            cursorWrapper.innerHTML = `<div class="target-cursor-dot"></div><div class="target-cursor-corner corner-tl"></div><div class="target-cursor-corner corner-tr"></div><div class="target-cursor-corner corner-br"></div><div class="target-cursor-corner corner-bl"></div>`;
+            document.body.appendChild(cursorWrapper);
+            const style = document.createElement('style');
+            style.textContent = `* { cursor: none !important; } .target-cursor-wrapper { position: fixed; top: 0; left: 0; width: 0; height: 0; pointer-events: none; z-index: 99999; mix-blend-mode: difference; } .target-cursor-dot { position: absolute; left: 0; top: 0; width: 6px; height: 6px; background: #fff; border-radius: 50%; transform: translate(-50%, -50%); } .target-cursor-corner { position: absolute; left: 0; top: 0; width: 12px; height: 12px; border: 2px solid #fff; transition: transform 0.18s cubic-bezier(0.2, 0.9, 0.4, 1.1); } .corner-tl { transform: translate(-20px, -20px); border-right: none; border-bottom: none; } .corner-tr { transform: translate(8px, -20px); border-left: none; border-bottom: none; } .corner-br { transform: translate(8px, 8px); border-left: none; border-top: none; } .corner-bl { transform: translate(-20px, 8px); border-right: none; border-top: none; } .target-cursor-wrapper.interactive .corner-tl { transform: translate(-24px, -24px) scale(1.2); } .target-cursor-wrapper.interactive .corner-tr { transform: translate(12px, -24px) scale(1.2); } .target-cursor-wrapper.interactive .corner-br { transform: translate(12px, 12px) scale(1.2); } .target-cursor-wrapper.interactive .corner-bl { transform: translate(-24px, 12px) scale(1.2); }`;
+            document.head.appendChild(style);
+            let mouseX = -100, mouseY = -100, targetX = -100, targetY = -100;
+            document.addEventListener('mousemove', (e) => {
+                targetX = e.clientX; targetY = e.clientY;
+                const element = document.elementFromPoint(e.clientX, e.clientY);
+                const isInteractive = element && (element.tagName === 'A' || element.tagName === 'BUTTON' || element.closest('a') || element.closest('button') || element.classList?.contains('btn-primary') || element.classList?.contains('btn-outline'));
+                if(isInteractive) cursorWrapper.classList.add('interactive');
+                else cursorWrapper.classList.remove('interactive');
+            });
+            document.addEventListener('mouseleave', () => { cursorWrapper.style.opacity = '0'; });
+            document.addEventListener('mouseenter', () => { cursorWrapper.style.opacity = '1'; });
+            function animate() { mouseX += (targetX - mouseX) * 0.12; mouseY += (targetY - mouseY) * 0.12; cursorWrapper.style.transform = `translate(${mouseX}px, ${mouseY}px)`; requestAnimationFrame(animate); }
+            animate();
+        })();
+    </script>
+</body>
+</html>

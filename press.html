@@ -1,0 +1,407 @@
+Here is your **completely updated `press.html`** with domain changed to `avenor.sbs`, founder name updated to **PRANAV GAUTAM**, all SEO tags added, schema markup, and proper styling - keeping your original layout intact.
+
+```html
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Press & Media | AVENOR – Media Resources for Journalists</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://avenor.sbs/press.html" />
+     <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Press resources, media kits, and company information for journalists covering AVENOR's venture intelligence platform. Founded by PRANAV GAUTAM from Bihar.">
+    <meta name="keywords" content="AVENOR, PRANAV GAUTAM, press, media, news, announcements, venture intelligence, startup fundraising, media kit">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR Press & Media – Resources for Journalists">
+    <meta property="og:description" content="Press resources, media kits, and company information for journalists covering AVENOR's venture intelligence platform.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs/press.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR Press & Media">
+    <meta name="twitter:description" content="Press resources and media information for AVENOR's venture intelligence platform.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <!-- Team Member SEO Meta -->
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="team:member" content="AKSHAY SINGH - Team Member">
+    <meta name="team:member" content="AMIT NAYAN - Team Member">
+    <meta name="built-by" content="gmitech.in">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg: #0a0a0a; --bg2: #050505; --bg3: #111; --text: #ffffff;
+            --muted: #aaaaaa; --dim: #666666; --border: rgba(255,255,255,0.08);
+            --card: rgba(255,255,255,0.03); --card-h: rgba(255,255,255,0.06);
+            --header: rgba(10,10,10,0.95); --accent: #7B7481;
+            --btn-bg: #ffffff; --btn-text: #000000;
+            --blue: #3b82f6; --blue-bg: rgba(59,130,246,0.1);
+        }
+        [data-theme="light"] {
+            --bg: #f5f5f0; --bg2: #ebebeb; --bg3: #e0e0e0; --text: #0a0a0a;
+            --muted: #555555; --dim: #888888; --border: rgba(0,0,0,0.08);
+            --card: rgba(0,0,0,0.03); --card-h: rgba(0,0,0,0.06);
+            --header: rgba(245,245,240,0.95); --accent: #6a5f70;
+            --btn-bg: #0a0a0a; --btn-text: #ffffff;
+        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .4s,color .4s;}
+        ::-webkit-scrollbar{width:6px;} ::-webkit-scrollbar-track{background:var(--bg2);} ::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px;}
+        a{text-decoration:none;color:inherit;}
+        
+        /* Header */
+        .main-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 2rem;background:var(--header);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:background .4s,border-color .4s;}
+        .header-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+        .logo-center a{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.3rem;color:var(--text);}
+        .logo-center img{height:32px;}
+        .logo-dark{display:block;}.logo-light{display:none;}
+        [data-theme="light"] .logo-dark{display:none;}[data-theme="light"] .logo-light{display:block;}
+        .nav-left{display:flex;gap:2rem;align-items:center;}
+        .nav-left a,.dropdown-btn{color:var(--text);font-size:.9rem;font-weight:500;background:none;border:none;cursor:pointer;font-family:inherit;transition:opacity .3s;}
+        .nav-left a:hover,.dropdown-btn:hover{opacity:.6;}
+        .dropdown{position:relative;display:inline-block;}
+        .dropdown-content{display:none;position:absolute;top:100%;left:0;background:var(--bg3);min-width:200px;border-radius:12px;padding:.5rem 0;margin-top:.5rem;border:1px solid var(--border);z-index:200;}
+        .dropdown-content a{display:block;padding:.7rem 1.2rem;font-size:.85rem;color:var(--text);transition:background .2s;}
+        .dropdown-content a:hover{background:var(--card-h);}
+        .dropdown:hover .dropdown-content{display:block;}
+        .nav-right{display:flex;align-items:center;gap:1rem;}
+        .portfolio-btn{background:var(--btn-bg);color:var(--btn-text);padding:.5rem 1.3rem;border-radius:100px;font-weight:600;font-size:.9rem;transition:all .3s;white-space:nowrap;}
+        .portfolio-btn:hover{opacity:.85;transform:scale(1.02);}
+        
+        /* Theme Toggle */
+        .switch{font-size:17px;position:relative;display:inline-block;width:64px;height:34px;flex-shrink:0;}
+        .switch input{opacity:0;width:0;height:0;}
+        .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#73C0FC;transition:.4s;border-radius:30px;}
+        .slider:before{position:absolute;content:"";height:30px;width:30px;border-radius:20px;left:2px;bottom:2px;z-index:2;background:#e8e8e8;transition:.4s;}
+        .sun svg{position:absolute;top:6px;left:36px;z-index:1;width:24px;height:24px;animation:rotate 15s linear infinite;}
+        .moon svg{fill:#73C0FC;position:absolute;top:5px;left:5px;z-index:1;width:24px;height:24px;animation:tilt 5s linear infinite;}
+        @keyframes rotate{to{transform:rotate(360deg);}}
+        @keyframes tilt{0%,100%{transform:rotate(0);}25%{transform:rotate(-10deg);}75%{transform:rotate(10deg);}}
+        .input:checked+.slider{background:#183153;}
+        .input:checked+.slider:before{transform:translateX(30px);}
+        
+        /* Mobile Menu */
+        .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;z-index:1001;}
+        .hamburger span{display:block;width:25px;height:2px;background:var(--text);margin:5px 0;transition:all .3s;}
+        .hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+        .hamburger.active span:nth-child(2){opacity:0;}
+        .hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+        .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--bg);z-index:999;padding:80px 2rem 2rem;flex-direction:column;gap:1.5rem;overflow-y:auto;transition:background .4s;}
+        .mobile-menu.active{display:flex;}
+        .mobile-menu a,.mobile-dropdown-btn{color:var(--text);font-size:1.2rem;font-weight:500;padding:.5rem 0;border-bottom:1px solid var(--border);background:none;text-align:left;width:100%;cursor:pointer;}
+        .mobile-dropdown-content{display:none;padding-left:1rem;margin-top:.5rem;}
+        .mobile-dropdown-content a{font-size:1rem;border-bottom:none;}
+        .mobile-theme-row{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--border);}
+        .mobile-theme-label{font-size:1.2rem;font-weight:500;color:var(--text);}
+
+        /* Press Page Specific */
+        .page-hero{padding:9rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
+        .page-hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(123,116,129,.12),transparent);pointer-events:none;}
+        .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border);padding:.3rem 1rem;border-radius:100px;font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;}
+        .page-hero h1{font-size:3rem;font-weight:900;letter-spacing:-.03em;margin-bottom:1rem;color:var(--text);}
+        .page-hero p{font-size:1rem;color:var(--muted);max-width:650px;margin:0 auto;line-height:1.6;}
+        
+        /* Content Sections */
+        .content-container{max-width:1000px;margin:0 auto 5rem;padding:0 1.5rem;}
+        .info-card{background:var(--card);border:1px solid var(--border);border-radius:28px;overflow:hidden;margin-bottom:2rem;}
+        .section-header{padding:2rem 2rem 0.5rem 2rem;border-bottom:1px solid var(--border);}
+        .section-header h2{font-size:1.5rem;font-weight:800;margin-bottom:.5rem;color:var(--text);}
+        .section-header p{font-size:.85rem;color:var(--muted);}
+        
+        .grid-list{padding:1.5rem 2rem 2rem 2rem;}
+        .info-row{display:flex;padding:.8rem 0;border-bottom:1px solid var(--border);}
+        .info-label{width:140px;font-weight:600;font-size:.85rem;color:var(--text);}
+        .info-value{flex:1;font-size:.85rem;color:var(--muted);}
+        
+        .resources-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem;}
+        .resource-item{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1rem;display:flex;align-items:center;gap:1rem;transition:all .3s;}
+        .resource-item:hover{background:var(--card-h);transform:translateY(-2px);}
+        .resource-icon{width:40px;height:40px;background:var(--accent);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;}
+        .resource-info h4{font-size:.9rem;font-weight:700;margin-bottom:.2rem;color:var(--text);}
+        .resource-info p{font-size:.7rem;color:var(--muted);}
+        .request-badge{display:inline-block;background:var(--blue-bg);color:var(--blue);border-radius:20px;padding:.2rem .6rem;font-size:.6rem;font-weight:600;margin-left:.5rem;}
+        
+        .press-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:1.2rem;transition:all .3s;}
+        .press-card:hover{background:var(--card-h);}
+        .press-title{font-size:1rem;font-weight:700;margin-bottom:.3rem;color:var(--text);}
+        .press-meta{font-size:.7rem;color:var(--accent);margin-bottom:.5rem;}
+        .press-excerpt{font-size:.8rem;color:var(--muted);line-height:1.5;}
+        
+        .guidelines-list{list-style:none;padding:0;}
+        .guidelines-list li{display:flex;align-items:flex-start;gap:.8rem;padding:.7rem 0;border-bottom:1px solid var(--border);font-size:.85rem;color:var(--muted);}
+        .guidelines-list li i{color:var(--accent);margin-top:.15rem;}
+        
+        .contact-box{background:linear-gradient(135deg,var(--card),transparent);border:1px solid var(--border);border-radius:20px;padding:2rem;text-align:center;margin-top:1rem;}
+        .contact-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.5rem;color:var(--text);}
+        .contact-box p{font-size:.85rem;color:var(--muted);margin-bottom:1rem;}
+        .contact-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+        .contact-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--btn-bg);color:var(--btn-text);padding:.7rem 1.5rem;border-radius:100px;font-weight:600;font-size:.85rem;transition:all .3s;border:none;cursor:pointer;font-family:inherit;}
+        .contact-btn:hover{transform:translateY(-2px);opacity:.9;}
+        .contact-wa{background:#25D366;color:#fff;}
+        
+        .footer{background:var(--bg2);padding:3rem 1rem 2rem;border-top:1px solid var(--border);margin-top:2rem;}
+        .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem;max-width:1200px;margin:0 auto;}
+        .footer-logo{font-size:1.2rem;font-weight:800;margin-bottom:.5rem;color:var(--text);}
+        .footer-grid p{font-size:.7rem;color:var(--dim);}
+        .footer-grid h4{font-size:.8rem;font-weight:700;margin-bottom:1rem;color:var(--text);}
+        .footer-grid a{display:block;font-size:.7rem;color:var(--dim);margin-bottom:.5rem;transition:color .3s;}
+        .footer-grid a:hover{color:var(--text);}
+        .footer-bottom{text-align:center;padding-top:2rem;margin-top:2rem;border-top:1px solid var(--border);font-size:.7rem;color:var(--dim);}
+
+        @media(max-width:768px){
+            .nav-left,.nav-right{display:none;}
+            .hamburger{display:block;}
+            .page-hero h1{font-size:2rem;}
+            .resources-grid{grid-template-columns:1fr;}
+            .info-row{flex-direction:column;}
+            .info-label{margin-bottom:.3rem;width:auto;}
+            .contact-buttons{flex-direction:column;align-items:center;}
+            .section-header{padding:1.5rem;}
+            .grid-list{padding:1rem 1.5rem 1.5rem;}
+        }
+        @media(max-width:480px){
+            .page-hero{padding:7rem 1rem 3rem;}
+        }
+        .dropdown:hover .dropdown-content{display:block;opacity:1;visibility:visible;}
+        .dropdown-content{display:none;position:absolute;top:100%;left:0;margin-top:0;padding-top:5px;z-index:1000;}
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AVENOR",
+      "url": "https://avenor.sbs",
+      "logo": "https://avenor.sbs/images/LogoA.svg",
+      "description": "AVENOR is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities. Founded by PRANAV GAUTAM from Bihar.",
+      "founder": {
+        "@type": "Person",
+        "name": "PRANAV GAUTAM",
+        "jobTitle": "Founder & CEO"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bihar",
+        "addressCountry": "India"
+      },
+      "foundingDate": "2026",
+      "industry": "Venture Intelligence",
+      "mission": "Less Noise. Better Decisions."
+    }
+    </script>
+</head>
+<body>
+
+ <header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/fff/000?text=A'">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/000/fff?text=A'">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch" title="Toggle dark/light mode">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+            <input type="checkbox" class="input" id="themeToggleMobile">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mentorship.html">Mentorship</a>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+
+
+<!-- HERO SECTION -->
+<section class="page-hero">
+    <div class="hero-badge"><i class="fas fa-newspaper" style="color:var(--accent);"></i> Press & Media</div>
+    <h1>Press & Media Resources</h1>
+    <p>Resources for journalists, analysts, and media professionals covering AVENOR's venture intelligence platform. Founded by <strong>PRANAV GAUTAM</strong> from Bihar.</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="content-container">
+    <!-- About AVENOR Card -->
+    <div class="info-card">
+        <div class="section-header">
+            <h2>About AVENOR</h2>
+            <p>Less Noise. Better Decisions.</p>
+        </div>
+        <div class="grid-list">
+            <p style="color:var(--muted);line-height:1.6;margin-bottom:1rem;">AVENOR is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities through structured workflows, AI-powered insights, founder KPI tracking, and intelligent deal sourcing. Founded by <strong>PRANAV GAUTAM</strong> from Bihar.</p>
+            <p style="color:var(--muted);line-height:1.6;">Founded with the vision of reducing noise in venture capital, AVENOR enables founders and investors to make better decisions through data-driven intelligence. Built from Bihar, for the world.</p>
+        </div>
+    </div>
+
+    <!-- Company Overview -->
+    <div class="info-card">
+        <div class="section-header">
+            <h2>Company Overview</h2>
+        </div>
+        <div class="grid-list">
+            <div class="info-row"><div class="info-label">Company Name</div><div class="info-value">AVENOR</div></div>
+            <div class="info-row"><div class="info-label">Industry</div><div class="info-value">Venture Intelligence & Startup Technology</div></div>
+            <div class="info-row"><div class="info-label">Headquarters</div><div class="info-value">Bihar, India</div></div>
+            <div class="info-row"><div class="info-label">Founded</div><div class="info-value">2026</div></div>
+            <div class="info-row"><div class="info-label">Founder</div><div class="info-value">PRANAV GAUTAM</div></div>
+            <div class="info-row"><div class="info-label">Mission</div><div class="info-value">Less Noise. Better Decisions.</div></div>
+        </div>
+    </div>
+
+    <!-- Media Resources -->
+    <div class="info-card">
+        <div class="section-header">
+            <h2>Media Resources</h2>
+            <p>The following resources are available upon request</p>
+        </div>
+        <div class="grid-list">
+            <div class="resources-grid">
+                <div class="resource-item"><div class="resource-icon"><i class="fas fa-chart-line"></i></div><div class="resource-info"><h4>Platform Demonstrations</h4><p>Walkthrough of AVENOR's intelligence layer</p></div></div>
+                <div class="resource-item"><div class="resource-icon"><i class="fas fa-mobile-alt"></i></div><div class="resource-info"><h4>Product Screenshots</h4><p>High-resolution UI images</p></div></div>
+                <div class="resource-item"><div class="resource-icon"><i class="fas fa-file-alt"></i></div><div class="resource-info"><h4>Press Releases</h4><p>Official announcements</p></div></div>
+                <div class="resource-item"><div class="resource-icon"><i class="fas fa-palette"></i></div><div class="resource-info"><h4>Brand Assets</h4><p>Logos, colors, typography</p></div></div>
+                <div class="resource-item"><div class="resource-icon"><i class="fas fa-camera"></i></div><div class="resource-info"><h4>Founder Photographs</h4><p>High-res headshots of PRANAV GAUTAM</p></div></div>
+                <div class="resource-item"><div class="resource-icon"><i class="fas fa-download"></i></div><div class="resource-info"><h4>Media Kit <span class="request-badge">Request Access</span></h4><p>Complete press package</p></div></div>
+            </div>
+            <p style="font-size:.75rem;color:var(--dim);margin-top:1rem;text-align:center;">All media resources are available upon request. Please contact our press team.</p>
+        </div>
+    </div>
+
+    <!-- Press Coverage / Announcements -->
+    <div class="info-card">
+        <div class="section-header">
+            <h2>Recent Announcements</h2>
+            <p>Stay connected for platform updates and ecosystem insights</p>
+        </div>
+        <div class="grid-list">
+            <div class="press-card" style="margin-bottom:.8rem;">
+                <div class="press-title">AVENOR Launches Structured Fundraising Platform</div>
+                <div class="press-meta">January 2026 · Press Release</div>
+                <div class="press-excerpt">AVENOR announces its official launch, bringing structured fundraising and AI-powered venture intelligence to startups and investors globally. Founded by PRANAV GAUTAM from Bihar, for the world.</div>
+            </div>
+            <div class="press-card" style="margin-bottom:.8rem;">
+                <div class="press-title">AI-Powered Startup Intelligence Goes Live</div>
+                <div class="press-meta">February 2026 · Product Update</div>
+                <div class="press-excerpt">Launch of AVENOR's proprietary AI intelligence layer, analyzing market signals, risk patterns, and growth trajectories for thousands of startups.</div>
+            </div>
+            <div class="press-card">
+                <div class="press-title">Investor Discovery Feed Now Available</div>
+                <div class="press-meta">March 2026 · Feature Launch</div>
+                <div class="press-excerpt">New structured discovery feed helps investors find high-signal opportunities with complete deal context in one calm surface.</div>
+            </div>
+            <p style="font-size:.75rem;color:var(--dim);margin-top:1rem;text-align:center;">For media inquiries about announcements, please contact our press team.</p>
+        </div>
+    </div>
+
+    <!-- Brand Guidelines -->
+    <div class="info-card">
+        <div class="section-header">
+            <h2>Brand Guidelines</h2>
+        </div>
+        <div class="grid-list">
+            <ul class="guidelines-list">
+                <li><i class="fas fa-trademark"></i> The AVENOR name, logo, trademarks, and brand assets may not be used without prior written permission.</li>
+                <li><i class="fas fa-palette"></i> Brand colors, typography, and design elements are proprietary to AVENOR.</li>
+                <li><i class="fas fa-envelope"></i> For brand usage requests, please contact our communications team.</li>
+                <li><i class="fas fa-newspaper"></i> Press may use the AVENOR name in editorial context with proper attribution.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact for Media Inquiries -->
+    <div class="contact-box">
+        <h3>Media Inquiries</h3>
+        <p>For interviews, media coverage, partnerships, speaking engagements, or press-related requests, please contact our communications team.</p>
+        <div class="contact-buttons">
+            <a href="mailto:press@avenor.sbs" class="contact-btn"><i class="fas fa-envelope"></i> press@avenor.sbs</a>
+            <button onclick="window.open('https://wa.me/9192622444607?text=Hi%20AVENOR%20Press%20Team,%20I%20have%20a%20media%20inquiry%20or%20press%20request.%20Please%20let%20me%20know%20how%20to%20proceed.', '_blank')" class="contact-btn contact-wa"><i class="fab fa-whatsapp"></i> WhatsApp Press Line</button>
+        </div>
+        <p style="font-size:.7rem; color:var(--dim); margin-top:1rem;">Response Time: Within 2-3 business days</p>
+        <p style="font-size:.7rem; color:var(--dim); margin-top:.5rem;">AVENOR welcomes opportunities to collaborate with journalists, technology publications, startup communities, venture capital firms, and ecosystem partners.</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div><div class="footer-logo">AVENOR</div><p>Structured fundraising and venture intelligence. Less noise. Better decisions.</p></div>
+        <div><h4>Product</h4><a>Startups</a><a>Investors</a><a>Intelligence</a><a>Pricing</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><a href="career.html">Careers</a><a href="press.html">Press</a><a href="contact.html">Contact</a></div>
+        <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a><a>Trust</a></div>
+        <div><h4>Social</h4><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a><a href="#"><i class="fab fa-youtube"></i> YouTube</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+    <div class="footer-bottom">Built With ❤️ By gmitech.in</div>
+</footer>
+
+<script>
+    // Theme Toggle
+    const html = document.documentElement;
+    const t1 = document.getElementById('themeToggle');
+    const t2 = document.getElementById('themeToggleMobile');
+    function setTheme(light) { html.setAttribute('data-theme', light ? 'light' : 'dark'); if(t1) t1.checked = light; if(t2) t2.checked = light; localStorage.setItem('avenor-theme', light ? 'light' : 'dark'); }
+    if(localStorage.getItem('avenor-theme') === 'light') setTheme(true);
+    if(t1) t1.addEventListener('change', () => setTheme(t1.checked));
+    if(t2) t2.addEventListener('change', () => setTheme(t2.checked));
+
+    // Mobile Menu
+    const hbtn = document.getElementById('hamburgerBtn');
+    const mmenu = document.getElementById('mobileMenu');
+    if(hbtn) {
+        hbtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mmenu.classList.toggle('active');
+            hbtn.classList.toggle('active');
+        });
+    }
+    const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+    const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+    if(mobileDropdownBtn) {
+        mobileDropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if(mobileDropdownContent) {
+                mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    }
+    document.querySelectorAll('.mobile-menu a, .mobile-menu button').forEach(l => l.addEventListener('click', () => { mmenu.classList.remove('active'); if(hbtn) hbtn.classList.remove('active'); }));
+</script>
+</body>
+</html>

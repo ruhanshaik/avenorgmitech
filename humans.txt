@@ -1,0 +1,24 @@
+/* HUMAN.TXT - Meet the team behind AVENOR */
+
+/* TEAM */
+Founder & CEO: PRANAV GAUTAM
+Team Member: AKSHAY SINGH
+Team Member: AMIT NAYAN
+
+/* COMPANY */
+Name: AVENOR
+Mission: Less Noise. Better Decisions.
+Headquarters: Bihar, India
+Founded: 2026
+Domain: avenor.sbs
+
+/* TECHNOLOGY */
+Built with: HTML5, CSS3, JavaScript, GSAP
+AI Integration: AVENOR AI Intelligence Layer
+
+/* THANKS */
+Thank you for visiting AVENOR. We're building the future of venture intelligence from Bihar, for the world.
+
+/* CONTACT */
+Email: hello@avenor.sbs
+WhatsApp: +91 9262244607

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Portfolio | AVENOR – High-Signal Startup Investments</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://avenor.sbs/portfolio.html" />
+     <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Discover high-signal startups backed by AVENOR. Each company has been vetted for momentum, team, and market fit. Founded by PRANAV GAUTAM from Bihar.">
+    <meta name="keywords" content="AVENOR, PRANAV GAUTAM, portfolio, startup investments, venture capital, portfolio companies, funded startups, Indian startups">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR Portfolio – High-Signal Startup Investments">
+    <meta property="og:description" content="Discover high-signal startups backed by AVENOR. Each company has been vetted for momentum, team, and market fit.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs/portfolio.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR Portfolio – Startup Investments">
+    <meta name="twitter:description" content="Discover high-signal startups backed by AVENOR. Vetted for momentum, team, and market fit.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <!-- Team Member SEO Meta -->
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="team:member" content="AKSHAY SINGH - Team Member">
+    <meta name="team:member" content="AMIT NAYAN - Team Member">
+    <meta name="built-by" content="gmitech.in">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0a0a0a; --bg-secondary: #050505; --text: #ffffff; --text-muted: #aaaaaa;
+            --text-dim: #666666; --border: rgba(255, 255, 255, 0.08); --border-hover: rgba(255, 255, 255, 0.2);
+            --card-bg: rgba(255, 255, 255, 0.03); --card-bg-hover: rgba(255, 255, 255, 0.05);
+            --header-bg: rgba(10, 10, 10, 0.95); --btn-primary-bg: #ffffff; --btn-primary-text: #000000;
+            --scrollbar-track: #1a1a1a; --scrollbar-thumb: #333; --accent: #7B7481; --icon-color: #7B7481;
+            --primary: #7B7481;
+        }
+        [data-theme="light"] {
+            --bg: #f5f5f0; --bg-secondary: #ebebeb; --text: #0a0a0a; --text-muted: #555555;
+            --text-dim: #888888; --border: rgba(0, 0, 0, 0.08); --border-hover: rgba(0, 0, 0, 0.2);
+            --card-bg: rgba(0, 0, 0, 0.03); --card-bg-hover: rgba(0, 0, 0, 0.05);
+            --header-bg: rgba(245, 245, 240, 0.95); --btn-primary-bg: #0a0a0a; --btn-primary-text: #ffffff;
+            --accent: #6a5f70; --icon-color: #6a5f70; --primary: #6a5f70;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; transition: background 0.4s ease, color 0.4s ease; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+        
+        .switch { font-size: 17px; position: relative; display: inline-block; width: 64px; height: 34px; flex-shrink: 0; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #73C0FC; transition: .4s; border-radius: 30px; }
+        .slider:before { position: absolute; content: ""; height: 30px; width: 30px; border-radius: 20px; left: 2px; bottom: 2px; z-index: 2; background-color: #e8e8e8; transition: .4s; }
+        .sun svg { position: absolute; top: 6px; left: 36px; z-index: 1; width: 24px; height: 24px; animation: rotate 15s linear infinite; }
+        .moon svg { fill: #73C0FC; position: absolute; top: 5px; left: 5px; z-index: 1; width: 24px; height: 24px; animation: tilt 5s linear infinite; }
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
+        @keyframes tilt { 0%,100%{transform:rotate(0deg)}25%{transform:rotate(-10deg)}75%{transform:rotate(10deg)} }
+        .input:checked + .slider { background-color: #183153; }
+        .input:checked + .slider:before { transform: translateX(30px); }
+        
+        .main-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2rem; background: var(--header-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); transition: background 0.4s ease; }
+        .header-container { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .logo-center a { display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 800; font-size: 1.3rem; color: var(--text); }
+        .logo-center img { height: 32px; width: auto; }
+        .logo-dark { display: block; }
+        .logo-light { display: none; }
+        [data-theme="light"] .logo-dark { display: none; }
+        [data-theme="light"] .logo-light { display: block; }
+        .nav-left { display: flex; gap: 2rem; align-items: center; }
+        .nav-left a, .dropdown-btn { color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: opacity 0.3s ease; background: none; border: none; cursor: pointer; font-family: inherit; }
+        .nav-left a:hover, .dropdown-btn:hover { opacity: 0.7; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: var(--bg-secondary); min-width: 200px; border-radius: 12px; padding: 0.5rem 0; margin-top: 0.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 1px solid var(--border); z-index: 200; }
+        .dropdown-content a { display: block; padding: 0.7rem 1.2rem; color: var(--text); text-decoration: none; font-size: 0.85rem; transition: background 0.2s ease; }
+        .dropdown-content a:hover { background: var(--card-bg-hover); }
+        .dropdown:hover .dropdown-content { display: block; }
+        .nav-right { display: flex; align-items: center; gap: 1rem; }
+        .lets-talk-btn { background: var(--btn-primary-bg); color: var(--btn-primary-text); padding: 0.5rem 1.3rem; border-radius: 100px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; white-space: nowrap; }
+        .lets-talk-btn:hover { transform: scale(1.02); opacity: 0.9; }
+        .hamburger { display: none; cursor: pointer; background: none; border: none; z-index: 1001; padding: 4px; }
+        .hamburger span { display: block; width: 25px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s ease; }
+        .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+        .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; padding: 80px 2rem 2rem; flex-direction: column; gap: 1.5rem; overflow-y: auto; }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a, .mobile-dropdown-btn { color: var(--text); text-decoration: none; font-size: 1.2rem; font-weight: 500; padding: 0.5rem 0; border-bottom: 1px solid var(--border); background: none; width: 100%; text-align: left; cursor: pointer; }
+        .mobile-dropdown-content { display: none; padding-left: 1rem; margin-top: 0.5rem; }
+        .mobile-dropdown-content a { font-size: 1rem; border-bottom: none; }
+        .mobile-theme-row { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+        .mobile-theme-label { font-size: 1.2rem; font-weight: 500; color: var(--text); }
+        
+        .split-char { display: inline-block; will-change: transform, opacity; }
+        .portfolio-card { transition: all 0.3s ease; cursor: pointer; }
+        .portfolio-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -12px rgba(0,0,0,0.2); background: var(--card-bg-hover); }
+        .category-btn { transition: all 0.2s ease; cursor: pointer; }
+        
+        @media (max-width: 768px) {
+            .nav-left, .nav-right { display: none; }
+            .hamburger { display: block; }
+            .main-header { padding: 0.8rem 1rem; }
+        }
+        .dropdown:hover .dropdown-content { display: block; opacity: 1; visibility: visible; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; margin-top: 0; padding-top: 5px; z-index: 1000; }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AVENOR",
+      "url": "https://avenor.sbs",
+      "logo": "https://avenor.sbs/images/LogoA.svg",
+      "description": "AVENOR is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities. Founded by PRANAV GAUTAM from Bihar.",
+      "founder": {
+        "@type": "Person",
+        "name": "PRANAV GAUTAM",
+        "jobTitle": "Founder & CEO"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bihar",
+        "addressCountry": "India"
+      },
+      "foundingDate": "2026",
+      "industry": "Venture Intelligence",
+      "mission": "Less Noise. Better Decisions."
+    }
+    </script>
+</head>
+<body>
+
+ <header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/fff/000?text=A'">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/000/fff?text=A'">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch" title="Toggle dark/light mode">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+            <input type="checkbox" class="input" id="themeToggleMobile">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mentorship.html">Mentorship</a>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+<main class="pt-24">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 pointer-events-none"></div>
+        <div class="mx-auto max-w-5xl px-5 py-16 md:py-24 text-center relative">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider mb-4" style="background: var(--card-bg-hover); color: var(--accent);">Investment Opportunities</span>
+            <h1 id="heroTitle" class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4" style="color: var(--text);">Portfolio</h1>
+            <p class="text-lg md:text-xl" style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Discover high-signal startups backed by AVENOR. Each company has been vetted for momentum, team, and market fit. Founded by <strong>PRANAV GAUTAM</strong> from Bihar.</p>
+            
+            <div class="mt-10 relative max-w-xl mx-auto">
+                <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2" style="color: var(--text-muted);"></i>
+                <input type="text" id="searchInput" placeholder="Search portfolio companies..." class="w-full pl-12 pr-4 py-3.5 rounded-full border" style="background: var(--card-bg); border-color: var(--border); color: var(--text);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="mx-auto max-w-7xl px-5 pb-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="text-center p-4 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><div class="text-2xl font-bold" style="color: var(--accent);">25+</div><div class="text-xs" style="color: var(--text-muted);">Portfolio Companies</div></div>
+            <div class="text-center p-4 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><div class="text-2xl font-bold" style="color: var(--accent);">₹150Cr+</div><div class="text-xs" style="color: var(--text-muted);">Combined Funding</div></div>
+            <div class="text-center p-4 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><div class="text-2xl font-bold" style="color: var(--accent);">5+</div><div class="text-xs" style="color: var(--text-muted);">Unicorns Created</div></div>
+            <div class="text-center p-4 rounded-xl border" style="background: var(--card-bg); border-color: var(--border);"><div class="text-2xl font-bold" style="color: var(--accent);">1000+</div><div class="text-xs" style="color: var(--text-muted);">Jobs Created</div></div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="mx-auto max-w-7xl px-5 pb-8">
+        <div class="flex flex-wrap justify-center gap-2.5" id="categoryFilters"></div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="mx-auto max-w-7xl px-5 pb-20">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolioGrid"></div>
+        <div id="noResults" class="text-center py-16" style="display: none;"><p style="color: var(--text-muted);">No companies match your search.</p><button onclick="clearFilters()" class="mt-4 hover:underline" style="color: var(--accent);">Clear filters</button></div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="mx-auto max-w-4xl px-5 py-12 mb-16">
+        <div class="rounded-2xl p-8 md:p-12 text-center border" style="background: linear-gradient(135deg, var(--card-bg), transparent); border-color: var(--border);">
+            <i class="fas fa-chart-line text-4xl mb-4" style="color: var(--accent);"></i>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3" style="color: var(--text);">Want to see your startup here?</h2>
+            <p class="mb-6 max-w-lg mx-auto" style="color: var(--text-muted);">Join AVENOR's portfolio and get access to our network of investors, operators, and resources.</p>
+            <button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all" style="background: var(--btn-primary-bg); color: var(--btn-primary-text);">Apply to Raise <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+</main>
+
+<footer style="background: var(--bg-secondary); padding: 3rem 1rem 2rem; margin-top: 2rem; border-top: 1px solid var(--border);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+        <div><div style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text);">AVENOR</div><p style="font-size: 0.7rem; color: var(--text-dim);">Structured fundraising and venture intelligence.</p></div>
+        <div><h4 style="font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text);">Product</h4><a href="#" style="display: block; font-size: 0.7rem; color: var(--text-dim); text-decoration: none; margin-bottom: 0.5rem;">Startups</a><a href="#" style="display: block; font-size: 0.7rem; color: var(--text-dim); text-decoration: none; margin-bottom: 0.5rem;">Investors</a></div>
+        <div><h4 style="font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text);">Company</h4><a href="about.html" style="display: block; font-size: 0.7rem; color: var(--text-dim); text-decoration: none; margin-bottom: 0.5rem;">About</a><a href="career.html" style="display: block; font-size: 0.7rem; color: var(--text-dim); text-decoration: none; margin-bottom: 0.5rem;">Careers</a></div>
+        <div><h4 style="font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text);">Legal</h4><a href="privacy.html" style="display: block; font-size: 0.7rem; color: var(--text-dim); text-decoration: none; margin-bottom: 0.5rem;">Privacy</a><a href="terms.html" style="display: block; font-size: 0.7rem; color: var(--text-dim); text-decoration: none; margin-bottom: 0.5rem;">Terms</a></div>
+    </div>
+    <div style="text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid var(--border); font-size: 0.7rem; color: var(--text-dim);">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+    <div style="text-align: center; padding-top: 1rem; font-size: 0.7rem; color: var(--text-dim);">Built With ❤️ By gmitech.in</div>
+</footer>
+
+<!-- Modal for Company Details -->
+<div id="companyModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto" style="display: none;" onclick="closeModal(event)">
+    <div class="max-w-2xl w-full rounded-2xl border overflow-hidden" style="background: var(--bg); border-color: var(--border);" onclick="event.stopPropagation()">
+        <div class="relative p-6 md:p-8">
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center" style="background: var(--card-bg-hover); color: var(--text);">✕</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const portfolio = [
+        { id:1, name:"FinSage", category:"Fintech", stage:"Series A", founded:2022, location:"Mumbai", funding:"₹12Cr", valuation:"₹85Cr", description:"Financial literacy platform for Gen Z in Tier-2 India. 500K+ users, 30% MoM growth.", logo:"💰", investors:"Blume Ventures, Titan Capital", impact:"1.2M+ lives touched" },
+        { id:2, name:"ServeStack", category:"SaaS", stage:"Seed", founded:2023, location:"Bengaluru", funding:"₹4Cr", valuation:"₹32Cr", description:"No-code internal tools platform for Indian SMEs. 200+ paying customers.", logo:"⚙️", investors:"AVENOR, AngelList", impact:"10K+ workflows automated" },
+        { id:3, name:"PayBharat", category:"Fintech", stage:"Series B", founded:2020, location:"Delhi", funding:"₹85Cr", valuation:"₹520Cr", description:"Voice-first payments for rural India. 10M+ active users.", logo:"📱", investors:"Accel, Matrix Partners", impact:"₹500Cr+ transactions processed" },
+        { id:4, name:"EduRise", category:"EdTech", stage:"Series A", founded:2021, location:"Pune", funding:"₹18Cr", valuation:"₹110Cr", description:"Skills training for first-time job seekers. 250K+ students placed.", logo:"🎓", investors:"GSV Ventures, AVENOR", impact:"85% placement rate" },
+        { id:5, name:"Naturally", category:"D2C", stage:"Seed", founded:2022, location:"Jaipur", funding:"₹6Cr", valuation:"₹45Cr", description:"Clean-label personal care products. 100K+ monthly orders.", logo:"🌿", investors:"DSG Consumer, AVENOR", impact:"1M+ plastic bottles saved" },
+        { id:6, name:"Inspekt", category:"SaaS", stage:"Pre-seed", founded:2024, location:"Bengaluru", funding:"₹2Cr", valuation:"₹15Cr", description:"AI-powered quality inspection for manufacturing. 50+ enterprise clients.", logo:"🔍", investors:"AVENOR, GSF", impact:"99.9% defect detection accuracy" },
+        { id:7, name:"CloudScale", category:"SaaS", stage:"Series C", founded:2019, location:"Bengaluru", funding:"₹250Cr", valuation:"₹1200Cr", description:"Cloud infrastructure monitoring platform. 5,000+ enterprise customers.", logo:"☁️", investors:"Sequoia, AVENOR", impact:"Fortune 500 clients" },
+        { id:8, name:"Vellum", category:"AI", stage:"Seed", founded:2023, location:"Hyderabad", funding:"₹8Cr", valuation:"₹55Cr", description:"AI document processing for enterprises. 150+ customers.", logo:"🤖", investors:"AVENOR, Y Combinator", impact:"10M+ documents processed" },
+        { id:9, name:"HealthBuddy", category:"HealthTech", stage:"Series A", founded:2021, location:"Mumbai", funding:"₹22Cr", valuation:"₹140Cr", description:"Affordable primary care for urban poor. 300+ clinics.", logo:"🏥", investors:"Avaana Capital, AVENOR", impact:"500K+ patients served" },
+        { id:10, name:"QuickCart", category:"Logistics", stage:"Series B", founded:2020, location:"Gurgaon", funding:"₹45Cr", valuation:"₹280Cr", description:"Hyperlocal delivery for small merchants. 50K+ sellers.", logo:"🚚", investors:"Alpha Wave, AVENOR", impact:"2M+ deliveries per month" }
+    ];
+    
+    const categories = ["All", ...new Set(portfolio.map(p => p.category))];
+    let currentCategory = "All";
+    let searchQuery = "";
+    
+    function renderFilters() {
+        const container = document.getElementById("categoryFilters");
+        if (!container) return;
+        container.innerHTML = categories.map(cat => `<button class="category-btn px-4 py-1.5 rounded-full text-sm font-medium transition-all" style="background: ${currentCategory === cat ? 'var(--accent)' : 'transparent'}; color: ${currentCategory === cat ? '#fff' : 'var(--text)'}; border: 1px solid var(--border);">${cat}</button>`).join("");
+        document.querySelectorAll(".category-btn").forEach(btn => {
+            btn.addEventListener("click", () => { currentCategory = btn.textContent; renderFilters(); renderPortfolio(); });
+        });
+    }
+    
+    function renderPortfolio() {
+        const filtered = portfolio.filter(p => (currentCategory === "All" || p.category === currentCategory) && p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+        const container = document.getElementById("portfolioGrid");
+        const noResults = document.getElementById("noResults");
+        if (!container) return;
+        if(filtered.length === 0) { container.innerHTML = ""; if(noResults) noResults.style.display = "block"; return; }
+        if(noResults) noResults.style.display = "none";
+        container.innerHTML = filtered.map(p => `<div class="portfolio-card rounded-xl border p-6" style="background: var(--card-bg); border-color: var(--border);" onclick="openCompany(${p.id})">
+            <div class="flex items-start justify-between"><div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background: var(--card-bg-hover);">${p.logo}</div><span class="text-xs px-2 py-1 rounded-full" style="background: var(--card-bg-hover); color: var(--accent);">${p.category}</span></div>
+            <h3 class="text-xl font-bold mt-4" style="color: var(--text);">${p.name}</h3>
+            <p class="text-sm mt-2" style="color: var(--text-muted);">${p.description}</p>
+            <div class="mt-4 flex flex-wrap gap-3 text-xs" style="color: var(--text-muted);"><span><i class="fas fa-map-marker-alt"></i> ${p.location}</span><span><i class="fas fa-chart-line"></i> ${p.stage}</span><span><i class="fas fa-rupee-sign"></i> ${p.funding}</span></div>
+            <div class="mt-4 pt-3 border-t" style="border-color: var(--border);"><button class="text-sm font-medium inline-flex items-center gap-1" style="color: var(--accent);">View Details <i class="fas fa-arrow-right"></i></button></div>
+        </div>`).join("");
+    }
+    
+    function openCompany(id) {
+        const p = portfolio.find(x => x.id === id);
+        if(!p) return;
+        const modal = document.getElementById("companyModal");
+        const modalContent = document.getElementById("modalContent");
+        if(!modal || !modalContent) return;
+        modalContent.innerHTML = `<div class="flex items-center gap-3 mb-4"><div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl" style="background: var(--card-bg-hover);">${p.logo}</div><div><span class="text-xs px-2 py-1 rounded-full" style="background: var(--card-bg-hover); color: var(--accent);">${p.category}</span><h2 class="text-2xl font-bold mt-1" style="color: var(--text);">${p.name}</h2></div></div>
+        <div class="grid grid-cols-2 gap-4 p-4 rounded-lg mb-6" style="background: var(--card-bg);"><div><div class="text-xs" style="color: var(--text-muted);">Stage</div><div class="font-semibold" style="color: var(--text);">${p.stage}</div></div><div><div class="text-xs" style="color: var(--text-muted);">Founded</div><div class="font-semibold" style="color: var(--text);">${p.founded}</div></div><div><div class="text-xs" style="color: var(--text-muted);">Location</div><div class="font-semibold" style="color: var(--text);">${p.location}</div></div><div><div class="text-xs" style="color: var(--text-muted);">Funding</div><div class="font-semibold" style="color: var(--text);">${p.funding}</div></div><div><div class="text-xs" style="color: var(--text-muted);">Valuation</div><div class="font-semibold" style="color: var(--text);">${p.valuation}</div></div><div><div class="text-xs" style="color: var(--text-muted);">Investors</div><div class="font-semibold" style="color: var(--text);">${p.investors}</div></div></div>
+        <p class="mb-4 leading-relaxed" style="color: var(--text-muted);">${p.description}</p>
+        <div class="p-4 rounded-lg mb-4" style="background: linear-gradient(135deg, var(--card-bg), transparent); border-left: 3px solid var(--accent);"><div class="text-sm font-semibold mb-1" style="color: var(--accent);">Impact</div><div class="text-sm" style="color: var(--text);">${p.impact}</div></div>
+        <button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="w-full py-3 rounded-lg font-semibold transition-all" style="background: var(--btn-primary-bg); color: var(--btn-primary-text);">Express Interest <i class="fas fa-arrow-right"></i></button>`;
+        modal.style.display = "flex";
+    }
+    
+    function closeModal(e) { if(!e || e.target === document.getElementById("companyModal")) document.getElementById("companyModal").style.display = "none"; }
+    function clearFilters() { currentCategory = "All"; searchQuery = ""; document.getElementById("searchInput").value = ""; renderFilters(); renderPortfolio(); }
+    
+    document.getElementById("searchInput").addEventListener("input", (e) => { searchQuery = e.target.value; renderPortfolio(); });
+    
+    renderFilters();
+    renderPortfolio();
+    
+    // Theme and mobile menu
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeToggleMobile = document.getElementById('themeToggleMobile');
+    function setTheme(isLight) { html.setAttribute('data-theme', isLight ? 'light' : 'dark'); if(themeToggle) themeToggle.checked = isLight; if(themeToggleMobile) themeToggleMobile.checked = isLight; localStorage.setItem('avenor-theme', isLight ? 'light' : 'dark'); }
+    const savedTheme = localStorage.getItem('avenor-theme'); setTheme(savedTheme === 'light');
+    if(themeToggle) themeToggle.addEventListener('change', () => setTheme(themeToggle.checked));
+    if(themeToggleMobile) themeToggleMobile.addEventListener('change', () => setTheme(themeToggleMobile.checked));
+    
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if(hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('active');
+            hamburgerBtn.classList.toggle('active');
+        });
+    }
+    const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+    const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+    if(mobileDropdownBtn) {
+        mobileDropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if(mobileDropdownContent) {
+                mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    }
+    document.querySelectorAll('.mobile-menu a, .mobile-menu .mobile-dropdown-content a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            if(hamburgerBtn) hamburgerBtn.classList.remove('active');
+        });
+    });
+    
+    // SplitText animation
+    if(typeof gsap !== 'undefined') {
+        const heroTitle = document.getElementById('heroTitle');
+        if(heroTitle) {
+            const text = heroTitle.textContent;
+            const chars = text.split('');
+            heroTitle.innerHTML = chars.map(ch => ch === ' ' ? '<span style="display:inline-block;width:0.3em;"> </span>' : `<span class="split-char" style="display:inline-block;">${ch}</span>`).join('');
+            gsap.fromTo(heroTitle.querySelectorAll('.split-char'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: 'power4.out', stagger: 0.03 });
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+Here is your **completely updated `terms.html`** with domain changed to `avenor.sbs`, founder name updated to **PRANAV GAUTAM**, all SEO tags added, schema markup, and proper styling - keeping your original layout intact.
+
+```html
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Terms & Conditions | AVENOR – Legal Agreement</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://avenor.sbs/terms.html" />
+     <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Read AVENOR's Terms and Conditions governing the use of our platform and services. Founded by PRANAV GAUTAM from Bihar. Last updated January 1, 2026.">
+    <meta name="keywords" content="AVENOR, PRANAV GAUTAM, terms and conditions, legal, terms of service, user agreement, platform terms">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR Terms & Conditions – Legal Agreement">
+    <meta property="og:description" content="Read AVENOR's Terms and Conditions governing the use of our platform and services.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs/terms.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR Terms & Conditions">
+    <meta name="twitter:description" content="Read AVENOR's Terms and Conditions governing the use of our platform and services.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <!-- Team Member SEO Meta -->
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="team:member" content="AKSHAY SINGH - Team Member">
+    <meta name="team:member" content="AMIT NAYAN - Team Member">
+    <meta name="built-by" content="gmitech.in">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg: #0a0a0a; --bg2: #050505; --bg3: #111; --text: #ffffff;
+            --muted: #aaaaaa; --dim: #666666; --border: rgba(255,255,255,0.08);
+            --card: rgba(255,255,255,0.03); --card-h: rgba(255,255,255,0.06);
+            --header: rgba(10,10,10,0.95); --accent: #7B7481;
+            --btn-bg: #ffffff; --btn-text: #000000;
+        }
+        [data-theme="light"] {
+            --bg: #f5f5f0; --bg2: #ebebeb; --bg3: #e0e0e0; --text: #0a0a0a;
+            --muted: #555555; --dim: #888888; --border: rgba(0,0,0,0.08);
+            --card: rgba(0,0,0,0.03); --card-h: rgba(0,0,0,0.06);
+            --header: rgba(245,245,240,0.95); --accent: #6a5f70;
+            --btn-bg: #0a0a0a; --btn-text: #ffffff;
+        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .4s,color .4s;}
+        ::-webkit-scrollbar{width:6px;} ::-webkit-scrollbar-track{background:var(--bg2);} ::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px;}
+        a{text-decoration:none;color:inherit;}
+        
+        /* Header */
+        .main-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 2rem;background:var(--header);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:background .4s,border-color .4s;}
+        .header-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+        .logo-center a{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.3rem;color:var(--text);}
+        .logo-center img{height:32px;}
+        .logo-dark{display:block;}.logo-light{display:none;}
+        [data-theme="light"] .logo-dark{display:none;}[data-theme="light"] .logo-light{display:block;}
+        .nav-left{display:flex;gap:2rem;align-items:center;}
+        .nav-left a,.dropdown-btn{color:var(--text);font-size:.9rem;font-weight:500;background:none;border:none;cursor:pointer;font-family:inherit;transition:opacity .3s;}
+        .nav-left a:hover,.dropdown-btn:hover{opacity:.6;}
+        .dropdown{position:relative;display:inline-block;}
+        .dropdown-content{display:none;position:absolute;top:100%;left:0;background:var(--bg3);min-width:200px;border-radius:12px;padding:.5rem 0;margin-top:.5rem;border:1px solid var(--border);z-index:200;}
+        .dropdown-content a{display:block;padding:.7rem 1.2rem;font-size:.85rem;color:var(--text);transition:background .2s;}
+        .dropdown-content a:hover{background:var(--card-h);}
+        .dropdown:hover .dropdown-content{display:block;}
+        .nav-right{display:flex;align-items:center;gap:1rem;}
+        .portfolio-btn{background:var(--btn-bg);color:var(--btn-text);padding:.5rem 1.3rem;border-radius:100px;font-weight:600;font-size:.9rem;transition:all .3s;white-space:nowrap;}
+        .portfolio-btn:hover{opacity:.85;transform:scale(1.02);}
+        
+        /* Theme Toggle */
+        .switch{font-size:17px;position:relative;display:inline-block;width:64px;height:34px;flex-shrink:0;}
+        .switch input{opacity:0;width:0;height:0;}
+        .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#73C0FC;transition:.4s;border-radius:30px;}
+        .slider:before{position:absolute;content:"";height:30px;width:30px;border-radius:20px;left:2px;bottom:2px;z-index:2;background:#e8e8e8;transition:.4s;}
+        .sun svg{position:absolute;top:6px;left:36px;z-index:1;width:24px;height:24px;animation:rotate 15s linear infinite;}
+        .moon svg{fill:#73C0FC;position:absolute;top:5px;left:5px;z-index:1;width:24px;height:24px;animation:tilt 5s linear infinite;}
+        @keyframes rotate{to{transform:rotate(360deg);}}
+        @keyframes tilt{0%,100%{transform:rotate(0);}25%{transform:rotate(-10deg);}75%{transform:rotate(10deg);}}
+        .input:checked+.slider{background:#183153;}
+        .input:checked+.slider:before{transform:translateX(30px);}
+        
+        /* Mobile Menu */
+        .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;z-index:1001;}
+        .hamburger span{display:block;width:25px;height:2px;background:var(--text);margin:5px 0;transition:all .3s;}
+        .hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+        .hamburger.active span:nth-child(2){opacity:0;}
+        .hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+        .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--bg);z-index:999;padding:80px 2rem 2rem;flex-direction:column;gap:1.5rem;overflow-y:auto;transition:background .4s;}
+        .mobile-menu.active{display:flex;}
+        .mobile-menu a,.mobile-dropdown-btn{color:var(--text);font-size:1.2rem;font-weight:500;padding:.5rem 0;border-bottom:1px solid var(--border);background:none;text-align:left;width:100%;cursor:pointer;}
+        .mobile-dropdown-content{display:none;padding-left:1rem;margin-top:.5rem;}
+        .mobile-dropdown-content a{font-size:1rem;border-bottom:none;}
+        .mobile-theme-row{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--border);}
+        .mobile-theme-label{font-size:1.2rem;font-weight:500;color:var(--text);}
+
+        /* Terms Page Specific */
+        .page-hero{padding:9rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
+        .page-hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(123,116,129,.12),transparent);pointer-events:none;}
+        .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border);padding:.3rem 1rem;border-radius:100px;font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;}
+        .page-hero h1{font-size:3rem;font-weight:900;letter-spacing:-.03em;margin-bottom:1rem;color:var(--text);}
+        .page-hero p{font-size:1rem;color:var(--muted);max-width:650px;margin:0 auto;line-height:1.6;}
+        
+        /* Terms Content */
+        .terms-container{max-width:1000px;margin:0 auto 5rem;padding:0 1.5rem;}
+        .terms-card{background:var(--card);border:1px solid var(--border);border-radius:28px;overflow:hidden;}
+        .terms-header{padding:2rem 2rem 0.5rem 2rem;border-bottom:1px solid var(--border);}
+        .terms-header h2{font-size:1.5rem;font-weight:800;margin-bottom:.5rem;color:var(--text);}
+        .terms-header p{font-size:.85rem;color:var(--muted);}
+        .terms-list{padding:1rem 2rem 2rem 2rem;}
+        .term-item{border-bottom:1px solid var(--border);padding:1.25rem 0;transition:all .2s;}
+        .term-item:last-child{border-bottom:none;}
+        .term-number{display:inline-block;font-size:.75rem;font-weight:800;color:var(--accent);letter-spacing:.05em;margin-bottom:.5rem;}
+        .term-title{font-size:1.05rem;font-weight:700;margin-bottom:.5rem;color:var(--text);}
+        .term-text{font-size:.85rem;color:var(--muted);line-height:1.6;}
+        .term-text a{color:var(--accent);text-decoration:underline;}
+        .term-text a:hover{opacity:.7;}
+        
+        /* Contact Box */
+        .contact-box{background:linear-gradient(135deg,var(--card),transparent);border:1px solid var(--border);border-radius:20px;padding:2rem;margin-top:2rem;text-align:center;}
+        .contact-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.5rem;color:var(--text);}
+        .contact-box p{font-size:.85rem;color:var(--muted);margin-bottom:1rem;}
+        .contact-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+        .contact-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--btn-bg);color:var(--btn-text);padding:.7rem 1.5rem;border-radius:100px;font-weight:600;font-size:.85rem;transition:all .3s;border:none;cursor:pointer;font-family:inherit;}
+        .contact-btn:hover{transform:translateY(-2px);opacity:.9;}
+        .contact-wa{background:#25D366;color:#fff;}
+        
+        /* Footer */
+        .footer{background:var(--bg2);padding:3rem 1rem 2rem;border-top:1px solid var(--border);margin-top:2rem;}
+        .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem;max-width:1200px;margin:0 auto;}
+        .footer-logo{font-size:1.2rem;font-weight:800;margin-bottom:.5rem;color:var(--text);}
+        .footer-grid p{font-size:.7rem;color:var(--dim);}
+        .footer-grid h4{font-size:.8rem;font-weight:700;margin-bottom:1rem;color:var(--text);}
+        .footer-grid a{display:block;font-size:.7rem;color:var(--dim);margin-bottom:.5rem;transition:color .3s;}
+        .footer-grid a:hover{color:var(--text);}
+        .footer-bottom{text-align:center;padding-top:2rem;margin-top:2rem;border-top:1px solid var(--border);font-size:.7rem;color:var(--dim);}
+        
+        .update-note{background:rgba(123,116,129,.08);border-left:3px solid var(--accent);padding:1rem;border-radius:8px;margin-bottom:1.5rem;font-size:.8rem;color:var(--muted);}
+
+        @media(max-width:768px){
+            .nav-left,.nav-right{display:none;}
+            .hamburger{display:block;}
+            .page-hero h1{font-size:2rem;}
+            .terms-header{padding:1.5rem;}
+            .terms-list{padding:1rem 1.5rem 1.5rem;}
+            .contact-buttons{flex-direction:column;align-items:center;}
+        }
+        @media(max-width:480px){
+            .page-hero{padding:7rem 1rem 3rem;}
+            .term-title{font-size:.95rem;}
+        }
+        .dropdown:hover .dropdown-content{display:block;opacity:1;visibility:visible;}
+        .dropdown-content{display:none;position:absolute;top:100%;left:0;margin-top:0;padding-top:5px;z-index:1000;}
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AVENOR",
+      "url": "https://avenor.sbs",
+      "logo": "https://avenor.sbs/images/LogoA.svg",
+      "description": "AVENOR is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities. Founded by PRANAV GAUTAM from Bihar.",
+      "founder": {
+        "@type": "Person",
+        "name": "PRANAV GAUTAM",
+        "jobTitle": "Founder & CEO"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bihar",
+        "addressCountry": "India"
+      },
+      "foundingDate": "2026",
+      "industry": "Venture Intelligence",
+      "mission": "Less Noise. Better Decisions."
+    }
+    </script>
+</head>
+<body>
+
+ <header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/fff/000?text=A'">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/000/fff?text=A'">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch" title="Toggle dark/light mode">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+            <input type="checkbox" class="input" id="themeToggleMobile">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mentorship.html">Mentorship</a>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+
+<!-- HERO SECTION -->
+<section class="page-hero">
+    <div class="hero-badge"><i class="fas fa-gavel" style="color:var(--accent);"></i> Legal</div>
+    <h1>Terms & Conditions</h1>
+    <p>By accessing or using AVENOR's platform, products, or services, you agree to be legally bound by these terms. Founded by <strong>PRANAV GAUTAM</strong> from Bihar.</p>
+</section>
+
+<!-- TERMS CONTENT -->
+<div class="terms-container">
+    <div class="terms-card">
+        <div class="terms-header">
+            <h2>AVENOR Terms and Conditions</h2>
+            <p><strong>Effective Date:</strong> January 1, 2026</p>
+        </div>
+        <div class="terms-list">
+            <div class="update-note">
+                <i class="fas fa-info-circle" style="margin-right:.5rem;"></i> These terms were last updated on January 1, 2026. By continuing to use AVENOR, you acknowledge and agree to the latest version.
+            </div>
+            
+            <div class="term-item"><div class="term-number">SECTION 1</div><div class="term-title">Acceptance of Terms</div><div class="term-text">By using AVENOR, you agree to comply with these Terms and all applicable laws and regulations of India. If you do not agree with any part of these terms, you must not use our platform or services.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 2</div><div class="term-title">Eligibility</div><div class="term-text">Users must be at least 18 years old and legally capable of entering into contracts. By using AVENOR, you represent and warrant that you meet these eligibility requirements.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 3</div><div class="term-title">Account Registration</div><div class="term-text">Users must provide accurate, complete, and updated information during registration. You are responsible for maintaining the accuracy of your account information and updating it as necessary.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 4</div><div class="term-title">Account Security</div><div class="term-text">Users are responsible for maintaining the confidentiality of their login credentials. You agree to notify us immediately of any unauthorized access to or use of your account. AVENOR is not liable for any loss or damage arising from your failure to protect your account.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 5</div><div class="term-title">Startup Applications</div><div class="term-text">Startups must provide truthful and accurate business information. Any misrepresentation of traction, metrics, team composition, or market position may result in immediate rejection or termination. AVENOR reserves the right to verify all submitted information.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 6</div><div class="term-title">Investor Applications</div><div class="term-text">Investors must provide accurate investment-related information and credentials. Misrepresentation of investment capacity, fund size, or track record may result in immediate termination. AVENOR is not responsible for any investment decisions made based on platform information.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 7</div><div class="term-title">AI-Generated Insights</div><div class="term-text">AI-generated reports, analyses, and insights are informational only and do not constitute investment, legal, or financial advice. Users should conduct their own due diligence before making any investment or business decisions. AVENOR does not guarantee the accuracy or completeness of AI-generated content.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 8</div><div class="term-title">No Investment Advice</div><div class="term-text">AVENOR is not a SEBI-registered investment advisor, merchant banker, or broker. Nothing on the platform constitutes an offer to sell or a solicitation of an offer to buy any security. All investment decisions are solely the responsibility of the user.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 9</div><div class="term-title">User Conduct</div><div class="term-text">Users shall not engage in fraudulent, misleading, unlawful, abusive, or harmful activities on the platform. This includes, but is not limited to, impersonation, harassment, spamming, or any activity that disrupts the experience of other users.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 10</div><div class="term-title">Prohibited Activities</div><div class="term-text">Users shall not attempt unauthorized access, data scraping, hacking, reverse engineering, or disruption of services. Automated access to the platform (bots, crawlers, scrapers) without explicit written permission is strictly prohibited.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 11</div><div class="term-title">Intellectual Property Rights</div><div class="term-text">All trademarks, content, software, logos, designs, and platform materials belong to AVENOR or its licensors. Users may not copy, modify, distribute, or create derivative works without explicit written permission. The "AVENOR" name and logo are registered trademarks.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 12</div><div class="term-title">User Content</div><div class="term-text">Users retain ownership of submitted content but grant AVENOR a non-exclusive, worldwide, royalty-free license to use, store, and display it for platform operations. This license continues even after account termination for archival and legal compliance purposes.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 13</div><div class="term-title">Data Verification</div><div class="term-text">AVENOR may verify information submitted by users but is not obligated to do so. We reserve the right to request additional documentation or evidence to validate any claim made on the platform.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 14</div><div class="term-title">Platform Availability</div><div class="term-text">We do not guarantee uninterrupted or error-free access to the platform. Maintenance, upgrades, technical issues, or events beyond our control may cause temporary downtime. We will make reasonable efforts to notify users of scheduled maintenance.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 15</div><div class="term-title">Third-Party Services</div><div class="term-text">The platform may contain links or integrations with third-party services. AVENOR is not responsible for the content, privacy practices, or terms of these third parties. Your use of third-party services is at your own risk.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 16</div><div class="term-title">Limitation of Liability</div><div class="term-text">To the maximum extent permitted by law, AVENOR shall not be liable for investment losses, business decisions, indirect damages, consequential damages, lost profits, or any other damages arising from platform use. Our total liability shall not exceed the amount paid by you to use the platform in the preceding 12 months.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 17</div><div class="term-title">Indemnification</div><div class="term-text">Users agree to indemnify and hold harmless AVENOR, its founders, employees, and partners against any claims, damages, losses, or expenses arising from misuse of the platform, violation of these terms, or infringement of any third-party rights.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 18</div><div class="term-title">Suspension and Termination</div><div class="term-text">AVENOR reserves the right to suspend or terminate accounts violating these terms at any time, without prior notice. Upon termination, your access to the platform will be revoked, and we may delete your data in accordance with our privacy policy.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 19</div><div class="term-title">Confidentiality</div><div class="term-text">Users must not disclose confidential information obtained through the platform, including but not limited to proprietary startup metrics, investor strategies, or unreleased platform features. Breach of confidentiality may result in immediate termination and legal action.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 20</div><div class="term-title">Anti-Fraud Policy</div><div class="term-text">Any attempt to manipulate startup metrics, investor credentials, platform data, or artificially inflate engagement may result in immediate termination without refund and potential reporting to relevant authorities. We actively monitor for fraudulent patterns.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 21</div><div class="term-title">Compliance with Laws</div><div class="term-text">Users must comply with all applicable Indian laws and regulations, including but not limited to data protection laws, securities laws, and anti-money laundering regulations. International users are responsible for compliance with their local laws.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 22</div><div class="term-title">Electronic Communications</div><div class="term-text">Users consent to receiving communications electronically from AVENOR, including but not limited to emails, in-app notifications, and SMS. These communications may include transactional messages, updates, and promotional content (with opt-out options).</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 23</div><div class="term-title">Modification of Services</div><div class="term-text">AVENOR may modify, suspend, or discontinue services without prior notice. We will make reasonable efforts to communicate significant changes to affected users, but we are not liable for any loss resulting from service modifications.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 24</div><div class="term-title">Force Majeure</div><div class="term-text">AVENOR shall not be liable for delays or failures caused by events beyond reasonable control, including but not limited to natural disasters, war, terrorism, cyberattacks, labor strikes, government actions, or internet outages.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 25</div><div class="term-title">Governing Law</div><div class="term-text">These Terms shall be governed by the laws of India, without regard to conflict of law principles. Any provisions inconsistent with Indian law shall be interpreted to the maximum extent permissible.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 26</div><div class="term-title">Jurisdiction</div><div class="term-text">Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of courts in Patna, Bihar, India. Users waive any objections based on inconvenient forum or lack of personal jurisdiction.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 27</div><div class="term-title">Dispute Resolution</div><div class="term-text">Parties shall attempt amicable resolution through written communication before initiating legal proceedings. If resolution cannot be reached within thirty (30) days, either party may pursue legal remedies as permitted by law.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 28</div><div class="term-title">Severability</div><div class="term-text">If any provision of these Terms is found invalid, illegal, or unenforceable by a court of competent jurisdiction, the remaining provisions shall continue in full force and effect. The invalid provision shall be reformed to the minimum extent necessary to make it enforceable.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 29</div><div class="term-title">Entire Agreement</div><div class="term-text">These Terms, together with the <a href="privacy.html">Privacy Policy</a> and any other legal notices published on the platform, constitute the complete and exclusive agreement between users and AVENOR. Any prior agreements, communications, or representations are superseded.</div></div>
+            
+            <div class="term-item"><div class="term-number">SECTION 30</div><div class="term-title">Contact Information</div><div class="term-text">For legal inquiries, questions about these Terms, or to report violations, please contact us at:</div></div>
+        </div>
+        
+        <!-- Contact Box -->
+        <div class="contact-box">
+            <h3>Have questions about these terms?</h3>
+            <p>Our team is here to help clarify any legal questions you may have about using the AVENOR platform.</p>
+            <div class="contact-buttons">
+                <a href="mailto:support@avenor.sbs" class="contact-btn"><i class="fas fa-envelope"></i> support@avenor.sbs</a>
+                <button onclick="window.open('https://wa.me/9192622444607?text=Hi%20AVENOR%20team,%20I%20have%20a%20question%20about%20the%20Terms%20&%20Conditions.%20Could%20you%20please%20help%20me%3F', '_blank')" class="contact-btn contact-wa"><i class="fab fa-whatsapp"></i> WhatsApp Support</button>
+            </div>
+            <p style="font-size:.7rem; color:var(--dim); margin-top:1rem;">📍 Registered Office: Patna, Bihar, India | AVENOR Technology Private Limited</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div><div class="footer-logo">AVENOR</div><p>Structured fundraising and venture intelligence. Less noise. Better decisions.</p></div>
+        <div><h4>Product</h4><a>Startups</a><a>Investors</a><a>Intelligence</a><a>Pricing</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><a href="career.html">Careers</a><a href="press.html">Press</a><a href="contact.html">Contact</a></div>
+        <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a><a>Trust</a></div>
+        <div><h4>Social</h4><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a><a href="#"><i class="fab fa-youtube"></i> YouTube</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+    <div class="footer-bottom">Built With ❤️ By gmitech.in</div>
+</footer>
+
+<script>
+    // Theme Toggle
+    const html = document.documentElement;
+    const t1 = document.getElementById('themeToggle');
+    const t2 = document.getElementById('themeToggleMobile');
+    function setTheme(light) { html.setAttribute('data-theme', light ? 'light' : 'dark'); if(t1) t1.checked = light; if(t2) t2.checked = light; localStorage.setItem('avenor-theme', light ? 'light' : 'dark'); }
+    if(localStorage.getItem('avenor-theme') === 'light') setTheme(true);
+    if(t1) t1.addEventListener('change', () => setTheme(t1.checked));
+    if(t2) t2.addEventListener('change', () => setTheme(t2.checked));
+
+    // Mobile Menu
+    const hbtn = document.getElementById('hamburgerBtn');
+    const mmenu = document.getElementById('mobileMenu');
+    if(hbtn) {
+        hbtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mmenu.classList.toggle('active');
+            hbtn.classList.toggle('active');
+        });
+    }
+    const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+    const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+    if(mobileDropdownBtn) {
+        mobileDropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if(mobileDropdownContent) {
+                mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    }
+    document.querySelectorAll('.mobile-menu a, .mobile-menu button').forEach(l => l.addEventListener('click', () => { mmenu.classList.remove('active'); if(hbtn) hbtn.classList.remove('active'); }));
+</script>
+</body>
+</html>

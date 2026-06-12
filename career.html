@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Careers | AVENOR – Join the Venture Intelligence Team</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://avenor.sbs/career.html" />
+     <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Join AVENOR, founded by PRANAV GAUTAM from Bihar. Build the future of venture intelligence. Remote-first, equity, learning budget. Check back for opportunities.">
+    <meta name="keywords" content="AVENOR careers, PRANAV GAUTAM, venture intelligence jobs, startup jobs, remote jobs, Bihar startup, AVENOR hiring">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR Careers – Join the Team">
+    <meta property="og:description" content="Join AVENOR, the venture intelligence platform founded by PRANAV GAUTAM from Bihar. Remote-first, equity, learning budget.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs/career.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR Careers – Join the Team">
+    <meta name="twitter:description" content="Join AVENOR. Remote-first, equity, learning budget. Built from Bihar for the world.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <!-- Team Member SEO Meta -->
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="team:member" content="AKSHAY SINGH - Team Member">
+    <meta name="team:member" content="AMIT NAYAN - Team Member">
+    <meta name="built-by" content="gmitech.in">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg: #0a0a0a; --bg2: #050505; --bg3: #111; --text: #ffffff;
+            --muted: #aaaaaa; --dim: #666666; --border: rgba(255,255,255,0.08);
+            --card: rgba(255,255,255,0.03); --card-h: rgba(255,255,255,0.06);
+            --header-bg: rgba(10,10,10,0.95); --accent: #7B7481;
+            --btn-bg: #ffffff; --btn-text: #000000;
+        }
+        [data-theme="light"] {
+            --bg: #f5f5f0; --bg2: #ebebeb; --bg3: #e0e0e0; --text: #0a0a0a;
+            --muted: #555555; --dim: #888888; --border: rgba(0,0,0,0.08);
+            --card: rgba(0,0,0,0.03); --card-h: rgba(0,0,0,0.06);
+            --header-bg: rgba(245,245,240,0.95); --accent: #6a5f70;
+            --btn-bg: #0a0a0a; --btn-text: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; transition: background .4s, color .4s; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg2); }
+        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* HEADER */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            background: var(--header-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            transition: background .4s, border-color .4s;
+        }
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .logo-center a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--text);
+        }
+        .logo-center img { height: 32px; width: auto; }
+        .logo-dark { display: block; }
+        .logo-light { display: none; }
+        [data-theme="light"] .logo-dark { display: none; }
+        [data-theme="light"] .logo-light { display: block; }
+        .nav-left { display: flex; gap: 2rem; align-items: center; }
+        .nav-left a, .dropdown-btn {
+            color: var(--text);
+            font-size: .9rem;
+            font-weight: 500;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            transition: opacity .3s;
+        }
+        .nav-left a:hover, .dropdown-btn:hover { opacity: .6; }
+        .dropdown { position: relative; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--bg3);
+            min-width: 200px;
+            border-radius: 12px;
+            padding: .5rem 0;
+            margin-top: .5rem;
+            border: 1px solid var(--border);
+            z-index: 200;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: .7rem 1.2rem;
+            font-size: .85rem;
+            color: var(--text);
+            transition: background .2s;
+        }
+        .dropdown-content a:hover { background: var(--card-h); }
+        .dropdown:hover .dropdown-content { display: block; }
+        .nav-right { display: flex; align-items: center; gap: 1rem; }
+        .lets-talk-btn {
+            background: var(--btn-bg);
+            color: var(--btn-text);
+            padding: .5rem 1.3rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: .9rem;
+            transition: all .3s;
+            white-space: nowrap;
+        }
+        .lets-talk-btn:hover { opacity: .85; transform: scale(1.02); }
+        
+        /* THEME TOGGLE */
+        .switch {
+            font-size: 17px;
+            position: relative;
+            display: inline-block;
+            width: 64px;
+            height: 34px;
+            flex-shrink: 0;
+        }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #73C0FC;
+            transition: .4s;
+            border-radius: 30px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            left: 2px;
+            bottom: 2px;
+            z-index: 2;
+            background: #e8e8e8;
+            transition: .4s;
+        }
+        .sun svg {
+            position: absolute;
+            top: 6px;
+            left: 36px;
+            z-index: 1;
+            width: 24px;
+            height: 24px;
+            animation: rotate 15s linear infinite;
+        }
+        .moon svg {
+            fill: #73C0FC;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 1;
+            width: 24px;
+            height: 24px;
+            animation: tilt 5s linear infinite;
+        }
+        @keyframes rotate { to { transform: rotate(360deg); } }
+        @keyframes tilt {
+            0%,100% { transform: rotate(0); }
+            25% { transform: rotate(-10deg); }
+            75% { transform: rotate(10deg); }
+        }
+        .input:checked + .slider { background: #183153; }
+        .input:checked + .slider:before { transform: translateX(30px); }
+        
+        /* MOBILE MENU */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            z-index: 1001;
+        }
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: var(--text);
+            margin: 5px 0;
+            transition: all .3s;
+        }
+        .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+        
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg);
+            z-index: 999;
+            padding: 80px 2rem 2rem;
+            flex-direction: column;
+            gap: 1.5rem;
+            overflow-y: auto;
+            transition: background .4s;
+        }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a, .mobile-dropdown-btn {
+            color: var(--text);
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: .5rem 0;
+            border-bottom: 1px solid var(--border);
+            background: none;
+            text-align: left;
+            width: 100%;
+            cursor: pointer;
+        }
+        .mobile-dropdown-content {
+            display: none;
+            padding-left: 1rem;
+            margin-top: .5rem;
+        }
+        .mobile-dropdown-content a { font-size: 1rem; border-bottom: none; }
+        .mobile-theme-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .mobile-theme-label { font-size: 1.2rem; font-weight: 500; color: var(--text); }
+        
+        /* HERO SECTION */
+        .page-hero {
+            padding: 10rem 2rem 5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(123,116,129,.12), transparent);
+            pointer-events: none;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: .3rem 1rem;
+            border-radius: 100px;
+            font-size: .8rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -.03em;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        .page-hero p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        /* STATS ROW */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border-radius: 24px;
+            overflow: hidden;
+            max-width: 1000px;
+            margin: 2rem auto 0;
+            border: 1px solid var(--border);
+        }
+        .stat-block {
+            background: var(--card);
+            padding: 1.8rem;
+            text-align: center;
+        }
+        .stat-num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text);
+        }
+        .stat-lbl {
+            font-size: .75rem;
+            color: var(--muted);
+            margin-top: .3rem;
+        }
+        
+        /* NO VACANCIES SECTION */
+        .no-vacancies {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+        .empty-state {
+            background: var(--card);
+            border: 2px dashed var(--border);
+            border-radius: 32px;
+            padding: 4rem 2rem;
+            transition: all .3s;
+        }
+        .empty-icon {
+            font-size: 5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            opacity: 0.7;
+        }
+        .empty-state h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        .empty-state p {
+            font-size: 1rem;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+            background: var(--btn-bg);
+            color: var(--btn-text);
+            padding: .9rem 2rem;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: .95rem;
+            transition: all .3s;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .contact-btn:hover { transform: translateY(-2px); opacity: .9; }
+        
+        /* VALUES SECTION */
+        .values-section {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+        .section-label {
+            font-size: .75rem;
+            font-weight: 700;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: .8rem;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -.02em;
+            margin-bottom: 1rem;
+            color: var(--text);
+            text-align: center;
+        }
+        .section-desc {
+            font-size: 1rem;
+            color: var(--muted);
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.6;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+        }
+        .value-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1.8rem;
+            text-align: center;
+            transition: all .3s;
+        }
+        .value-card:hover {
+            background: var(--card-h);
+            transform: translateY(-4px);
+        }
+        .value-icon {
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .value-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            color: var(--text);
+        }
+        .value-card p {
+            font-size: .8rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+        
+        /* PERKS SECTION */
+        .perks-section {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+        .perks-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+        }
+        .perk-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .perk-icon {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: .8rem;
+        }
+        .perk-card h3 {
+            font-size: .9rem;
+            font-weight: 700;
+            margin-bottom: .3rem;
+            color: var(--text);
+        }
+        .perk-card p {
+            font-size: .7rem;
+            color: var(--muted);
+        }
+        
+        /* CTA SECTION */
+        .cta-section {
+            max-width: 800px;
+            margin: 4rem auto 5rem;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, var(--card), transparent);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 3rem;
+            text-align: center;
+        }
+        .cta-box h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: .8rem;
+            color: var(--text);
+        }
+        .cta-box p {
+            font-size: .9rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .7rem;
+            background: var(--btn-bg);
+            color: var(--btn-text);
+            padding: .8rem 1.8rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: .9rem;
+            transition: all .3s;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .cta-btn:hover { transform: translateY(-2px); opacity: .9; }
+        
+        /* FOOTER */
+        .footer {
+            background: var(--bg2);
+            padding: 3rem 1rem 2rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: .5rem;
+            color: var(--text);
+        }
+        .footer-grid p { font-size: .7rem; color: var(--dim); }
+        .footer-grid h4 {
+            font-size: .8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        .footer-grid a {
+            display: block;
+            font-size: .7rem;
+            color: var(--dim);
+            margin-bottom: .5rem;
+            transition: color .3s;
+        }
+        .footer-grid a:hover { color: var(--text); }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: .7rem;
+            color: var(--dim);
+        }
+        
+        /* CHATBOT STYLES */
+        .chatbot-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 9998;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chatbot-btn:hover { transform: scale(1.05); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25); }
+        .chatbot-btn img { width: 32px; height: 32px; border-radius: 50%; object-fit: contain; }
+        
+        .chatbot-popup {
+            position: fixed;
+            bottom: 95px;
+            right: 24px;
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            z-index: 9997;
+            animation: popupFloat 2.5s ease-in-out infinite;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            white-space: nowrap;
+            font-family: 'Inter', sans-serif;
+        }
+        .chatbot-popup::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 20px;
+            border-width: 8px 8px 0;
+            border-style: solid;
+            border-color: var(--accent) transparent transparent;
+        }
+        @keyframes popupFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        
+        .chatbot-window {
+            position: fixed;
+            bottom: 100px;
+            right: 24px;
+            width: 400px;
+            max-width: calc(100vw - 48px);
+            height: 600px;
+            max-height: calc(100vh - 120px);
+            background: var(--card);
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 9999;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        .chatbot-window.hidden { display: none; }
+        
+        .chat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 20px;
+            background: var(--accent);
+            color: white;
+        }
+        .chat-header-left { display: flex; align-items: center; gap: 12px; }
+        .chat-header-left img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: white;
+            padding: 8px;
+            object-fit: contain;
+        }
+        .chat-header-info h4 { margin: 0; font-size: 16px; font-weight: 700; }
+        .chat-header-info p { margin: 4px 0 0; font-size: 11px; opacity: 0.85; }
+        .close-chat {
+            background: rgba(255,255,255,0.15);
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .close-chat:hover { background: rgba(255,255,255,0.3); }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .message {
+            max-width: 85%;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            line-height: 1.45;
+            word-wrap: break-word;
+        }
+        .user-message {
+            align-self: flex-end;
+            background: var(--accent);
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+        .bot-message {
+            align-self: flex-start;
+            background: var(--card-h);
+            color: var(--text);
+            border-bottom-left-radius: 4px;
+        }
+        .bot-message a { color: var(--accent); text-decoration: underline; }
+        
+        .quick-buttons {
+            padding: 12px 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-top: 1px solid var(--border);
+            background: var(--card);
+        }
+        .quick-btn {
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 500;
+            background: var(--card-h);
+            border: 1px solid var(--border);
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .quick-btn:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+            transform: translateY(-1px);
+        }
+        
+        .chat-input-area {
+            display: flex;
+            padding: 14px 16px;
+            gap: 10px;
+            border-top: 1px solid var(--border);
+            background: var(--card);
+        }
+        .chat-input-area input {
+            flex: 1;
+            padding: 12px 16px;
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 13px;
+            outline: none;
+        }
+        .chat-input-area input:focus { border-color: var(--accent); }
+        .send-btn {
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .send-btn:hover { transform: scale(1.05); }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-left, .nav-right { display: none; }
+            .hamburger { display: block; }
+            .page-hero h1 { font-size: 2.2rem; }
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
+            .values-grid { grid-template-columns: 1fr; }
+            .perks-grid { grid-template-columns: repeat(2, 1fr); }
+            .empty-state { padding: 2.5rem 1.5rem; }
+            .chatbot-window { width: calc(100vw - 32px); right: 16px; bottom: 80px; height: 520px; }
+            .chatbot-btn { bottom: 16px; right: 16px; width: 50px; height: 50px; }
+            .chatbot-popup { bottom: 80px; right: 16px; padding: 8px 14px; font-size: 11px; white-space: nowrap; }
+        }
+        @media (max-width: 480px) {
+            .stats-row { grid-template-columns: 1fr; }
+            .perks-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AVENOR",
+      "url": "https://avenor.sbs",
+      "logo": "https://avenor.sbs/images/LogoA.svg",
+      "description": "AVENOR is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities. Founded by PRANAV GAUTAM from Bihar.",
+      "founder": {
+        "@type": "Person",
+        "name": "PRANAV GAUTAM",
+        "jobTitle": "Founder & CEO"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bihar",
+        "addressCountry": "India"
+      },
+      "foundingDate": "2026",
+      "industry": "Venture Intelligence",
+      "mission": "Less Noise. Better Decisions."
+    }
+    </script>
+</head>
+<body>
+
+ <header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/fff/000?text=A'">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/000/fff?text=A'">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch" title="Toggle dark/light mode">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+            <input type="checkbox" class="input" id="themeToggleMobile">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mentorship.html">Mentorship</a>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+
+<!-- HERO SECTION -->
+<section class="page-hero">
+    <div class="hero-badge"><i class="fas fa-briefcase" style="color:var(--accent);"></i> Join the Mission</div>
+    <h1>Shape the future<br>of venture intelligence</h1>
+    <p>We're building the platform that will define how capital finds signal for the next decade. Small team, massive ambition — built from Bihar, for the world. Founded by <strong>PRANAV GAUTAM</strong>.</p>
+</section>
+
+<!-- STATS ROW -->
+<div style="max-width:1000px;margin:0 auto;padding:0 1.5rem;">
+    <div class="stats-row">
+        <div class="stat-block"><div class="stat-num">🏆 6</div><div class="stat-lbl">Product verticals</div></div>
+        <div class="stat-block"><div class="stat-num">🌍 15+</div><div class="stat-lbl">Countries served</div></div>
+        <div class="stat-block"><div class="stat-num">🚀 1000+</div><div class="stat-lbl">Startups in feed</div></div>
+        <div class="stat-block"><div class="stat-num">⚡ Weekly</div><div class="stat-lbl">Ship cycle</div></div>
+    </div>
+</div>
+
+<!-- NO VACANCIES SECTION -->
+<div class="no-vacancies">
+    <div class="empty-state">
+        <div class="empty-icon"><i class="fas fa-search"></i></div>
+        <h2>No open positions right now</h2>
+        <p>We're a small, focused team building deliberately. While we don't have any vacancies at the moment, we're always excited to connect with exceptional people who share our vision.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Please check back regularly — we'll post new opportunities as we grow.</p>
+        <button class="contact-btn" onclick="window.open('https://wa.me/9192622444607?text=Hi%20AVENOR%20team,%20I%27m%20interested%20in%20career%20opportunities%20at%20AVENOR.%20Please%20let%20me%20know%20when%20you%20have%20openings.%20Thanks!', '_blank')">
+            <i class="fab fa-whatsapp"></i> Contact us for future opportunities →
+        </button>
+    </div>
+</div>
+
+<!-- VALUES SECTION -->
+<div class="values-section">
+    <div class="section-label">What We Believe</div>
+    <div class="section-title">Our operating principles</div>
+    <div class="section-desc">We don't have a playbook — we write it. These are the values that guide every decision we make.</div>
+    <div class="values-grid">
+        <div class="value-card"><div class="value-icon"><i class="fas fa-signal"></i></div><h3>Signal over noise</h3><p>We optimize for clarity, insight, and signal in everything we build. If it adds noise, it doesn't ship.</p></div>
+        <div class="value-card"><div class="value-icon"><i class="fas fa-bolt"></i></div><h3>Ship weekly</h3><p>We deploy code every week. Small, fast iterations beat perfect, delayed launches.</p></div>
+        <div class="value-card"><div class="value-icon"><i class="fas fa-globe"></i></div><h3>Geography is not destiny</h3><p>The best talent isn't just in SF or Bangalore. We build remote-first and hire from anywhere.</p></div>
+        <div class="value-card"><div class="value-icon"><i class="fas fa-eye"></i></div><h3>Radical transparency</h3><p>We share metrics, mistakes, and learnings openly. No ego, no hidden agendas.</p></div>
+        <div class="value-card"><div class="value-icon"><i class="fas fa-heart"></i></div><h3>Founder-first</h3><p>Everything we do serves the founder. If it doesn't help them, we shouldn't build it.</p></div>
+        <div class="value-card"><div class="value-icon"><i class="fas fa-chart-line"></i></div><h3>Long-term greed</h3><p>We optimize for the next decade, not the next quarter. Sustainable over explosive.</p></div>
+    </div>
+</div>
+
+<!-- PERKS SECTION -->
+<div class="perks-section">
+    <div class="section-label">What You Get</div>
+    <div class="section-title">Perks & benefits</div>
+    <div class="perks-grid">
+        <div class="perk-card"><div class="perk-icon"><i class="fas fa-home"></i></div><h3>Fully remote</h3><p>Work from anywhere. No commute, no forced office days.</p></div>
+        <div class="perk-card"><div class="perk-icon"><i class="fas fa-clock"></i></div><h3>Flexible hours</h3><p>Asynchronous first. Work when you're most productive.</p></div>
+        <div class="perk-card"><div class="perk-icon"><i class="fas fa-laptop"></i></div><h3>Equipment stipend</h3><p>Get the tools you need to do your best work.</p></div>
+        <div class="perk-card"><div class="perk-icon"><i class="fas fa-chalkboard-user"></i></div><h3>Learning budget</h3><p>$1,000/year for courses, books, or conferences.</p></div>
+        <div class="perk-card"><div class="perk-icon"><i class="fas fa-hand-holding-heart"></i></div><h3>Equity ownership</h3><p>Everyone gets a stake in what we're building.</p></div>
+        <div class="perk-card"><div class="perk-icon"><i class="fas fa-plane"></i></div><h3>Annual retreat</h3><p>We meet once a year somewhere interesting. All expenses covered.</p></div>
+        <div class="perk-card"><div class="perk-icon"><i class="fas fa-book"></i></div><h3>Audible/books credit</h3><p>We pay for your reading habit. Learning never stops.</p></div>
+        <div class="perk-card"><div class="perk-icon"><i class="fas fa-heartbeat"></i></div><h3>Wellness stipend</h3><p>Gym, meditation, therapy — whatever keeps you healthy.</p></div>
+    </div>
+</div>
+
+<!-- CTA SECTION -->
+<div class="cta-section">
+    <div class="cta-box">
+        <h3>Don't see the perfect role?</h3>
+        <p>We're always open to conversations with exceptional people. If you think you can help us move faster, we want to hear from you.</p>
+        <button class="cta-btn" onclick="window.open('https://wa.me/9192622444607?text=Hi%20AVENOR%20team,%20I%27d%20love%20to%20work%20with%20you.%20Here%27s%20why%20I%20think%20I%20can%20help...', '_blank')">
+            <i class="fab fa-whatsapp"></i> Send us a message →
+        </button>
+        <p style="font-size:0.7rem; color:var(--dim); margin-top:1rem;">Tell us who you are, what you do, and why you want to join</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div><div class="footer-logo">AVENOR</div><p>Structured fundraising and venture intelligence. Less noise. Better decisions.</p></div>
+        <div><h4>Product</h4><a>Startups</a><a>Investors</a><a>Intelligence</a><a>Pricing</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><a href="career.html">Careers</a><a href="press.html">Press</a><a href="contact.html">Contact</a></div>
+        <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a><a>Trust</a></div>
+        <div><h4>Social</h4><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a><a href="#"><i class="fab fa-youtube"></i> YouTube</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+    <div class="footer-bottom">Built With ❤️ By gmitech.in</div>
+</footer>
+
+<!-- Floating Message Bubble -->
+<div class="chatbot-popup" id="chatbotPopup">👋 Hey! I'm Online</div>
+
+<!-- Chatbot Button (No border, no green badge) -->
+<button class="chatbot-btn" id="chatbotToggleBtn">
+    <img src="images/LogoA.svg" alt="AVENOR Chatbot">
+</button>
+
+<!-- Chatbot Window -->
+<div class="chatbot-window hidden" id="chatbotWindow">
+    <div class="chat-header">
+        <div class="chat-header-left">
+            <img src="images/LogoA.svg" alt="AVENOR AI">
+            <div class="chat-header-info">
+                <h4>AVENOR AI Assistant</h4>
+                <p>✨ Always here to help</p>
+            </div>
+        </div>
+        <button class="close-chat" id="closeChatBtn">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">👋 Hey there! I'm AVENOR AI Assistant. What's your name?</div>
+    </div>
+    <div class="quick-buttons" id="quickButtons"></div>
+    <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendMessage()">
+        <button class="send-btn" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<script>
+    // ============================================
+    // PREMIUM CHATBOT LOGIC
+    // ============================================
+    let userName = null;
+    let waitingForName = true;
+    
+    const faqDatabase = [
+        { keywords: ["founder", "who created", "who started", "ceo", "pranav", "gautam", "pranav gautam", "company founder", "founder name"], 
+          answer: "👨‍💼 <strong>PRANAV GAUTAM</strong> is the Founder & CEO of AVENOR. He started building internet products at age 14 and founded AVENOR in 2026 from Bihar, India with the mission <strong>'Less Noise. Better Decisions.'</strong>" },
+        { keywords: ["what is avenor", "avenor meaning", "about avenor", "company background", "avenor story"], 
+          answer: "🚀 <strong>AVENOR</strong> is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities through AI-powered insights, founder KPI tracking, and intelligent deal sourcing. Built from Bihar for the world." },
+        { keywords: ["services", "what do you do", "offer", "features", "products", "platform"], 
+          answer: "✨ AVENOR offers:<br>• <strong>AI Startup Intelligence</strong><br>• <strong>Founder KPI Tracking</strong><br>• <strong>Investor Discovery Feed</strong><br>• <strong>AI Red-Flag Detection</strong><br>• <strong>Structured Fundraising workflows</strong><br>• <strong>Free Mentorship programs</strong>" },
+        { keywords: ["raise capital", "fundraising", "how to raise", "get funding", "raise money"], 
+          answer: "💰 AVENOR helps startups raise capital by providing structured submission workflows, AI-powered analysis, and curated investor matching. <a href='connect.html' style='color:#4f8cff;'>Apply through our Connect.in page →</a>" },
+        { keywords: ["investor", "join as investor", "invest", "angel", "vc", "venture capital"], 
+          answer: "📈 Investors can join AVENOR through our <a href='portfolio.html' style='color:#4f8cff;'>Portfolio page →</a> You'll get access to curated startup summaries, pitch decks, traction metrics, AI analysis, and live growth timelines." },
+        { keywords: ["mentorship", "mentor", "free mentorship", "guidance", "advice", "learn"], 
+          answer: "🎓 AVENOR offers <strong>free 30-minute mentorship sessions</strong> with experienced founders, operators, and investors. <a href='free-mentorship.html' style='color:#4f8cff;'>Book your session →</a>" },
+        { keywords: ["contact", "support", "help", "phone", "whatsapp", "email", "reach", "talk", "human agent"], 
+          answer: "📞 You can contact AVENOR support at:<br>📧 <strong>hello@avenor.sbs</strong><br>📱 WhatsApp: <strong>+91 9262244607</strong><br><br><a href='contact.html' style='color:#4f8cff;'>Visit Contact Page →</a>" },
+        { keywords: ["ai red flag", "red flag detection", "risk detection"], 
+          answer: "⚠️ <strong>AI Red-Flag Detection</strong> surfaces patterns humans miss — risk detection at scale across thousands of data points." },
+        { keywords: ["kpi tracking", "founder kpi", "metrics", "tracking"], 
+          answer: "📊 <strong>Founder KPI Tracking</strong> lets founders publish weekly updates on revenue, CAC, burn, runway, retention, users, and milestones." },
+        { keywords: ["investor discovery", "discovery feed", "find startups"], 
+          answer: "🔍 <strong>Investor Discovery</strong> is AVENOR's structured feed providing curated summaries, pitch decks, traction metrics, AI analysis, and live growth timelines." },
+        { keywords: ["mission", "vision", "goal", "purpose"], 
+          answer: "🎯 AVENOR's mission is <strong>'Less Noise. Better Decisions.'</strong> We believe capital should flow to signal, not to whoever has the loudest network." },
+        { keywords: ["location", "headquarters", "bihar", "where are you"], 
+          answer: "📍 AVENOR is headquartered in <strong>Bihar, India</strong>. We serve founders and investors across India and globally, proving that geography is not destiny." },
+        { keywords: ["built by", "gmitech", "who built", "technology partner"], 
+          answer: "🛠️ AVENOR was founded by <strong>PRANAV GAUTAM</strong> and is proudly built by <strong>gmitech.in</strong>." }
+    ];
+    
+    const quickReplies = [
+        "Who is the founder?",
+        "What is AVENOR?",
+        "Services offered?",
+        "How to raise capital?",
+        "Join as investor?",
+        "Free mentorship?",
+        "Contact support?"
+    ];
+    
+    function updateQuickButtons() {
+        const container = document.getElementById('quickButtons');
+        if (!container) return;
+        container.innerHTML = quickReplies.map(q => `<button class="quick-btn" onclick="sendQuickReply('${q.replace(/'/g, "\\'")}')">${q}</button>`).join('');
+        container.innerHTML += `<button class="quick-btn" onclick="window.location.href='contact.html'">📞 Contact AVENOR Team</button>`;
+    }
+    
+    function addMessage(text, isUser = false) {
+        const container = document.getElementById('chatMessages');
+        const div = document.createElement('div');
+        div.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+        div.innerHTML = text;
+        container.appendChild(div);
+        container.scrollTop = container.scrollHeight;
+    }
+    
+    function sendQuickReply(text) {
+        document.getElementById('chatInput').value = text;
+        sendMessage();
+    }
+    
+    function findBestMatch(message) {
+        const lowerMsg = message.toLowerCase();
+        let bestMatch = null;
+        let highestScore = 0;
+        for (const faq of faqDatabase) {
+            for (const keyword of faq.keywords) {
+                if (lowerMsg.includes(keyword.toLowerCase())) {
+                    const score = keyword.length;
+                    if (score > highestScore) {
+                        highestScore = score;
+                        bestMatch = faq;
+                    }
+                }
+            }
+        }
+        return bestMatch;
+    }
+    
+    function sendMessage() {
+        const input = document.getElementById('chatInput');
+        const message = input.value.trim();
+        if (!message) return;
+        addMessage(message, true);
+        input.value = '';
+        setTimeout(() => processMessage(message), 300);
+    }
+    
+    function processMessage(message) {
+        const lowerMsg = message.toLowerCase();
+        if (waitingForName) {
+            userName = message.trim();
+            waitingForName = false;
+            addMessage(`Hey <strong>${userName}</strong>, nice to meet you! 👋 I'm here to help you learn about AVENOR. What would you like to know?`);
+            updateQuickButtons();
+            return;
+        }
+        if (lowerMsg.includes('bye') || lowerMsg.includes('goodbye')) {
+            addMessage(`Goodbye <strong>${userName}</strong>! Feel free to reach out anytime. Have a great day! 🚀`);
+            setTimeout(() => document.getElementById('chatbotWindow').classList.add('hidden'), 2000);
+            return;
+        }
+        const match = findBestMatch(message);
+        if (match) {
+            addMessage(match.answer);
+        } else {
+            addMessage(`Thank you for your question, <strong>${userName}</strong>! For detailed assistance, please visit our <a href='contact.html' style='color:#4f8cff;'>Contact page</a> or <a href='connect.html' style='color:#4f8cff;'>Connect page</a>. Our team would be happy to help!`);
+        }
+    }
+    
+    // Chatbot Toggle
+    const chatbotBtn = document.getElementById('chatbotToggleBtn');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    const closeChatBtn = document.getElementById('closeChatBtn');
+    const chatbotPopup = document.getElementById('chatbotPopup');
+    if (chatbotBtn) {
+        chatbotBtn.addEventListener('click', () => {
+            chatbotWindow.classList.toggle('hidden');
+            if (chatbotPopup) chatbotPopup.style.opacity = '0';
+            setTimeout(() => { if (chatbotPopup) chatbotPopup.style.display = 'none'; }, 300);
+        });
+    }
+    if (closeChatBtn) {
+        closeChatBtn.addEventListener('click', () => {
+            chatbotWindow.classList.add('hidden');
+            if (chatbotPopup) {
+                chatbotPopup.style.display = 'flex';
+                setTimeout(() => { if (chatbotPopup) chatbotPopup.style.opacity = '1'; }, 50);
+            }
+        });
+    }
+    
+    // Theme Toggle
+    const html = document.documentElement;
+    const t1 = document.getElementById('themeToggle');
+    const t2 = document.getElementById('themeToggleMobile');
+    function setTheme(light) {
+        html.setAttribute('data-theme', light ? 'light' : 'dark');
+        if (t1) t1.checked = light;
+        if (t2) t2.checked = light;
+        localStorage.setItem('avenor-theme', light ? 'light' : 'dark');
+    }
+    if (localStorage.getItem('avenor-theme') === 'light') setTheme(true);
+    if (t1) t1.addEventListener('change', () => setTheme(t1.checked));
+    if (t2) t2.addEventListener('change', () => setTheme(t2.checked));
+    
+    // Mobile Menu
+    const hbtn = document.getElementById('hamburgerBtn');
+    const mmenu = document.getElementById('mobileMenu');
+    if (hbtn) {
+        hbtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mmenu.classList.toggle('active');
+            hbtn.classList.toggle('active');
+        });
+    }
+    const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+    const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+    if (mobileDropdownBtn) {
+        mobileDropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (mobileDropdownContent) {
+                mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    }
+    document.querySelectorAll('.mobile-menu a, .mobile-menu .mobile-dropdown-content a').forEach(link => {
+        link.addEventListener('click', () => {
+            mmenu.classList.remove('active');
+            if (hbtn) hbtn.classList.remove('active');
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Free Mentorship | AVENOR – Book Free 30-Minute Session</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://avenor.sbs/free-mentorship.html" />
+     <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Get free 30-minute mentorship sessions from experienced founders and investors. Book your free session today. No fees. Built from Bihar by PRANAV GAUTAM.">
+    <meta name="keywords" content="AVENOR, PRANAV GAUTAM, free mentorship, startup mentorship, founder mentorship, investor mentorship, AVENOR mentorship">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR Free Mentorship – Book Your Session">
+    <meta property="og:description" content="Get free 30-minute mentorship sessions from experienced founders and investors. Book your free session today. No fees.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs/free-mentorship.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR Free Mentorship – Book Your Session">
+    <meta name="twitter:description" content="Get free 30-minute mentorship sessions from experienced founders and investors.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <!-- Team Member SEO Meta -->
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="team:member" content="AKSHAY SINGH - Team Member">
+    <meta name="team:member" content="AMIT NAYAN - Team Member">
+    <meta name="built-by" content="gmitech.in">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #050505;
+            --text: #ffffff;
+            --text-muted: #aaaaaa;
+            --text-dim: #666666;
+            --border: rgba(255,255,255,0.08);
+            --border-hover: rgba(255,255,255,0.2);
+            --card-bg: rgba(255,255,255,0.03);
+            --card-bg-hover: rgba(255,255,255,0.05);
+            --header-bg: rgba(10,10,10,0.95);
+            --btn-primary-bg: #ffffff;
+            --btn-primary-text: #000000;
+            --scrollbar-track: #1a1a1a;
+            --scrollbar-thumb: #333;
+            --accent: #7B7481;
+            --icon-color: #7B7481;
+        }
+        [data-theme="light"] {
+            --bg: #f5f5f0;
+            --bg-secondary: #ebebeb;
+            --text: #0a0a0a;
+            --text-muted: #555555;
+            --text-dim: #888888;
+            --border: rgba(0,0,0,0.08);
+            --border-hover: rgba(0,0,0,0.2);
+            --card-bg: rgba(0,0,0,0.03);
+            --card-bg-hover: rgba(0,0,0,0.05);
+            --header-bg: rgba(245,245,240,0.95);
+            --btn-primary-bg: #0a0a0a;
+            --btn-primary-text: #ffffff;
+            --accent: #6a5f70;
+            --icon-color: #6a5f70;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; transition: background .4s, color .4s; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+        
+        /* HEADER */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            background: var(--header-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            transition: background .4s;
+        }
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .logo-center a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--text);
+        }
+        .logo-center img { height: 32px; width: auto; }
+        .logo-dark { display: block; }
+        .logo-light { display: none; }
+        [data-theme="light"] .logo-dark { display: none; }
+        [data-theme="light"] .logo-light { display: block; }
+        .nav-left { display: flex; gap: 2rem; align-items: center; }
+        .nav-left a, .dropdown-btn {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: opacity .3s;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .nav-left a:hover, .dropdown-btn:hover { opacity: 0.7; }
+        .dropdown { position: relative; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--bg-secondary);
+            min-width: 200px;
+            border-radius: 12px;
+            padding: 0.5rem 0;
+            margin-top: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+            z-index: 200;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: 0.7rem 1.2rem;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background .2s;
+        }
+        .dropdown-content a:hover { background: var(--card-bg-hover); }
+        .dropdown:hover .dropdown-content { display: block; }
+        .nav-right { display: flex; align-items: center; gap: 1rem; }
+        .lets-talk-btn {
+            background: var(--btn-primary-bg);
+            color: var(--btn-primary-text);
+            padding: 0.5rem 1.3rem;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all .3s;
+            white-space: nowrap;
+        }
+        .lets-talk-btn:hover { transform: scale(1.02); opacity: 0.9; }
+        
+        /* THEME TOGGLE */
+        .switch {
+            font-size: 17px;
+            position: relative;
+            display: inline-block;
+            width: 64px;
+            height: 34px;
+            flex-shrink: 0;
+        }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #73C0FC;
+            transition: .4s;
+            border-radius: 30px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            left: 2px;
+            bottom: 2px;
+            z-index: 2;
+            background: #e8e8e8;
+            transition: .4s;
+        }
+        .sun svg {
+            position: absolute;
+            top: 6px;
+            left: 36px;
+            z-index: 1;
+            width: 24px;
+            height: 24px;
+            animation: rotate 15s linear infinite;
+        }
+        .moon svg {
+            fill: #73C0FC;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 1;
+            width: 24px;
+            height: 24px;
+            animation: tilt 5s linear infinite;
+        }
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
+        @keyframes tilt { 0%,100%{transform:rotate(0deg)}25%{transform:rotate(-10deg)}75%{transform:rotate(10deg)} }
+        .input:checked + .slider { background: #183153; }
+        .input:checked + .slider:before { transform: translateX(30px); }
+        
+        /* MOBILE MENU */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            z-index: 1001;
+        }
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: var(--text);
+            margin: 5px 0;
+            transition: all .3s;
+        }
+        .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg);
+            z-index: 999;
+            padding: 80px 2rem 2rem;
+            flex-direction: column;
+            gap: 1.5rem;
+            overflow-y: auto;
+        }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a, .mobile-dropdown-btn {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+        }
+        .mobile-dropdown-content {
+            display: none;
+            padding-left: 1rem;
+            margin-top: 0.5rem;
+        }
+        .mobile-dropdown-content a { font-size: 1rem; border-bottom: none; }
+        .mobile-theme-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .mobile-theme-label { font-size: 1.2rem; font-weight: 500; color: var(--text); }
+        
+        /* HERO SECTION */
+        .page-hero {
+            padding: 10rem 2rem 5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(123,116,129,.12), transparent);
+            pointer-events: none;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: .3rem 1rem;
+            border-radius: 100px;
+            font-size: .8rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -.03em;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        .page-hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        /* FEATURE CARDS */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 1.8rem;
+            text-align: center;
+            transition: all .3s;
+        }
+        .feature-card:hover {
+            background: var(--card-bg-hover);
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--card-bg-hover);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .feature-icon i { font-size: 1.8rem; color: var(--accent); }
+        .feature-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; color: var(--text); }
+        .feature-card p { font-size: .85rem; color: var(--text-muted); line-height: 1.5; }
+        
+        /* STEPS SECTION */
+        .steps-section {
+            background: var(--card-bg);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 4rem 1.5rem;
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .step-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1.8rem;
+            text-align: center;
+            transition: all .3s;
+        }
+        .step-card:hover { transform: translateY(-4px); background: var(--card-bg-hover); }
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0 auto 1rem;
+        }
+        .step-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; color: var(--text); }
+        .step-card p { font-size: .85rem; color: var(--text-muted); line-height: 1.5; }
+        
+        /* CTA BUTTONS */
+        .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+        .btn-primary, .btn-outline {
+            padding: 0.8rem 2rem;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .3s;
+            display: inline-block;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background: var(--btn-primary-bg);
+            color: var(--btn-primary-text);
+        }
+        .btn-primary:hover { transform: translateY(-2px); opacity: .9; }
+        .btn-outline {
+            border: 1px solid var(--border-hover);
+            color: var(--text);
+        }
+        .btn-outline:hover { background: var(--card-bg-hover); }
+        
+        /* MENTOR CTA */
+        .mentor-cta {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+        .mentor-box {
+            background: linear-gradient(135deg, var(--card-bg), transparent);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 2.5rem;
+            text-align: center;
+        }
+        
+        /* FOOTER */
+        .footer {
+            background: var(--bg-secondary);
+            padding: 3rem 1rem 2rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-logo { font-size: 1.2rem; font-weight: 800; margin-bottom: .5rem; color: var(--text); }
+        .footer-grid p { font-size: .7rem; color: var(--text-dim); }
+        .footer-grid h4 { font-size: .8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text); }
+        .footer-grid a {
+            display: block;
+            font-size: .7rem;
+            color: var(--text-dim);
+            margin-bottom: .5rem;
+            transition: color .3s;
+        }
+        .footer-grid a:hover { color: var(--text); }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: .7rem;
+            color: var(--text-dim);
+        }
+        
+        /* CHATBOT STYLES */
+        .chatbot-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 9998;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chatbot-btn:hover { transform: scale(1.05); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25); }
+        .chatbot-btn img { width: 32px; height: 32px; border-radius: 50%; object-fit: contain; }
+        
+        .chatbot-popup {
+            position: fixed;
+            bottom: 95px;
+            right: 24px;
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            z-index: 9997;
+            animation: popupFloat 2.5s ease-in-out infinite;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            white-space: nowrap;
+            font-family: 'Inter', sans-serif;
+        }
+        .chatbot-popup::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 20px;
+            border-width: 8px 8px 0;
+            border-style: solid;
+            border-color: var(--accent) transparent transparent;
+        }
+        @keyframes popupFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        
+        .chatbot-window {
+            position: fixed;
+            bottom: 100px;
+            right: 24px;
+            width: 400px;
+            max-width: calc(100vw - 48px);
+            height: 600px;
+            max-height: calc(100vh - 120px);
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 9999;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        .chatbot-window.hidden { display: none; }
+        
+        .chat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 20px;
+            background: var(--accent);
+            color: white;
+        }
+        .chat-header-left { display: flex; align-items: center; gap: 12px; }
+        .chat-header-left img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: white;
+            padding: 8px;
+            object-fit: contain;
+        }
+        .chat-header-info h4 { margin: 0; font-size: 16px; font-weight: 700; }
+        .chat-header-info p { margin: 4px 0 0; font-size: 11px; opacity: 0.85; }
+        .close-chat {
+            background: rgba(255,255,255,0.15);
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .close-chat:hover { background: rgba(255,255,255,0.3); }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .message {
+            max-width: 85%;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            line-height: 1.45;
+            word-wrap: break-word;
+        }
+        .user-message {
+            align-self: flex-end;
+            background: var(--accent);
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+        .bot-message {
+            align-self: flex-start;
+            background: var(--card-bg-hover);
+            color: var(--text);
+            border-bottom-left-radius: 4px;
+        }
+        .bot-message a { color: var(--accent); text-decoration: underline; }
+        
+        .quick-buttons {
+            padding: 12px 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-top: 1px solid var(--border);
+            background: var(--card-bg);
+        }
+        .quick-btn {
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 500;
+            background: var(--card-bg-hover);
+            border: 1px solid var(--border);
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .quick-btn:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+            transform: translateY(-1px);
+        }
+        
+        .chat-input-area {
+            display: flex;
+            padding: 14px 16px;
+            gap: 10px;
+            border-top: 1px solid var(--border);
+            background: var(--card-bg);
+        }
+        .chat-input-area input {
+            flex: 1;
+            padding: 12px 16px;
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 13px;
+            outline: none;
+        }
+        .chat-input-area input:focus { border-color: var(--accent); }
+        .send-btn {
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .send-btn:hover { transform: scale(1.05); }
+        
+        .split-char { display: inline-block; will-change: transform, opacity; }
+        
+        @media (max-width: 768px) {
+            .nav-left, .nav-right { display: none; }
+            .hamburger { display: block; }
+            .main-header { padding: 0.8rem 1rem; }
+            .page-hero h1 { font-size: 2.2rem; }
+            .features-grid { grid-template-columns: 1fr; padding: 2rem 1rem; }
+            .steps-grid { grid-template-columns: 1fr; }
+            .chatbot-window { width: calc(100vw - 32px); right: 16px; bottom: 80px; height: 520px; }
+            .chatbot-btn { bottom: 16px; right: 16px; width: 50px; height: 50px; }
+            .chatbot-popup { bottom: 80px; right: 16px; padding: 8px 14px; font-size: 11px; white-space: nowrap; }
+        }
+        @media (max-width: 480px) {
+            .page-hero { padding: 8rem 1rem 3rem; }
+            .mentor-box { padding: 1.5rem; }
+        }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AVENOR",
+      "url": "https://avenor.sbs",
+      "logo": "https://avenor.sbs/images/LogoA.svg",
+      "description": "AVENOR is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities. Founded by PRANAV GAUTAM from Bihar.",
+      "founder": {
+        "@type": "Person",
+        "name": "PRANAV GAUTAM",
+        "jobTitle": "Founder & CEO"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bihar",
+        "addressCountry": "India"
+      },
+      "foundingDate": "2026",
+      "industry": "Venture Intelligence",
+      "mission": "Less Noise. Better Decisions."
+    }
+    </script>
+</head>
+<body>
+
+ <header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/fff/000?text=A'">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/000/fff?text=A'">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch" title="Toggle dark/light mode">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+            <input type="checkbox" class="input" id="themeToggleMobile">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mentorship.html">Mentorship</a>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+
+<!-- HERO SECTION -->
+<section class="page-hero">
+    <div class="hero-badge"><i class="fas fa-chalkboard-user" style="color:var(--accent);"></i> Free Mentorship Program</div>
+    <h1 id="heroTitle">Free Mentorship</h1>
+    <p>Book a session with founders and operators who've been there. No fees, no fluff — just real conversations that help you move forward. Founded by <strong>PRANAV GAUTAM</strong> from Bihar.</p>
+</section>
+
+<!-- FEATURES SECTION -->
+<div class="features-grid">
+    <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-users"></i></div>
+        <h3>Experienced Mentors</h3>
+        <p>Learn from founders, operators, and investors who have built and scaled successful companies.</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+        <h3>30-Minute Sessions</h3>
+        <p>Focused, actionable conversations that respect your time and deliver real value.</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-sparkles"></i></div>
+        <h3>Completely Free</h3>
+        <p>No hidden costs, no strings attached — just genuine support from the AVENOR community.</p>
+    </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="steps-section">
+    <div style="text-align: center; max-width: 700px; margin: 0 auto 2.5rem;">
+        <span class="hero-badge" style="display: inline-flex;">Simple Process</span>
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--text);">How It Works</h2>
+        <p style="color: var(--text-muted);">Get started in three easy steps and get the guidance you need</p>
+    </div>
+    <div class="steps-grid">
+        <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Pick Your Focus</h3>
+            <p>Choose the area where you need guidance — fundraising, product, growth, operations, or leadership.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Book Your Session</h3>
+            <p>Reach out via WhatsApp and schedule your free 30-minute mentoring session with an expert.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Get Unblocked</h3>
+            <p>Walk away with actionable advice, a clear next step, and a mentor who genuinely wants to see you succeed.</p>
+        </div>
+    </div>
+</div>
+
+<!-- WHAT YOU'LL GET SECTION -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 4rem 1.5rem;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+            <span class="hero-badge" style="display: inline-flex;">What You'll Get</span>
+            <h2 style="font-size: 2rem; font-weight: 800; margin: 1rem 0; color: var(--text);">More than just advice</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Our mentors don't just tell you what to do — they help you figure out how to do it.</p>
+            <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--accent);"></i><span style="color: var(--text-muted);">Honest feedback on your fundraising strategy</span></div>
+                <div style="display: flex; align-items: center; gap: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--accent);"></i><span style="color: var(--text-muted);">Practical next steps you can implement immediately</span></div>
+                <div style="display: flex; align-items: center; gap: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--accent);"></i><span style="color: var(--text-muted);">Connections to resources and tools that actually work</span></div>
+                <div style="display: flex; align-items: center; gap: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--accent);"></i><span style="color: var(--text-muted);">A sounding board for your toughest decisions</span></div>
+            </div>
+        </div>
+        <div style="background: linear-gradient(135deg, var(--card-bg), transparent); border: 1px solid var(--border); border-radius: 24px; padding: 2rem; text-align: center;">
+            <i class="fas fa-calendar-alt" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+            <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text);">Ready to get started?</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Your first mentoring session is completely free. No obligations, just real help.</p>
+            <button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">Book Your Free Session <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- BECOME A MENTOR -->
+<div class="mentor-cta">
+    <div class="mentor-box">
+        <i class="fas fa-comment-dots" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text);">Want to become a mentor?</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Pay it forward — just 30 minutes a week can make a massive difference for a founder.</p>
+        <button onclick="window.open('https://wa.me/9192622444607', '_blank')" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">Apply to Mentor <i class="fas fa-arrow-right"></i></button>
+        <p style="font-size: 0.7rem; color: var(--text-dim); margin-top: 1rem;">Clicking will open WhatsApp — just send us a message saying "Interested in mentoring"</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div><div class="footer-logo">AVENOR</div><p>Structured fundraising and venture intelligence. Less noise. Better decisions.</p></div>
+        <div><h4>Product</h4><a>Startups</a><a>Investors</a><a>Intelligence</a><a>Pricing</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><a href="career.html">Careers</a><a href="press.html">Press</a><a href="contact.html">Contact</a></div>
+        <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a><a>Trust</a></div>
+        <div><h4>Social</h4><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a><a href="#"><i class="fab fa-youtube"></i> YouTube</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+    <div class="footer-bottom">Built With ❤️ By gmitech.in</div>
+</footer>
+
+<!-- Floating Message Bubble -->
+<div class="chatbot-popup" id="chatbotPopup">👋 Hey! I'm Online</div>
+
+<!-- Chatbot Button (No border, no green badge) -->
+<button class="chatbot-btn" id="chatbotToggleBtn">
+    <img src="images/LogoA.svg" alt="AVENOR Chatbot">
+</button>
+
+<!-- Chatbot Window -->
+<div class="chatbot-window hidden" id="chatbotWindow">
+    <div class="chat-header">
+        <div class="chat-header-left">
+            <img src="images/LogoA.svg" alt="AVENOR AI">
+            <div class="chat-header-info">
+                <h4>AVENOR AI Assistant</h4>
+                <p>✨ Always here to help</p>
+            </div>
+        </div>
+        <button class="close-chat" id="closeChatBtn">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">👋 Hey there! I'm AVENOR AI Assistant. What's your name?</div>
+    </div>
+    <div class="quick-buttons" id="quickButtons"></div>
+    <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendMessage()">
+        <button class="send-btn" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<script>
+    // ============================================
+    // PREMIUM CHATBOT LOGIC
+    // ============================================
+    let userName = null;
+    let waitingForName = true;
+    
+    const faqDatabase = [
+        { keywords: ["founder", "who created", "who started", "ceo", "pranav", "gautam", "pranav gautam", "company founder", "founder name"], 
+          answer: "👨‍💼 <strong>PRANAV GAUTAM</strong> is the Founder & CEO of AVENOR. He started building internet products at age 14 and founded AVENOR in 2026 from Bihar, India with the mission <strong>'Less Noise. Better Decisions.'</strong>" },
+        { keywords: ["what is avenor", "avenor meaning", "about avenor", "company background", "avenor story"], 
+          answer: "🚀 <strong>AVENOR</strong> is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities through AI-powered insights, founder KPI tracking, and intelligent deal sourcing. Built from Bihar for the world." },
+        { keywords: ["mentorship", "mentor", "free mentorship", "how to book mentorship", "mentorship session"], 
+          answer: "🎓 AVENOR offers <strong>free 30-minute mentorship sessions</strong> with experienced founders, operators, and investors. <a href='free-mentorship.html' style='color:#4f8cff;'>Book your session →</a> Just click the WhatsApp button below to get started!" },
+        { keywords: ["contact", "support", "help", "phone", "whatsapp", "email", "reach", "talk", "human agent"], 
+          answer: "📞 You can contact AVENOR support at:<br>📧 <strong>hello@avenor.sbs</strong><br>📱 WhatsApp: <strong>+91 9262244607</strong><br><br><a href='contact.html' style='color:#4f8cff;'>Visit Contact Page →</a>" }
+    ];
+    
+    const quickReplies = [
+        "Who is the founder?",
+        "What is AVENOR?",
+        "How to book mentorship?",
+        "Contact support?"
+    ];
+    
+    function updateQuickButtons() {
+        const container = document.getElementById('quickButtons');
+        if (!container) return;
+        container.innerHTML = quickReplies.map(q => `<button class="quick-btn" onclick="sendQuickReply('${q.replace(/'/g, "\\'")}')">${q}</button>`).join('');
+        container.innerHTML += `<button class="quick-btn" onclick="window.location.href='contact.html'">📞 Contact AVENOR Team</button>`;
+    }
+    
+    function addMessage(text, isUser = false) {
+        const container = document.getElementById('chatMessages');
+        const div = document.createElement('div');
+        div.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+        div.innerHTML = text;
+        container.appendChild(div);
+        container.scrollTop = container.scrollHeight;
+    }
+    
+    function sendQuickReply(text) {
+        document.getElementById('chatInput').value = text;
+        sendMessage();
+    }
+    
+    function findBestMatch(message) {
+        const lowerMsg = message.toLowerCase();
+        for (const faq of faqDatabase) {
+            for (const keyword of faq.keywords) {
+                if (lowerMsg.includes(keyword.toLowerCase())) {
+                    return faq;
+                }
+            }
+        }
+        return null;
+    }
+    
+    function sendMessage() {
+        const input = document.getElementById('chatInput');
+        const message = input.value.trim();
+        if (!message) return;
+        addMessage(message, true);
+        input.value = '';
+        setTimeout(() => processMessage(message), 300);
+    }
+    
+    function processMessage(message) {
+        if (waitingForName) {
+            userName = message.trim();
+            waitingForName = false;
+            addMessage(`Hey <strong>${userName}</strong>, nice to meet you! 👋 I'm here to help you learn about AVENOR's free mentorship program. What would you like to know?`);
+            updateQuickButtons();
+            return;
+        }
+        if (message.toLowerCase().includes('bye') || message.toLowerCase().includes('goodbye')) {
+            addMessage(`Goodbye <strong>${userName}</strong>! Feel free to reach out anytime. Have a great day! 🚀`);
+            setTimeout(() => document.getElementById('chatbotWindow').classList.add('hidden'), 2000);
+            return;
+        }
+        const match = findBestMatch(message);
+        if (match) {
+            addMessage(match.answer);
+        } else {
+            addMessage(`Thank you for your question, <strong>${userName}</strong>! For detailed assistance, please visit our <a href='contact.html' style='color:#4f8cff;'>Contact page</a> or <a href='connect.html' style='color:#4f8cff;'>Connect page</a>. Our team would be happy to help!`);
+        }
+    }
+    
+    // Chatbot Toggle
+    const chatbotBtn = document.getElementById('chatbotToggleBtn');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    const closeChatBtn = document.getElementById('closeChatBtn');
+    const chatbotPopup = document.getElementById('chatbotPopup');
+    if (chatbotBtn) {
+        chatbotBtn.addEventListener('click', () => {
+            chatbotWindow.classList.toggle('hidden');
+            if (chatbotPopup) chatbotPopup.style.opacity = '0';
+            setTimeout(() => { if (chatbotPopup) chatbotPopup.style.display = 'none'; }, 300);
+        });
+    }
+    if (closeChatBtn) {
+        closeChatBtn.addEventListener('click', () => {
+            chatbotWindow.classList.add('hidden');
+            if (chatbotPopup) {
+                chatbotPopup.style.display = 'flex';
+                setTimeout(() => { if (chatbotPopup) chatbotPopup.style.opacity = '1'; }, 50);
+            }
+        });
+    }
+    
+    // Theme Toggle
+    const html = document.documentElement;
+    const t1 = document.getElementById('themeToggle');
+    const t2 = document.getElementById('themeToggleMobile');
+    function setTheme(light) {
+        html.setAttribute('data-theme', light ? 'light' : 'dark');
+        if (t1) t1.checked = light;
+        if (t2) t2.checked = light;
+        localStorage.setItem('avenor-theme', light ? 'light' : 'dark');
+    }
+    if (localStorage.getItem('avenor-theme') === 'light') setTheme(true);
+    if (t1) t1.addEventListener('change', () => setTheme(t1.checked));
+    if (t2) t2.addEventListener('change', () => setTheme(t2.checked));
+    
+    // Mobile Menu
+    const hbtn = document.getElementById('hamburgerBtn');
+    const mmenu = document.getElementById('mobileMenu');
+    if (hbtn) {
+        hbtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mmenu.classList.toggle('active');
+            hbtn.classList.toggle('active');
+        });
+    }
+    const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+    const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+    if (mobileDropdownBtn) {
+        mobileDropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (mobileDropdownContent) {
+                mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    }
+    document.querySelectorAll('.mobile-menu a, .mobile-menu .mobile-dropdown-content a').forEach(link => {
+        link.addEventListener('click', () => {
+            mmenu.classList.remove('active');
+            if (hbtn) hbtn.classList.remove('active');
+        });
+    });
+    
+    // SplitText Animation
+    if (typeof gsap !== 'undefined') {
+        const heroTitle = document.getElementById('heroTitle');
+        if (heroTitle) {
+            const text = heroTitle.textContent;
+            const chars = text.split('');
+            heroTitle.innerHTML = chars.map(ch => ch === ' ' ? '<span style="display:inline-block;width:0.3em;"> </span>' : `<span class="split-char" style="display:inline-block;">${ch}</span>`).join('');
+            gsap.fromTo(heroTitle.querySelectorAll('.split-char'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: 'power4.out', stagger: 0.03 });
+        }
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</body>
+</html>

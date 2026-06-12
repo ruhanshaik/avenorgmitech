@@ -1,0 +1,492 @@
+Here is your **completely updated `security.html`** with domain changed to `avenor.sbs`, founder name updated to **PRANAV GAUTAM**, all SEO tags added, schema markup, and proper styling - keeping your original layout intact.
+
+```html
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Security & Trust | AVENOR – Your Data is Safe With Us</title>
+    <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://avenor.sbs/security.html" />
+     <link rel="icon" href="images/LogoA.svg" type="image/svg+xml">
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="AVENOR's security practices and trust framework. Learn how we protect startup and investor data with enterprise-grade security. Founded by PRANAV GAUTAM from Bihar.">
+    <meta name="keywords" content="AVENOR, PRANAV GAUTAM, security, data protection, encryption, trust center, compliance, DPDP Act, cybersecurity">
+    <meta name="author" content="PRANAV GAUTAM">
+    <meta name="copyright" content="AVENOR">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVENOR">
+    <meta property="og:title" content="AVENOR Security & Trust – Data Protection">
+    <meta property="og:description" content="AVENOR's security practices and trust framework. Enterprise-grade security for your startup and investor data.">
+    <meta property="og:image" content="https://avenor.sbs/images/LogoA.svg">
+    <meta property="og:url" content="https://avenor.sbs/security.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVENOR Security & Trust">
+    <meta name="twitter:description" content="Enterprise-grade security for your startup and investor data.">
+    <meta name="twitter:image" content="https://avenor.sbs/images/LogoA.svg">
+    
+    <!-- Team Member SEO Meta -->
+    <meta name="team:founder" content="PRANAV GAUTAM - Founder & CEO">
+    <meta name="team:member" content="AKSHAY SINGH - Team Member">
+    <meta name="team:member" content="AMIT NAYAN - Team Member">
+    <meta name="built-by" content="gmitech.in">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg: #0a0a0a; --bg2: #050505; --bg3: #111; --text: #ffffff;
+            --muted: #aaaaaa; --dim: #666666; --border: rgba(255,255,255,0.08);
+            --card: rgba(255,255,255,0.03); --card-h: rgba(255,255,255,0.06);
+            --header: rgba(10,10,10,0.95); --accent: #7B7481;
+            --btn-bg: #ffffff; --btn-text: #000000;
+            --green: #22c55e; --green-bg: rgba(34,197,94,0.1);
+            --blue: #3b82f6; --blue-bg: rgba(59,130,246,0.1);
+        }
+        [data-theme="light"] {
+            --bg: #f5f5f0; --bg2: #ebebeb; --bg3: #e0e0e0; --text: #0a0a0a;
+            --muted: #555555; --dim: #888888; --border: rgba(0,0,0,0.08);
+            --card: rgba(0,0,0,0.03); --card-h: rgba(0,0,0,0.06);
+            --header: rgba(245,245,240,0.95); --accent: #6a5f70;
+            --btn-bg: #0a0a0a; --btn-text: #ffffff;
+        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .4s,color .4s;}
+        ::-webkit-scrollbar{width:6px;} ::-webkit-scrollbar-track{background:var(--bg2);} ::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px;}
+        a{text-decoration:none;color:inherit;}
+        
+        /* Header */
+        .main-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 2rem;background:var(--header);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:background .4s,border-color .4s;}
+        .header-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+        .logo-center a{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.3rem;color:var(--text);}
+        .logo-center img{height:32px;}
+        .logo-dark{display:block;}.logo-light{display:none;}
+        [data-theme="light"] .logo-dark{display:none;}[data-theme="light"] .logo-light{display:block;}
+        .nav-left{display:flex;gap:2rem;align-items:center;}
+        .nav-left a,.dropdown-btn{color:var(--text);font-size:.9rem;font-weight:500;background:none;border:none;cursor:pointer;font-family:inherit;transition:opacity .3s;}
+        .nav-left a:hover,.dropdown-btn:hover{opacity:.6;}
+        .dropdown{position:relative;display:inline-block;}
+        .dropdown-content{display:none;position:absolute;top:100%;left:0;background:var(--bg3);min-width:200px;border-radius:12px;padding:.5rem 0;margin-top:.5rem;border:1px solid var(--border);z-index:200;}
+        .dropdown-content a{display:block;padding:.7rem 1.2rem;font-size:.85rem;color:var(--text);transition:background .2s;}
+        .dropdown-content a:hover{background:var(--card-h);}
+        .dropdown:hover .dropdown-content{display:block;}
+        .nav-right{display:flex;align-items:center;gap:1rem;}
+        .portfolio-btn{background:var(--btn-bg);color:var(--btn-text);padding:.5rem 1.3rem;border-radius:100px;font-weight:600;font-size:.9rem;transition:all .3s;white-space:nowrap;}
+        .portfolio-btn:hover{opacity:.85;transform:scale(1.02);}
+        
+        /* Theme Toggle */
+        .switch{font-size:17px;position:relative;display:inline-block;width:64px;height:34px;flex-shrink:0;}
+        .switch input{opacity:0;width:0;height:0;}
+        .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#73C0FC;transition:.4s;border-radius:30px;}
+        .slider:before{position:absolute;content:"";height:30px;width:30px;border-radius:20px;left:2px;bottom:2px;z-index:2;background:#e8e8e8;transition:.4s;}
+        .sun svg{position:absolute;top:6px;left:36px;z-index:1;width:24px;height:24px;animation:rotate 15s linear infinite;}
+        .moon svg{fill:#73C0FC;position:absolute;top:5px;left:5px;z-index:1;width:24px;height:24px;animation:tilt 5s linear infinite;}
+        @keyframes rotate{to{transform:rotate(360deg);}}
+        @keyframes tilt{0%,100%{transform:rotate(0);}25%{transform:rotate(-10deg);}75%{transform:rotate(10deg);}}
+        .input:checked+.slider{background:#183153;}
+        .input:checked+.slider:before{transform:translateX(30px);}
+        
+        /* Mobile Menu */
+        .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;z-index:1001;}
+        .hamburger span{display:block;width:25px;height:2px;background:var(--text);margin:5px 0;transition:all .3s;}
+        .hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+        .hamburger.active span:nth-child(2){opacity:0;}
+        .hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+        .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--bg);z-index:999;padding:80px 2rem 2rem;flex-direction:column;gap:1.5rem;overflow-y:auto;transition:background .4s;}
+        .mobile-menu.active{display:flex;}
+        .mobile-menu a,.mobile-dropdown-btn{color:var(--text);font-size:1.2rem;font-weight:500;padding:.5rem 0;border-bottom:1px solid var(--border);background:none;text-align:left;width:100%;cursor:pointer;}
+        .mobile-dropdown-content{display:none;padding-left:1rem;margin-top:.5rem;}
+        .mobile-dropdown-content a{font-size:1rem;border-bottom:none;}
+        .mobile-theme-row{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--border);}
+        .mobile-theme-label{font-size:1.2rem;font-weight:500;color:var(--text);}
+
+        /* Page Specific */
+        .page-hero{padding:9rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
+        .page-hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(123,116,129,.12),transparent);pointer-events:none;}
+        .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border);padding:.3rem 1rem;border-radius:100px;font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;}
+        .page-hero h1{font-size:3rem;font-weight:900;letter-spacing:-.03em;margin-bottom:1rem;color:var(--text);}
+        .page-hero p{font-size:1rem;color:var(--muted);max-width:650px;margin:0 auto;line-height:1.6;}
+        
+        /* Security & Trust Content */
+        .content-container{max-width:1000px;margin:0 auto 5rem;padding:0 1.5rem;}
+        
+        /* Tabs Navigation */
+        .tabs-nav{display:flex;gap:.5rem;margin-bottom:2rem;border-bottom:1px solid var(--border);padding-bottom:.5rem;flex-wrap:wrap;}
+        .tab-btn{background:none;border:none;padding:.8rem 1.8rem;font-size:.9rem;font-weight:600;color:var(--muted);cursor:pointer;transition:all .3s;border-radius:40px;font-family:inherit;}
+        .tab-btn:hover{color:var(--text);background:var(--card-h);}
+        .tab-btn.active{background:var(--accent);color:#fff;}
+        
+        /* Tab Content */
+        .tab-content{display:none;}
+        .tab-content.active{display:block;animation:fadeIn .4s ease;}
+        @keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+        
+        .content-card{background:var(--card);border:1px solid var(--border);border-radius:28px;overflow:hidden;}
+        .section-header{padding:2rem 2rem 0.5rem 2rem;border-bottom:1px solid var(--border);}
+        .section-header h2{font-size:1.5rem;font-weight:800;margin-bottom:.5rem;color:var(--text);}
+        .section-header p{font-size:.85rem;color:var(--muted);}
+        
+        .grid-list{padding:1.5rem 2rem 2rem 2rem;}
+        .grid-2col{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+        .security-item{border:1px solid var(--border);border-radius:16px;padding:1.2rem;transition:all .3s;}
+        .security-item:hover{background:var(--card-h);transform:translateY(-2px);}
+        .security-icon{font-size:1.8rem;color:var(--accent);margin-bottom:.8rem;}
+        .security-title{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:var(--text);}
+        .security-desc{font-size:.8rem;color:var(--muted);line-height:1.5;}
+        
+        .principle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;}
+        .principle-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:1.5rem;text-align:center;transition:all .3s;}
+        .principle-card:hover{background:var(--card-h);transform:translateY(-4px);}
+        .principle-icon{font-size:2rem;color:var(--accent);margin-bottom:1rem;}
+        .principle-card h3{font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--text);}
+        .principle-card p{font-size:.8rem;color:var(--muted);line-height:1.5;}
+        
+        .measures-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;}
+        .measure-item{display:flex;align-items:center;gap:.8rem;padding:.8rem;border-bottom:1px solid var(--border);}
+        .measure-item i{color:var(--green);font-size:.9rem;}
+        .measure-item span{font-size:.85rem;color:var(--text);}
+        
+        .contact-box{background:linear-gradient(135deg,var(--card),transparent);border:1px solid var(--border);border-radius:20px;padding:2rem;margin-top:2rem;text-align:center;}
+        .contact-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.5rem;color:var(--text);}
+        .contact-box p{font-size:.85rem;color:var(--muted);margin-bottom:1rem;}
+        .contact-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+        .contact-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--btn-bg);color:var(--btn-text);padding:.7rem 1.5rem;border-radius:100px;font-weight:600;font-size:.85rem;transition:all .3s;border:none;cursor:pointer;font-family:inherit;}
+        .contact-btn:hover{transform:translateY(-2px);opacity:.9;}
+        .contact-wa{background:#25D366;color:#fff;}
+        .contact-secure{background:var(--green-bg);color:var(--green);border:1px solid var(--green);}
+        
+        .badge-row{display:flex;justify-content:center;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap;}
+        .badge{background:var(--card);border:1px solid var(--border);border-radius:100px;padding:.4rem 1rem;font-size:.75rem;color:var(--accent);}
+        
+        .footer{background:var(--bg2);padding:3rem 1rem 2rem;border-top:1px solid var(--border);margin-top:2rem;}
+        .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem;max-width:1200px;margin:0 auto;}
+        .footer-logo{font-size:1.2rem;font-weight:800;margin-bottom:.5rem;color:var(--text);}
+        .footer-grid p{font-size:.7rem;color:var(--dim);}
+        .footer-grid h4{font-size:.8rem;font-weight:700;margin-bottom:1rem;color:var(--text);}
+        .footer-grid a{display:block;font-size:.7rem;color:var(--dim);margin-bottom:.5rem;transition:color .3s;}
+        .footer-grid a:hover{color:var(--text);}
+        .footer-bottom{text-align:center;padding-top:2rem;margin-top:2rem;border-top:1px solid var(--border);font-size:.7rem;color:var(--dim);}
+
+        @media(max-width:768px){
+            .nav-left,.nav-right{display:none;}
+            .hamburger{display:block;}
+            .page-hero h1{font-size:2rem;}
+            .grid-2col{grid-template-columns:1fr;}
+            .principle-grid{grid-template-columns:1fr;}
+            .measures-grid{grid-template-columns:1fr;}
+            .contact-buttons{flex-direction:column;align-items:center;}
+            .tabs-nav{justify-content:center;}
+            .tab-btn{padding:.6rem 1.2rem;font-size:.8rem;}
+        }
+        @media(max-width:480px){
+            .page-hero{padding:7rem 1rem 3rem;}
+            .section-header{padding:1.5rem;}
+            .grid-list{padding:1rem 1.5rem 1.5rem;}
+        }
+        .dropdown:hover .dropdown-content{display:block;opacity:1;visibility:visible;}
+        .dropdown-content{display:none;position:absolute;top:100%;left:0;margin-top:0;padding-top:5px;z-index:1000;}
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AVENOR",
+      "url": "https://avenor.sbs",
+      "logo": "https://avenor.sbs/images/LogoA.svg",
+      "description": "AVENOR is a venture intelligence platform helping startups raise smarter and investors discover high-signal opportunities. Founded by PRANAV GAUTAM from Bihar.",
+      "founder": {
+        "@type": "Person",
+        "name": "PRANAV GAUTAM",
+        "jobTitle": "Founder & CEO"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bihar",
+        "addressCountry": "India"
+      },
+      "foundingDate": "2026",
+      "industry": "Venture Intelligence",
+      "mission": "Less Noise. Better Decisions."
+    }
+    </script>
+</head>
+<body>
+
+ <header class="main-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <a href="index.html">
+                <img class="logo-dark" src="images/blacklogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/fff/000?text=A'">
+                <img class="logo-light" src="images/whitelogo.png" alt="AVENOR" onerror="this.src='https://placehold.co/32x32/000/fff?text=A'">
+            </a>
+        </div>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="connect.html">Connect.in</a>
+        </div>
+        <div class="nav-right">
+            <label class="switch" title="Toggle dark/light mode">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                <input type="checkbox" class="input" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <a href="portfolio.html" class="lets-talk-btn">Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Dark Mode</span>
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1-.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1-.75.29zm-12.02 12.02a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-.7.24zm6.36-14.36a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm0 17a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1zm-5.66-14.66a1 1 0 0 1-.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.29zm12.02 12.02a1 1 0 0 1-.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1-.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+            <input type="checkbox" class="input" id="themeToggleMobile">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mentorship.html">Mentorship</a>
+    <a href="connect.html">Connect.in</a>
+    <a href="portfolio.html">Portfolio</a>
+</div>
+
+
+<!-- HERO SECTION -->
+<section class="page-hero">
+    <div class="hero-badge"><i class="fas fa-shield-hart" style="color:var(--accent);"></i> Security & Trust</div>
+    <h1>Security Matters</h1>
+    <p>At AVENOR, security is a core part of our platform. We are committed to protecting startup, investor, and business information through modern security practices and operational controls. Founded by <strong>PRANAV GAUTAM</strong> from Bihar.</p>
+</section>
+
+<!-- TABS NAVIGATION -->
+<div class="content-container">
+    <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="security">🔒 Security</button>
+        <button class="tab-btn" data-tab="trust">🤝 Trust Center</button>
+        <button class="tab-btn" data-tab="compliance">📋 Compliance</button>
+    </div>
+
+    <!-- SECURITY TAB -->
+    <div id="security" class="tab-content active">
+        <div class="content-card">
+            <div class="section-header">
+                <h2>Security at AVENOR</h2>
+                <p>We build security into every layer of our platform — from infrastructure to application code.</p>
+            </div>
+            <div class="grid-list">
+                <div class="badge-row">
+                    <span class="badge"><i class="fas fa-shield-alt"></i> SOC 2 Type II Ready</span>
+                    <span class="badge"><i class="fas fa-lock"></i> ISO 27001 Compliant</span>
+                    <span class="badge"><i class="fas fa-cloud"></i> Cloud-Native Security</span>
+                </div>
+                
+                <h3 style="font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--text);">Data Protection</h3>
+                <div class="grid-2col">
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-database"></i></div><div class="security-title">Secure Storage</div><div class="security-desc">All user information is stored in encrypted databases with strict access controls.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-lock"></i></div><div class="security-title">Encryption in Transit</div><div class="security-desc">TLS 1.3 encryption for all data transmitted between your browser and our servers.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-user-check"></i></div><div class="security-title">Controlled Access</div><div class="security-desc">Internal systems use role-based access control (RBAC) with multi-factor authentication.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-chart-line"></i></div><div class="security-title">Continuous Monitoring</div><div class="security-desc">24/7 platform activity monitoring with automated anomaly detection.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-clipboard-list"></i></div><div class="security-title">Regular Reviews</div><div class="security-desc">Quarterly security audits and penetration testing by third-party firms.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-sync-alt"></i></div><div class="security-title">Backup Procedures</div><div class="security-desc">Automated daily backups with point-in-time recovery capabilities.</div></div>
+                </div>
+
+                <h3 style="font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;color:var(--text);">Account Security</h3>
+                <div class="grid-2col">
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-key"></i></div><div class="security-title">Secure Authentication</div><div class="security-desc">Password hashing using bcrypt + optional 2FA for verified accounts.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-timer"></i></div><div class="security-title">Session Management</div><div class="security-desc">Automatic session timeout and IP-based anomaly detection.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-bug"></i></div><div class="security-title">Protection</div><div class="security-desc">Brute force protection and rate limiting on authentication endpoints.</div></div>
+                </div>
+
+                <h3 style="font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;color:var(--text);">Infrastructure Security</h3>
+                <div class="grid-2col">
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-cloud-upload-alt"></i></div><div class="security-title">Cloud Infrastructure</div><div class="security-desc">Secure cloud-based infrastructure hosted on AWS/GCP with industry best practices.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-shield-virus"></i></div><div class="security-title">Threat Detection</div><div class="security-desc">Network monitoring and real-time threat detection systems.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-wrench"></i></div><div class="security-title">Patch Management</div><div class="security-desc">Regular software updates and security patches within 48 hours of release.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-database"></i></div><div class="security-title">Backup & Recovery</div><div class="security-desc">Automated daily backups with 30-day retention and tested recovery procedures.</div></div>
+                </div>
+
+                <h3 style="font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;color:var(--text);">AI Security</h3>
+                <div class="grid-2col">
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-microchip"></i></div><div class="security-title">Controlled Environments</div><div class="security-desc">AI systems operate within isolated, controlled environments with strict guardrails.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-chart-simple"></i></div><div class="security-title">Quality Monitoring</div><div class="security-desc">AI-generated insights are continuously monitored for quality, bias, and reliability.</div></div>
+                </div>
+
+                <div class="contact-box" style="margin-top:1.5rem;">
+                    <h3>Responsible Disclosure</h3>
+                    <p>If you discover a security vulnerability, please report it responsibly to our security team.</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:security@avenor.sbs" class="contact-btn"><i class="fas fa-envelope"></i> security@avenor.sbs</a>
+                        <button onclick="window.open('https://wa.me/9192622444607?text=Hi%20AVENOR%20Security%20Team,%20I%20would%20like%20to%20report%20a%20potential%20security%20concern.%20Please%20advise.', '_blank')" class="contact-btn contact-wa"><i class="fab fa-whatsapp"></i> Report via WhatsApp</button>
+                    </div>
+                    <p style="font-size:.7rem; color:var(--dim); margin-top:.8rem;">We investigate all legitimate security concerns promptly and responsibly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRUST TAB -->
+    <div id="trust" class="tab-content">
+        <div class="content-card">
+            <div class="section-header">
+                <h2>Trust Center</h2>
+                <p>Building Trust Between Founders and Investors — Every interaction on AVENOR is designed to increase transparency and reduce noise.</p>
+            </div>
+            <div class="grid-list">
+                <div class="badge-row">
+                    <span class="badge"><i class="fas fa-check-circle"></i> 1000+ Verified Startups</span>
+                    <span class="badge"><i class="fas fa-user-check"></i> 500+ Verified Investors</span>
+                    <span class="badge"><i class="fas fa-chart-line"></i> ₹150Cr+ Tracked</span>
+                </div>
+
+                <h3 style="font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--text);">Our Principles</h3>
+                <div class="principle-grid">
+                    <div class="principle-card"><div class="principle-icon"><i class="fas fa-eye"></i></div><h3>Transparency</h3><p>We encourage accurate and complete information from all users. What you see is what you get.</p></div>
+                    <div class="principle-card"><div class="principle-icon"><i class="fas fa-handshake"></i></div><h3>Integrity</h3><p>We maintain ethical standards in platform operations and user interactions. No shortcuts.</p></div>
+                    <div class="principle-card"><div class="principle-icon"><i class="fas fa-user-secret"></i></div><h3>Privacy</h3><p>User data is handled according to our Privacy Policy and applicable laws. Your data stays yours.</p></div>
+                    <div class="principle-card"><div class="principle-icon"><i class="fas fa-shield-alt"></i></div><h3>Security</h3><p>We invest in security controls designed to protect user information and platform integrity.</p></div>
+                    <div class="principle-card"><div class="principle-icon"><i class="fas fa-balance-scale"></i></div><h3>Fair Access</h3><p>We strive to provide a fair environment for startups and investors regardless of geography.</p></div>
+                </div>
+
+                <h3 style="font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;color:var(--text);">Platform Trust Measures</h3>
+                <div class="measures-grid">
+                    <div class="measure-item"><i class="fas fa-check-circle"></i><span>Structured startup profiles</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle"></i><span>Founder verification processes</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle"></i><span>Investor onboarding reviews</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle"></i><span>AI-powered signal analysis</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle"></i><span>Risk and anomaly detection</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle"></i><span>Data quality monitoring</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle"></i><span>Community reporting system</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle"></i><span>Regular trust audits</span></div>
+                </div>
+
+                <h3 style="font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;color:var(--text);">Community Standards</h3>
+                <p style="font-size:.85rem;color:var(--muted);margin-bottom:1rem;">Users are expected to:</p>
+                <div class="measures-grid">
+                    <div class="measure-item"><i class="fas fa-check-circle" style="color:var(--green);"></i><span>Provide truthful information</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle" style="color:var(--green);"></i><span>Respect confidentiality</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle" style="color:var(--green);"></i><span>Avoid fraudulent activities</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle" style="color:var(--green);"></i><span>Comply with applicable laws</span></div>
+                    <div class="measure-item"><i class="fas fa-check-circle" style="color:var(--green);"></i><span>Maintain professional conduct</span></div>
+                </div>
+
+                <div class="contact-box" style="margin-top:1.5rem;">
+                    <h3>Report Concerns</h3>
+                    <p>If you encounter suspicious activity, misinformation, abuse, or security concerns, please contact our Trust & Safety team.</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:trust@avenor.sbs" class="contact-btn"><i class="fas fa-envelope"></i> trust@avenor.sbs</a>
+                        <button onclick="window.open('https://wa.me/9192622444607?text=Hi%20AVENOR%20Trust%20Team,%20I%20want%20to%20report%20a%20concern%20about%20platform%20activity.%20Please%20help.', '_blank')" class="contact-btn contact-wa"><i class="fab fa-whatsapp"></i> WhatsApp Support</button>
+                    </div>
+                </div>
+
+                <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);text-align:center;">
+                    <p style="font-size:.8rem;color:var(--muted);"><i class="fas fa-heart" style="color:var(--green);"></i> Together, we are building a more transparent and intelligent venture ecosystem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMPLIANCE TAB -->
+    <div id="compliance" class="tab-content">
+        <div class="content-card">
+            <div class="section-header">
+                <h2>Compliance & Regulations</h2>
+                <p>AVENOR aims to operate in accordance with applicable Indian laws and global best practices.</p>
+            </div>
+            <div class="grid-list">
+                <div class="badge-row">
+                    <span class="badge"><i class="fas fa-gavel"></i> IT Act, 2000</span>
+                    <span class="badge"><i class="fas fa-shield-alt"></i> DPDP Act, 2023</span>
+                    <span class="badge"><i class="fas fa-globe"></i> Global Standards</span>
+                </div>
+
+                <div class="grid-2col">
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-file-alt"></i></div><div class="security-title">Information Technology Act, 2000</div><div class="security-desc">Compliance with India's foundational cybersecurity and e-commerce legislation.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-user-shield"></i></div><div class="security-title">Digital Personal Data Protection Act, 2023</div><div class="security-desc">Full compliance with India's modern data protection framework.</div></div>
+                    <div class="security-item"><div class="security-icon"><i class="fas fa-chart-line"></i></div><div class="security-title">Cybersecurity Requirements</div><div class="security-desc">Adherence to CERT-In incident reporting and security practice guidelines.</div></div>
+                </div>
+
+                <div class="contact-box" style="margin-top:1rem;">
+                    <h3>Our Security Commitment</h3>
+                    <p>We continuously improve our security posture to help founders and investors operate with confidence on AVENOR.</p>
+                    <p style="font-size:.75rem;color:var(--dim);margin-top:.8rem;">📍 Registered Office: Patna, Bihar, India | AVENOR Technology Private Limited</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div><div class="footer-logo">AVENOR</div><p>Structured fundraising and venture intelligence. Less noise. Better decisions.</p></div>
+        <div><h4>Product</h4><a>Startups</a><a>Investors</a><a>Intelligence</a><a>Pricing</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><a href="career.html">Careers</a><a href="press.html">Press</a><a href="contact.html">Contact</a></div>
+        <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a><a>Trust</a></div>
+        <div><h4>Social</h4><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a><a href="#"><i class="fab fa-youtube"></i> YouTube</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 AVENOR. Built from Bihar, for the world. All rights reserved.</div>
+    <div class="footer-bottom">Built With ❤️ By gmitech.in</div>
+</footer>
+
+<script>
+    // Theme Toggle
+    const html = document.documentElement;
+    const t1 = document.getElementById('themeToggle');
+    const t2 = document.getElementById('themeToggleMobile');
+    function setTheme(light) { html.setAttribute('data-theme', light ? 'light' : 'dark'); if(t1) t1.checked = light; if(t2) t2.checked = light; localStorage.setItem('avenor-theme', light ? 'light' : 'dark'); }
+    if(localStorage.getItem('avenor-theme') === 'light') setTheme(true);
+    if(t1) t1.addEventListener('change', () => setTheme(t1.checked));
+    if(t2) t2.addEventListener('change', () => setTheme(t2.checked));
+
+    // Mobile Menu
+    const hbtn = document.getElementById('hamburgerBtn');
+    const mmenu = document.getElementById('mobileMenu');
+    if(hbtn) {
+        hbtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mmenu.classList.toggle('active');
+            hbtn.classList.toggle('active');
+        });
+    }
+    const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+    const mobileDropdownContent = document.getElementById('mobileDropdownContent');
+    if(mobileDropdownBtn) {
+        mobileDropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if(mobileDropdownContent) {
+                mobileDropdownContent.style.display = mobileDropdownContent.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    }
+    document.querySelectorAll('.mobile-menu a, .mobile-menu button').forEach(l => l.addEventListener('click', () => { mmenu.classList.remove('active'); if(hbtn) hbtn.classList.remove('active'); }));
+
+    // Tab Switching
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.getAttribute('data-tab');
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            tabContents.forEach(content => content.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
